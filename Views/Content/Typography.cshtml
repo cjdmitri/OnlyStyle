@@ -1,0 +1,109 @@
+﻿@{
+    ViewBag.Title = "OnlyStyle Typography";
+    ViewBag.Description = "Headings, text style, list style";
+    ViewBag.Canonical = $"{Context.Request.Scheme}://{Context.Request.Host}{Context.Request.Path}".ToLower();
+    ViewBag.H1 = "OnlyStyle Typography";
+    //ViewBag.Keywords = "";
+    ViewBag.UrlImage = null;
+    ViewBag.HideTopRibbon = true;
+    ViewBag.HideBottomRibbon = true;
+}
+
+
+<div class="container">
+    @* Typography *@
+    <div class="grid g-sm-2">
+        <div>
+            <h2>Headings</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Heading</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>&lt;h1>Heading&lt;/h1></code></td>
+                        <td><h1>h1 heading</h1></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;h2>Heading&lt;/h2></code></td>
+                        <td><h2>h2 heading</h2></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;h3>Heading&lt;/h3></code></td>
+                        <td><h3>h3 heading</h3></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;h4>Heading&lt;/h4></code></td>
+                        <td><h4>h4 heading</h4></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;h5>Heading&lt;/h5></code></td>
+                        <td><h5>h5 heading</h5></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;h6>Heading&lt;/h6></code></td>
+                        <td><h6>h6 heading</h6></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h2>Text style</h2>
+            <div class="card">
+                <div class="card-body">
+                    <p class="text-muted"><code>.text-muted</code> Lorem ipsum dolor sit amet.</p>
+                    <p class="text-primary"><code>.text-primary</code> Lorem ipsum dolor sit amet.</p>
+                    <p class="text-secondary"><code>.text-secondary</code> Lorem ipsum dolor sit amet.</p>
+                    <p class="text-success"><code>.text-success</code> Lorem ipsum dolor sit amet.</p>
+                    <p class="text-info"><code>.text-info</code> Lorem ipsum dolor sit amet.</p>
+                    <p class="text-warning"><code>.text-warning</code> Lorem ipsum dolor sit amet.</p>
+                    <p class="text-danger"><code>.text-danger</code> Lorem ipsum dolor sit amet.</p>
+                    <p><code>&lt;p>&lt;/p></code> Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2>List</h2>
+            <pre class="bordered pd-15">
+<code>
+&ltul>
+    &ltli>List item 1&lt/li>
+&lt/ul>
+</code>
+</pre>
+
+            <ul>
+                <li>List item 1</li>
+                <li>List item 2</li>
+                <li>List item 3</li>
+                <li>List item 1</li>
+                <li>List item 5</li>
+                <li>List item 6</li>
+                <li>List item 7</li>
+            </ul>
+        </div>
+        <div>
+            <h2>List</h2>
+            <pre class="bordered pd-15">
+            <code>
+&ltol>
+    &ltli>List item 1&lt/li>
+&lt/ol>
+                </code>
+</pre>
+
+            <ol>
+                <li>List item 1</li>
+                <li>List item 2</li>
+                <li>List item 3</li>
+                <li>List item 1</li>
+                <li>List item 5</li>
+                <li>List item 6</li>
+                <li>List item 7</li>
+            </ol>
+        </div>
+    </div>
+</div>

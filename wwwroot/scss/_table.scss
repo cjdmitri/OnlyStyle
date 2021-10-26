@@ -1,0 +1,69 @@
+﻿.table {
+    width: 100%;
+    border: 1px solid var(--border-color);
+    overflow-x: auto;
+    max-width: 100%;
+    margin-bottom: 20px;
+    background-color: white;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+}
+
+/*tbody, td, tfoot, th, thead, tr {
+    border-color: inherit;
+    border-style: solid;
+}*/
+
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+    padding: 8px;
+    vertical-align: top;
+    border: 1px solid var(--border-color);
+}
+
+
+.table-striped > tbody tr:nth-child(odd),
+.table-striped > tbody tr:nth-child(odd) > td > input {
+    background-color: white;
+}
+
+.table-striped > tbody tr:nth-child(even),
+.table-striped > tbody tr:nth-child(even) > td > input {
+    background-color: #F1F1F1;
+}
+
+
+.table-hover > tbody tr:hover {
+    background-color: #DFE2FF;
+}
+
+
+.table-edit > tbody>tr> td {
+    padding: 0;
+}
+
+.table-edit input {
+    border: none;
+    display: block;
+    padding: 8px;
+
+    width: 100%;
+}
+
+.table-edit input:focus,
+.table-edit input:active,
+.table-edit input:hover {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+

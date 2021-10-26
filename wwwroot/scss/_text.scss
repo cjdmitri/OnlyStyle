@@ -1,0 +1,36 @@
+﻿.text-upper{
+    text-transform:uppercase;
+}
+
+.text-center {
+    text-align: center;
+
+    & * {
+        text-align: center;
+    }
+}
+.text-small{
+    font-size:small;
+}
+.text-muted{
+    color:var(--text-color-muted);
+}
+
+.text-primary {
+    color: var(--primary);
+}
+.text-secondary {
+    color: var(--secondary);
+}
+.text-success {
+    color: var(--success);
+}
+.text-info {
+    color: var(--info);
+}
+.text-warning {
+    color: var(--warning);
+}
+.text-danger {
+    color: var(--danger);
+}

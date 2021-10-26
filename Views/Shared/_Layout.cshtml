@@ -1,0 +1,83 @@
+﻿@{
+    if (ViewBag.Title == null)
+        ViewBag.Title = "OnlyStyle";
+    if (ViewBag.Description == null)
+        ViewBag.Description = "OnlyStyle Framework";
+    //if (ViewBag.UrlImage == null)
+    //    ViewBag.UrlImage = Url.Content("~/img/general.jpg");
+    if (ViewBag.Keywords == null)
+        ViewBag.Keywords = "onlystyle, cssframework, web framework";
+    if (ViewBag.Canonical == null)
+        ViewBag.Canonical = $"{Context.Request.Scheme}://{Context.Request.Host}{Context.Request.Path}{Context.Request.QueryString}".ToLower();
+    if (ViewBag.H1 == null)
+        ViewBag.H1 = ViewBag.Title;
+    string siteDomain = $"{Context.Request.Host}";
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>@ViewBag.Title</title>
+    <link rel="image_src" href="@ViewBag.UrlImage">
+    <meta name="description" content="@ViewBag.Description">
+    <meta name="keywords" content="@ViewBag.Keywords">
+
+    @*Open Graph*@
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="@ViewBag.Title">
+    <meta property="og:description" content="@ViewBag.Description">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content=@siteDomain>
+    <meta property="og:url" content="@ViewBag.Canonical">
+    <meta property="og:image" content="@ViewBag.UrlImage">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="@ViewBag.UrlImage">
+    <meta name="twitter:description" content="@ViewBag.Description">
+    <meta name="twitter:title" content="@ViewBag.Title">
+
+    <meta name="theme-color" content="#FFFFFF" />
+    <link rel="manifest" href="~/manifest.json" />
+    <link rel="apple-touch-icon" href="~/img/icons/ios/192.png" />
+
+    <environment include="Development">
+        <link href="~/css/onlystyle.css" rel="stylesheet">
+    </environment>
+    <environment exclude="Development">
+        <cache expires-after="@TimeSpan.FromDays(10)">
+            <link href="~/css/onlystyle.min.css" rel="stylesheet" asp-append-version="true">
+        </cache>
+    </environment>
+    <link href="~/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    @{
+        await Html.RenderPartialAsync("_navbar");
+        if (Convert.ToBoolean(ViewBag.HideTopRibbon) != true)
+        {
+            await Html.RenderPartialAsync("_ribbonTop");
+
+        }
+        await Html.RenderPartialAsync("_header");
+    }
+    @RenderBody()
+    @{
+        if (Convert.ToBoolean(ViewBag.HideBottomRibbon) !=true)
+        {
+            await Html.RenderPartialAsync("_ribbonBottom");
+
+        }
+        //await Html.RenderPartialAsync("_footer");
+    }
+    <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("/service-worker.js");
+        }
+    </script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>

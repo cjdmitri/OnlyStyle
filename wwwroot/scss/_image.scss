@@ -1,0 +1,16 @@
+﻿.img-full {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-rounded{
+    border-radius:50%;
+}
+
+.img-thumb {
+    border: 1px solid var(--border-color);
+    max-width: 100%;
+    padding: 5px;
+    background-color: var(--color-white);
+    height: auto;
+}

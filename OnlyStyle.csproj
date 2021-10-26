@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\scss\onlystyle.scss" />
+    <Content Remove="wwwroot\scss\_buttons.scss" />
+    <Content Remove="wwwroot\scss\_card.scss" />
+    <Content Remove="wwwroot\scss\_general.scss" />
+    <Content Remove="wwwroot\scss\_grid.scss" />
+    <Content Remove="wwwroot\scss\_headers.scss" />
+    <Content Remove="wwwroot\scss\_image.scss" />
+    <Content Remove="wwwroot\scss\_listgroups.scss" />
+    <Content Remove="wwwroot\scss\_navbar.scss" />
+    <Content Remove="wwwroot\scss\_ribbon.scss" />
+    <Content Remove="wwwroot\scss\_table.scss" />
+    <Content Remove="wwwroot\scss\_text.scss" />
+    <Content Remove="wwwroot\scss\_tooltip.scss" />
+    <Content Remove="wwwroot\scss\__mixins.scss" />
+    <Content Remove="wwwroot\scss\__variable.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\ContentController\" />
+    <Folder Include="wwwroot\js\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\scss\onlystyle.scss" />
+    <None Include="wwwroot\scss\_buttons.scss" />
+    <None Include="wwwroot\scss\_card.scss" />
+    <None Include="wwwroot\scss\_general.scss" />
+    <None Include="wwwroot\scss\_grid.scss" />
+    <None Include="wwwroot\scss\_headers.scss" />
+    <None Include="wwwroot\scss\_image.scss" />
+    <None Include="wwwroot\scss\_listgroups.scss" />
+    <None Include="wwwroot\scss\_navbar.scss" />
+    <None Include="wwwroot\scss\_ribbon.scss" />
+    <None Include="wwwroot\scss\_table.scss" />
+    <None Include="wwwroot\scss\_text.scss" />
+    <None Include="wwwroot\scss\_tooltip.scss" />
+    <None Include="wwwroot\scss\__mixins.scss" />
+    <None Include="wwwroot\scss\__variable.scss" />
+  </ItemGroup>
+
+</Project>

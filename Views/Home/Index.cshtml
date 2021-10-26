@@ -1,0 +1,464 @@
+﻿@{
+    ViewBag.Title = "OnlyStyle Home Page";
+    ViewBag.Description = "Compact, fast framework. Without use JavaScript";
+    ViewBag.Canonical = $"{Context.Request.Scheme}://{Context.Request.Host}{Context.Request.Path}".ToLower();
+    ViewBag.H1 = "OnlyStyle Framework";
+    //ViewBag.Keywords = "";
+    ViewBag.UrlImage = null;
+    ViewBag.HideTopRibbon = false;
+    ViewBag.HideBottomRibbon = false;
+}
+
+<div class="container">
+    @* Grid *@
+    <div class="grid g-sm-1">
+        <h2>Grid</h2>
+        <code>grid g-sm-2 g-md-6 g-lg-8</code>
+    </div>
+    <div class="grid g-sm-2 g-md-6 g-lg-8">
+        <div class="item-empty">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="item-empty col-md-span-3 col-lg-span-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="item-empty row-md-span-1 row-lg-span-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="item-empty">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="item-empty">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="item-empty">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="item-empty">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="item-empty col-sm-span-1 col-md-span-2 col-lg-span-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="item-empty">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="item-empty">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="item-empty col-sm-span-1 col-md-span-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    </div>
+    <pre class="mg-15 pd-10 bordered">
+&ltdiv class="grid g-sm-2 g-md-6 g-lg-8">
+    &ltdiv>&lt/div>
+    &ltdiv class="col-md-span-3 col-lg-span-3">&lt/div>
+    &ltdiv class="row-sm-span-1 row-lg-span-2">&lt/div>
+    &ltdiv>&lt/div>
+    &ltdiv>&lt/div>
+    &ltdiv>&lt/div>
+    &ltdiv>&lt/div>
+    &ltdiv class="col-sm-span-1 col-md-span-2 col-lg-span-2">&lt/div>
+    &ltdiv>&lt/div>
+    &ltdiv>&lt/div>
+    &ltdiv class="col-sm-span-1 col-md-span-2">&lt/div>
+&lt/div>
+</pre>
+    @* Navbar *@
+    <div class="grid g-sm-1">
+        <h2>Navbar</h2>
+    </div>
+    <div class="grid g-sm-1">
+        <div class="card">
+            <div class="card-body">
+                <h3>Navbar default</h3>
+            </div>
+
+            <nav class="navbar" style="z-index:1">
+                <input type="checkbox" class="hidden" />
+                <div class="brand">
+                    <label for="btnmenu" class="btn-menu">
+                        <i class="line"></i>
+                        <i class="line"></i>
+                        <i class="line"></i>
+                    </label>
+                    <a href="/"><img src="~/img/icons/ios/87.png" class="hidden-md" />OnlyStyle</a>
+                </div>
+                @* Left toolbar *@
+                <div class="nav-left">
+                    <a href="#" class="nav-link text-upper">Home</a>
+                    <div class="nav-dropdown">
+                        <button type="button" class="nav-btn-dropdown text-upper">Menu 1</button>
+                        <div class="dropdown-menu">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Link 2 long title link</a></li>
+                                <li><a href="#">Link 3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-dropdown">
+                        <button type="button" class="nav-btn-dropdown text-upper">Menu 2</button>
+                        <div class="dropdown-menu">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Link 2 long title link</a></li>
+                                <li><a href="#">Link 3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-dropdown-full">
+                        <button type="button" class="nav-btn-dropdown text-upper">Full Menu</button>
+                        <div class="dropdown-menu">
+                            <div class="grid g-sm-1 g-md-3">
+                                <div>
+                                    <h4>Full menu</h4>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Link 1</a></li>
+                                        <li><a href="#">Link 2</a></li>
+                                        <li><a href="#">Link 3</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4>Full menu</h4>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Link 1</a></li>
+                                        <li><a href="#">Link 2</a></li>
+                                        <li><a href="#">Link 3</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4>Full menu</h4>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Link 1</a></li>
+                                        <li><a href="#">Link 2</a></li>
+                                        <li><a href="#">Link 3</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @* right toolbar *@
+                <div class="nav-end">
+                    <div class="nav-dropdown">
+                        <button type="button" class="nav-btn-dropdown text-upper">Search</button>
+                        <div class="dropdown-menu">
+                            <input type="text" class="form-control" placeholder="Search..." />
+                        </div>
+                    </div>
+                    <div class="nav-dropdown">
+                        <button type="button" class="nav-btn-dropdown text-upper">Account</button>
+                        <div class="dropdown-menu">
+                            <h4>Account</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Link 1</a></li>
+                                <li><a href="#">Link 2</a></li>
+                                <li><a href="#">Link 3</a></li>
+                            </ul>
+                            <h4>Settings</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Link 1</a></li>
+                                <li><a href="#">Link 2</a></li>
+                                <li><a href="#">Link 3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="card-body">
+                <pre>
+&ltnav class="navbar">
+    &ltinput type="checkbox" id="btnmenu" />
+    &ltdiv class="brand">
+        &ltlabel for="btnmenu" class="btn-menu">
+            &lti class="line">&lt/i>
+            &lti class="line">&lt/i>
+            &lti class="line">&lt/i>
+        &lt/label>
+        &lta href="/">&ltimg src="/img/icons/ios/87.png" class="hidden-md" />OnlyStyle&lt/a>
+    &lt/div>
+    &ltdiv class="nav-left">
+        &lta href="#" class="nav-link text-upper">Home&lt/a>
+        &ltdiv class="nav-dropdown">
+            &ltbutton type="button" class="nav-btn-dropdown text-upper">Menu 1&lt/button>
+            &ltdiv class="dropdown-menu">
+                &ltul class="list-unstyled">
+                    &ltli>&lta href="#">Link 2 long title link&lt/a>&lt/li>
+                    &ltli>&lta href="#">Link 3&lt/a>&lt/li>
+                &lt/ul>
+            &lt/div>
+        &lt/div>
+        &ltdiv class="nav-dropdown">
+            &ltbutton type="button" class="nav-btn-dropdown text-upper">Menu 2&lt/button>
+            &ltdiv class="dropdown-menu">
+                &ltul class="list-unstyled">
+                    &ltli>&lta href="#">Link 2 long title link&lt/a>&lt/li>
+                    &ltli>&lta href="#">Link 3&lt/a>&lt/li>
+                &lt/ul>
+            &lt/div>
+        &lt/div>
+        &ltdiv class="nav-dropdown-full">
+            &ltbutton type="button" class="nav-btn-dropdown text-upper">Full Menu&lt/button>
+            &ltdiv class="dropdown-menu">
+                &ltdiv class="grid g-sm-1 g-md-3">
+                    &ltdiv>
+                        &lth4>Full menu&lt/h4>
+                        &ltul class="list-unstyled">
+                            &ltli>&lta href="#">Link 1&lt/a>&lt/li>
+                            &ltli>&lta href="#">Link 2&lt/a>&lt/li>
+                            &ltli>&lta href="#">Link 3&lt/a>&lt/li>
+                        &lt/ul>
+                    &lt/div>
+                    &ltdiv>
+                        &lth4>Full menu&lt/h4>
+                        &ltul class="list-unstyled">
+                            &ltli>&lta href="#">Link 1&lt/a>&lt/li>
+                            &ltli>&lta href="#">Link 2&lt/a>&lt/li>
+                            &ltli>&lta href="#">Link 3&lt/a>&lt/li>
+                        &lt/ul>
+                    &lt/div>
+                &ltdiv>
+                    &lth4>Full menu&lt/h4>
+                    &ltul class="list-unstyled">
+                        &ltli>&lta href="#">Link 1&lt/a>&lt/li>
+                        &ltli>&lta href="#">Link 2&lt/a>&lt/li>
+                        &ltli>&lta href="#">Link 3&lt/a>&lt/li>
+                    &lt/ul>
+                &lt/div>
+            &lt/div>
+        &lt/div>
+    &lt/div>
+&lt/div>
+    &ltdiv class="nav-end">
+        &ltdiv class="nav-dropdown">
+            &ltbutton type="button" class="nav-btn-dropdown text-upper">Search&lt/button>
+                &ltdiv class="dropdown-menu">
+                    &ltinput type="text" class="form-control" placeholder="Search..." />
+                 &lt/div>
+            &lt/div>
+            &ltdiv class="nav-dropdown">
+                &ltbutton type="button" class="nav-btn-dropdown text-upper">Account&lt/button>
+                &ltdiv class="dropdown-menu">
+                    &lth4>Account&lt/h4>
+                    &ltul class="list-unstyled">
+                        &ltli>&lta href="#">Link 1&lt/a>&lt/li>
+                        &ltli>&lta href="#">Link 2&lt/a>&lt/li>
+                        &ltli>&lta href="#">Link 3&lt/a>&lt/li>
+                    &lt/ul>
+                    &lth4>Settings&lt/h4>
+                    &ltul class="list-unstyled">
+                        &ltli>&lta href="#">Link 1&lt/a>&lt/li>
+                        &ltli>&lta href="#">Link 2&lt/a>&lt/li>
+                        &ltli>&lta href="#">Link 3&lt/a>&lt/li>
+                    &lt/ul>
+                &lt/div>
+            &lt/div>
+        &lt/div>
+&lt/nav>
+</pre>
+            </div>
+            <div class="card-body">
+                <h3>Navbar dark </h3>
+                <code>.dark</code>
+            </div>
+            <nav class="navbar dark" style="z-index:1">
+                <input type="checkbox" class="hidden" />
+                <div class="brand">
+                    <label for="btnmenu" class="btn-menu">
+                        <i class="line"></i>
+                        <i class="line"></i>
+                        <i class="line"></i>
+                    </label>
+                    <a href="/"><img src="~/img/icons/ios/87.png" class="hidden-md" />OnlyStyle</a>
+                </div>
+                @* Left toolbar *@
+                <div class="nav-left">
+                    <a href="#" class="nav-link text-upper">Home</a>
+                    <div class="nav-dropdown">
+                        <button type="button" class="nav-btn-dropdown text-upper">Menu 1</button>
+                        <div class="dropdown-menu">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Link 2 long title link</a></li>
+                                <li><a href="#">Link 3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-dropdown">
+                        <button type="button" class="nav-btn-dropdown text-upper">Menu 2</button>
+                        <div class="dropdown-menu">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Link 2 long title link</a></li>
+                                <li><a href="#">Link 3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-dropdown-full">
+                        <button type="button" class="nav-btn-dropdown text-upper">Full Menu</button>
+                        <div class="dropdown-menu">
+                            <div class="grid g-sm-1 g-md-3">
+                                <div>
+                                    <h4>Full menu</h4>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Link 1</a></li>
+                                        <li><a href="#">Link 2</a></li>
+                                        <li><a href="#">Link 3</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4>Full menu</h4>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Link 1</a></li>
+                                        <li><a href="#">Link 2</a></li>
+                                        <li><a href="#">Link 3</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4>Full menu</h4>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Link 1</a></li>
+                                        <li><a href="#">Link 2</a></li>
+                                        <li><a href="#">Link 3</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @* right toolbar *@
+                <div class="nav-end">
+                    <div class="nav-dropdown">
+                        <button type="button" class="nav-btn-dropdown text-upper">Search</button>
+                        <div class="dropdown-menu">
+                            <input type="text" class="form-control" placeholder="Search..." />
+                        </div>
+                    </div>
+                    <div class="nav-dropdown">
+                        <button type="button" class="nav-btn-dropdown text-upper">Account</button>
+                        <div class="dropdown-menu">
+                            <h4>Account</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Link 1</a></li>
+                                <li><a href="#">Link 2</a></li>
+                                <li><a href="#">Link 3</a></li>
+                            </ul>
+                            <h4>Settings</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Link 1</a></li>
+                                <li><a href="#">Link 2</a></li>
+                                <li><a href="#">Link 3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="card-body">
+                <pre>
+&ltnav class="navbar dark">
+    &ltinput type="checkbox" id="btnmenu" />
+    &ltdiv class="brand">
+        &ltlabel for="btnmenu" class="btn-menu">
+            &lti class="line">&lt/i>
+            &lti class="line">&lt/i>
+            &lti class="line">&lt/i>
+        &lt/label>
+        &lta href="/">&ltimg src="/img/icons/ios/87.png" class="hidden-md" />OnlyStyle&lt/a>
+    &lt/div>
+    &ltdiv class="nav-left">
+        &lta href="#" class="nav-link text-upper">Home&lt/a>
+        &ltdiv class="nav-dropdown">
+            &ltbutton type="button" class="nav-btn-dropdown text-upper">Menu 1&lt/button>
+            &ltdiv class="dropdown-menu">
+                &ltul class="list-unstyled">
+                    &ltli>&lta href="#">Link 2 long title link&lt/a>&lt/li>
+                    &ltli>&lta href="#">Link 3&lt/a>&lt/li>
+                &lt/ul>
+            &lt/div>
+        &lt/div>
+        &ltdiv class="nav-dropdown">
+            &ltbutton type="button" class="nav-btn-dropdown text-upper">Menu 2&lt/button>
+            &ltdiv class="dropdown-menu">
+                &ltul class="list-unstyled">
+                    &ltli>&lta href="#">Link 2 long title link&lt/a>&lt/li>
+                    &ltli>&lta href="#">Link 3&lt/a>&lt/li>
+                &lt/ul>
+            &lt/div>
+        &lt/div>
+        &ltdiv class="nav-dropdown-full">
+            &ltbutton type="button" class="nav-btn-dropdown text-upper">Full Menu&lt/button>
+            &ltdiv class="dropdown-menu">
+                &ltdiv class="grid g-sm-1 g-md-3">
+                    &ltdiv>
+                        &lth4>Full menu&lt/h4>
+                        &ltul class="list-unstyled">
+                            &ltli>&lta href="#">Link 1&lt/a>&lt/li>
+                            &ltli>&lta href="#">Link 2&lt/a>&lt/li>
+                            &ltli>&lta href="#">Link 3&lt/a>&lt/li>
+                        &lt/ul>
+                    &lt/div>
+                    &ltdiv>
+                        &lth4>Full menu&lt/h4>
+                        &ltul class="list-unstyled">
+                            &ltli>&lta href="#">Link 1&lt/a>&lt/li>
+                            &ltli>&lta href="#">Link 2&lt/a>&lt/li>
+                            &ltli>&lta href="#">Link 3&lt/a>&lt/li>
+                        &lt/ul>
+                    &lt/div>
+                &ltdiv>
+                    &lth4>Full menu&lt/h4>
+                    &ltul class="list-unstyled">
+                        &ltli>&lta href="#">Link 1&lt/a>&lt/li>
+                        &ltli>&lta href="#">Link 2&lt/a>&lt/li>
+                        &ltli>&lta href="#">Link 3&lt/a>&lt/li>
+                    &lt/ul>
+                &lt/div>
+            &lt/div>
+        &lt/div>
+    &lt/div>
+&lt/div>
+    &ltdiv class="nav-end">
+        &ltdiv class="nav-dropdown">
+            &ltbutton type="button" class="nav-btn-dropdown text-upper">Search&lt/button>
+                &ltdiv class="dropdown-menu">
+                    &ltinput type="text" class="form-control" placeholder="Search..." />
+                 &lt/div>
+            &lt/div>
+            &ltdiv class="nav-dropdown">
+                &ltbutton type="button" class="nav-btn-dropdown text-upper">Account&lt/button>
+                &ltdiv class="dropdown-menu">
+                    &lth4>Account&lt/h4>
+                    &ltul class="list-unstyled">
+                        &ltli>&lta href="#">Link 1&lt/a>&lt/li>
+                        &ltli>&lta href="#">Link 2&lt/a>&lt/li>
+                        &ltli>&lta href="#">Link 3&lt/a>&lt/li>
+                    &lt/ul>
+                    &lth4>Settings&lt/h4>
+                    &ltul class="list-unstyled">
+                        &ltli>&lta href="#">Link 1&lt/a>&lt/li>
+                        &ltli>&lta href="#">Link 2&lt/a>&lt/li>
+                        &ltli>&lta href="#">Link 3&lt/a>&lt/li>
+                    &lt/ul>
+                &lt/div>
+            &lt/div>
+        &lt/div>
+&lt/nav>
+</pre>
+            </div>
+        </div>
+    </div>
+
+    @* List groups *@
+    <div class="grid g-sm-1">
+        <h2>List groups</h2>
+    </div>
+    <div class="grid g-sm-1 g-md-3">
+        <div>
+            <h3>List group</h3>
+            <ul class="list-group">
+                <li>List item 1</li>
+                <li>List item 2</li>
+                <li>List item 3</li>
+                <li>List item 4</li>
+            </ul>
+        </div>
+        <div>
+            <h3>List link group</h3>
+            <ul class="list-group list-group-link">
+                <li><a href="#">List link item 1</a></li>
+                <li><a href="#">List link item 2</a></li>
+                <li><a href="#">List link item 3</a></li>
+                <li><a href="#">List link item 4</a></li>
+            </ul>
+        </div>
+    </div>
+
+    @*<div class="grid g-sm-1">
+            <div>
+                <p>Data attribute only <a href="#" data-tooltip="I’m the tooltip text">Tooltip</a></p>
+                <p><code>.tooltip</code> <a href="#" class="tooltip" data-tooltip="I’m the tooltip text.">Tooltip</a></p>
+                <p><code>.tooltip-top</code> <a href="#" class="tooltip-top" data-tooltip="I’m the tooltip text.">Tooltip</a></p>
+                <p><code>.tooltip-right</code> <a href="#" class="tooltip-right" data-tooltip="I’m the tooltip text.">Tooltip</a></p>
+                <p><code>.tooltip-bottom</code> <a href="#" class="tooltip-bottom" data-tooltip="I’m the tooltip text.">Tooltip</a></p>
+                <p><a href="#" class="tooltip-left" data-tooltip="I’m the tooltip text.">Tooltip</a> <code>.tooltip-left</code></p>
+            </div>
+        </div>*@
+</div>
+
+

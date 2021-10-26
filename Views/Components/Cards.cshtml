@@ -1,0 +1,121 @@
+﻿@{
+    ViewBag.Title = "OnlyStyle Components. Cards";
+    ViewBag.Description = "Cards style";
+    ViewBag.Canonical = $"{Context.Request.Scheme}://{Context.Request.Host}{Context.Request.Path}".ToLower();
+    ViewBag.H1 = "OnlyStyle Components. Cards";
+    //ViewBag.Keywords = "";
+    ViewBag.UrlImage = null;
+    ViewBag.HideTopRibbon = true;
+    ViewBag.HideBottomRibbon = true;
+}
+
+<div class="container">
+    <div class="grid g-sm-1">
+        <h2>Cards</h2>
+    </div>
+    <div class="grid g-sm-2 g-md-3 g-lg-4">
+        <div>
+<pre class="bordered pd-15">
+<code>
+&ltdiv class="card">
+    &ltdiv class="card-header">
+        &lth3>Default card&lt/h3>
+    &lt/div>
+    &ltdiv class="card-body">
+        &ltp>Content&lt/p>
+    &lt/div>
+&lt/div>
+</code>
+</pre>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3>Default card</h3>
+            </div>
+            <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+        <div class="card card-primary hover">
+            <div class="card-header">
+                <h3>Primary card + .hover</h3>
+            </div>
+            <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+        <div class="card card-secondary">
+            <div class="card-header">
+                <h3>Secondary card</h3>
+            </div>
+            <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+        <div class="card card-success">
+            <div class="card-header">
+                <h3>Success card</h3>
+            </div>
+            <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+        <div class="card card-info">
+            <div class="card-header">
+                <h3>Info card</h3>
+            </div>
+            <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+        <div class="card card-warning">
+            <div class="card-header">
+                <h3>Warning card</h3>
+            </div>
+            <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+        <div class="card card-danger">
+            <div class="card-header">
+                <h3>Danger card</h3>
+            </div>
+            <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+    </div>
+
+    @* Cards with image *@
+    <div class="grid g-sm-1">
+        <h2>Cards with image</h2>
+    </div>
+
+    <div class="grid g-sm-2">
+        <div>
+<pre class="bordered pd-15">
+<code>
+&ltdiv class="card card-primary">
+    &ltdiv class="card-header">
+        &lth3>Primary card&lt/h3>
+    &lt/div>
+    &ltimg class="img-full" src="/img/back1-min.jpg" />
+    &ltdiv class="card-body">
+        &ltp>Content&lt/p>
+    &lt/div>
+&lt/div>
+</code>
+</pre>
+        </div>
+        <div class="card card-primary">
+            <div class="card-header">
+                <h3>Primary card</h3>
+            </div>
+            <img class="img-full" src="~/img/back1-min.jpg" />
+            <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+    </div>
+
+</div>

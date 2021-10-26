@@ -1,0 +1,66 @@
+﻿.ribbon {
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+    background-color: white;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    -webkit-overflow-scrolling: touch;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: block;
+}
+.ribbon.sticky{
+    position:sticky;
+    top:-1px;
+    z-index:150;
+}
+.ribbon::-webkit-scrollbar {
+    height: 4px;
+}
+
+.ribbon::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #f9f9fd;
+    border-radius: 2px;
+}
+
+.ribbon::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background: linear-gradient(180deg, #00c6fb, #005bea);
+}
+
+.ribbon > a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #464646;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+.ribbon > a:hover {
+    color: #130041;
+}
+
+.ribbon > a > i {
+    display: block;
+    text-align: center;
+    font-size: 22px;
+}
+
+.ribbon > a.active,
+.ribbon > a:active {
+    color: #130041;
+    border-top: none;
+    border-bottom: 2px solid #a7a7ff;
+}
+
+.ribbon.bottom-fixed > a.active,
+.ribbon.bottom-fixed > a:active,
+.ribbon.bottom-fixed > a:focus {
+    /*border-top: 2px solid #a7a7ff;*/
+    border-bottom: none;
+    border-top: none;
+    color: #130041;
+}

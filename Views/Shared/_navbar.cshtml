@@ -1,0 +1,92 @@
+﻿<nav class="navbar dark navbar-fixed">
+    <input type="checkbox" id="btnmenu" />
+    <div class="brand">
+        <label for="btnmenu" class="btn-menu">
+            <i class="line"></i>
+            <i class="line"></i>
+            <i class="line"></i>
+        </label>
+        <a href="/"><img src="~/img/icons/ios/87.png" class="hidden-md"/>OnlyStyle</a>
+    </div>
+    @* Left toolbar *@
+    <div class="nav-left">
+        <a href="/" class="nav-link text-upper">Home</a>
+        <div class="nav-dropdown">
+            <button type="button" class="nav-btn-dropdown text-upper">Content</button>
+            <div class="dropdown-menu">
+                <ul class="list-unstyled">
+                    <li><a asp-controller="Content" asp-action="Typography">Typography</a></li>
+                    <li><a href="#">Link 2 long title link</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-dropdown">
+            <button type="button" class="nav-btn-dropdown text-upper">Components</button>
+            <div class="dropdown-menu">
+                <ul class="list-unstyled">
+                    <li><a asp-controller="Components" asp-action="Buttons">Buttons</a></li>
+                    <li><a asp-controller="Components" asp-action="Cards">Cards</a></li>
+                    <li><a asp-controller="Components" asp-action="Table">Table</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-dropdown-full">
+            <button type="button" class="nav-btn-dropdown text-upper">Full Menu</button>
+            <div class="dropdown-menu">
+                <div class="grid g-sm-1 g-md-3">
+                    <div>
+                        <h4>Full menu</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 3</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Full menu</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 3</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Full menu</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @* right toolbar *@
+    <div class="nav-end">
+        <div class="nav-dropdown">
+            <button type="button" class="nav-btn-dropdown text-upper">Search</button>
+            <div class="dropdown-menu">
+                <input type="text" class="form-control" placeholder="Search..." />
+            </div>
+        </div>
+        <div class="nav-dropdown">
+            <button type="button" class="nav-btn-dropdown text-upper">Account</button>
+            <div class="dropdown-menu">
+                <h4>Account</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+                <h4>Settings</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
