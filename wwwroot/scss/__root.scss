@@ -1,0 +1,30 @@
+﻿@import "__variable.scss";
+:root {
+    --font-family: $font-general;
+    --background-color: $background-color; /*Фон страницы*/
+    --color-white: $color-white; /*Белый цвет, для всего, что использует белый цвет))*/
+    --container-width: $container-width; /*Ширина фиксированной страницы*/
+    --text-color: $text-color; /*Цвет текста по умолчанию, для всей страницы*/
+    --text-color-muted: $text-color-muted; /**/
+    --border-color: $border-color; /*Цвет для всех элементов*/
+    --border-radius: $border-radius; /**/
+    --border-weight: $border-weight; /**/
+    --padding-general: $padding-general; /*Отступ для всех элементов*/
+    --padding-10: $padding-10; /**/
+    --navbar-light: $navbar-light; /**/
+    --navbar-dark: $navbar-dark; /**/
+    --navbar-hover-dark: $navbar-hover-dark; /**/
+    --link-color: $link-color; /**/
+    --link-color-dark: $link-color-dark; /**/
+    --link-color-hover: $link-color-hover; /**/
+    --shadow-color: $shadow-color; /**/
+    --hover-color: $hover-color; /**/
+    --navbar-background-color-dark: $navbar-background-color-dark; /**/
+    /*Colors*/
+    --primary: $primary;
+    --secondary: $secondary;
+    --success: $success;
+    --info: $info;
+    --warning: $warning;
+    --danger: $danger;
+}

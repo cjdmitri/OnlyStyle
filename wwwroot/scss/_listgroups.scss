@@ -1,4 +1,5 @@
-﻿.list-unstyled {
+﻿@import "__variable.scss";
+.list-unstyled {
     padding-left: 0;
     list-style: none;
 }
@@ -11,7 +12,7 @@
     padding: 0;
 }
 .list-group>li {
-    border:1px solid var(--border-color);
+    border:$border-general;
     margin-bottom:-1px;
 }
 
@@ -27,11 +28,11 @@
 .list-group-link > li > a {
     display: block;
     padding: 8px;
-    color: var(--text-color);
+    color: $text-color;
 }
 
 .list-group-link > li > a:hover,
 .list-group-link > li > a:active,
 .list-group-link > li > a.active {
-    background-color: var(--shadow-color);
+    background-color: $hover-color;
 }

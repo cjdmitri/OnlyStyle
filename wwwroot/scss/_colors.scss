@@ -1,28 +1,91 @@
-﻿/*
+﻿@import "__variable.scss";
+/*
     background-color
 */
 .bg-primary {
-    background-color: var(--primary);
+    background-color: $primary !important;
 }
 
 .bg-secondary {
-    background-color: var(--secondary);
+    background-color: $secondary !important;
 }
 
 .bg-success {
-    background-color: var(--success);
+    background-color: $success !important;
 }
 
 .bg-info {
-    background-color: var(--info);
+    background-color: $info !important;
 }
 
 .bg-warning {
-    background-color: var(--warning);
+    background-color: $warning !important;
 }
 
 .bg-danger {
-    background-color: var(--danger);
+    background-color: $danger !important;
+}
+
+.bg-white {
+    background-color: #FFFFFF !important;
+}
+
+/*
+    background-color-light
+*/
+.bg-primary-light {
+    background-color: $primary-light !important;
+}
+
+.bg-secondary-light {
+    background-color: $secondary-light !important;
+}
+
+.bg-success-light {
+    background-color: $success-light !important;
+}
+
+.bg-info-light {
+    background-color: $info-light !important;
+}
+
+.bg-warning-light {
+    background-color: $warning-light !important;
+}
+
+.bg-danger-light {
+    background-color: $danger-light !important;
+}
+
+/*
+    background-color-glass
+*/
+.bg-primary-glass {
+    background-color: transparentize($primary,$glassy) !important;
+}
+
+.bg-secondary-glass {
+    background-color: transparentize($secondary,$glassy) !important;
+}
+
+.bg-success-glass {
+    background-color: transparentize($success,$glassy) !important;
+}
+
+.bg-info-glass {
+    background-color: transparentize($info,$glassy) !important;
+}
+
+.bg-warning-glass {
+    background-color: transparentize($warning,$glassy) !important;
+}
+
+.bg-danger-glass {
+    background-color: transparentize($danger,$glassy) !important;
+}
+
+.bg-white-glass {
+    background-color: transparentize(#FFFFFF,$glassy) !important;
 }
 
 
@@ -30,25 +93,61 @@
     border-color
 */
 .border-primary {
-    border-color: var(--primary);
+    border-color: $primary !important;
 }
 
 .border-secondary {
-    border-color: var(--secondary);
+    border-color: $secondary !important;
 }
 
 .border-success {
-    border-color: var(--success);
+    border-color: $success !important;
 }
 
 .border-info {
-    border-color: var(--info);
+    border-color: $info !important;
 }
 
 .border-warning {
-    border-color: var(--warning);
+    border-color: $warning !important;
 }
 
 .border-danger {
-    border-color: var(--danger);
+    border-color: $danger !important;
 }
+
+/*
+    Text colors
+*/
+.text-muted {
+    color: $text-color-muted !important;
+}
+
+.text-primary {
+    color: $primary !important;
+}
+
+.text-secondary {
+    color: $secondary !important;
+}
+
+.text-success {
+    color: $success !important;
+}
+
+.text-info {
+    color: $info !important;
+}
+
+.text-warning {
+    color: $warning !important;
+}
+
+.text-danger {
+    color: $danger !important;
+}
+
+.text-white {
+    color: #FFFFFF !important;
+}
+

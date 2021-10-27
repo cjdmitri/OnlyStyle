@@ -1,4 +1,4 @@
-﻿
+﻿@import "__variable.scss";
 *, ::after, ::before {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -8,20 +8,42 @@ body {
     margin: 0%;
     padding: 0%;
     font-size: 15px;
-    font-family: var(--font-family);
-    background-color: var(--background-color);
-    color: var(--text-color);
+    font-family: $font-general;
+    background-color: $background-color;
+    color: $text-color;
     line-height: 1.5;
 }
 
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #BD93BD;
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #B543B5;
+}
+
+::-webkit-scrollbar-track {
+    background: #EBEBEB;
+    border-radius: 0px;
+    box-shadow: inset 0px 0px 0px 0px #F0F0F0;
+}
+
+
 .container {
-    background-color: white;
-    max-width: var(--container-width);
+    background-color: $color-white;
+    max-width: $container-width;
     margin-left: auto;
     margin-right: auto;
-    border-left: 1px solid var(--border-color);
-    border-right: 1px solid var(--border-color);
-    border-bottom: 1px solid var(--border-color);
+    border-left: $border-general;
+    border-right: $border-general;
+    border-bottom: $border-general;
     padding-bottom: 80px;
 }
 
@@ -35,15 +57,15 @@ body {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     font-weight: 500;
     line-height: 1.2;
-    margin-top: var(--padding-general);
-    margin-bottom: var(--padding-10);
+    margin-top: $padding-general;
+    margin-bottom: $padding-10;
 }
 
 a {
-    color: #2780e3;
+    color: $a-color;
     text-decoration: none;
     &:hover{
-        color: #0050C6;
+        color: $a-color-hover
 
     }
 }
@@ -63,8 +85,8 @@ pre {
     margin-bottom: 15px;
     overflow: auto;
     font-size: 0.875em;
-    background-color: var(--background-color);
-    max-height:300px;
+    background-color: $background-color;
+    max-height:400px;
 }
 
 pre code {
@@ -75,9 +97,9 @@ pre code {
 
 code {
     font-size: 0.875em;
-    color: #000000;
+    /*color: #000000;*/
     word-wrap: break-word;
-    background-color: var(--background-color);
+    background-color: $background-color;
     padding:5px;
 }
 
@@ -102,13 +124,13 @@ summary {
 
 p {
     margin-top: 0;
-    margin-bottom: var(--padding-general);
+    margin-bottom: $padding-general;
 }
 
 footer, .footer {
-    display:block;
-    padding: var(--padding-general);
-    background-color: var(--color-white);
-    border-top: 1px solid var(--border-color);
-    padding-bottom:80px;
+    display: block;
+    padding: $padding-general;
+    background-color: $color-white;
+    border-top: $border-general;
+    padding-bottom: 80px;
 }

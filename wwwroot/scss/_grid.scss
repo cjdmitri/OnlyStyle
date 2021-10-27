@@ -1,11 +1,18 @@
-﻿.grid {
+﻿@import "__variable.scss";
+.grid {
     display: grid;
-    grid-gap: var(--padding-general);
-    padding-top: var(--padding-general);
-    padding-left: var(--padding-general);
-    padding-right: var(--padding-general);
+    grid-gap: $padding-general;
+    padding: $padding-general;
 }
 
+
+.grid-inline {
+    display: grid;
+    grid-gap: $padding-general;
+    padding: $padding-general;
+    overflow: auto;
+    grid-auto-flow: column;
+}
 
 @media (min-width: 576px) {
     .g-sm-1 {

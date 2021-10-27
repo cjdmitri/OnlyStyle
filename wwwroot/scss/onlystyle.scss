@@ -3,8 +3,9 @@
 
 @import "__variable.scss";
 @import "__mixins.scss";
-@import "_general.scss";
+@import "__root.scss";
 @import "_colors.scss";
+@import "_general.scss";
 @import "_ribbon.scss";
 @import "_buttons.scss";
 @import "_navbar.scss";
@@ -23,10 +24,10 @@
     font-size: 15px;
     line-height: 1.42857143;
     color: #333;
-    background-color: #fff;
+    background-color: $color-white;
     background-image: none;
-    border: 1px solid var(--border-color);
-    border-radius: var(--border-radius);
+    border: $border-general;
+    border-radius: $border-radius;
 }
 
 .form-control:focus {
@@ -50,16 +51,19 @@
 }
 
 .shadow {
-    box-shadow: 0px 0px 10px 1px var(--shadow-color);
+    box-shadow: 0px 0px 10px 1px $shadow-color;
 }
 
 .hover:hover {
-    box-shadow: 0px 0px 10px 1px var(--shadow-color);
+    box-shadow: 0px 0px 10px 1px $shadow-color;
 }
 
 
 .bordered{
-    border:1px solid var(--border-color);
+    border:$border-general;
+}
+.border-10{
+    border-radius:10px;
 }
 
 .rounded{

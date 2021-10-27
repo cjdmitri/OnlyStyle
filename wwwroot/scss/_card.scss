@@ -1,82 +1,23 @@
-﻿.card {
+﻿@import "__variable.scss";
+.card {
     position: relative;
     display: block;
-    background-color: var(--color-white);
+    background-color: $color-white;
     word-wrap: break-word;
-    border: var(--border-weight) solid var(--border-color);
-    border-radius: var(--border-radius);
-    overflow:auto;
+    border: $border-general;
+    border-radius: $border-radius;
+    overflow: auto;
+    min-width:fit-content;
 }
 
 .card-header {
-    background-color: var(--background-color);
-    border-bottom: var(--border-weight) solid var(--border-color);
-    padding: var(--padding-10);
-    border-top-left-radius: var(--border-radius);
-    border-top-right-radius: var(--border-radius);
+    background-color: $background-color;
+    border-bottom: $border-general;
+    padding: $padding-general;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
 }
 
-.card-body{
-    padding:var(--padding-10);
-}
-
-
-.card-primary{
-    border-color:var(--primary)
-}
-
-.card-primary .card-header {
-    background-color: var(--primary);
-    border-bottom: var(--border-weight) solid var(--primary);
-    color:var(--color-white);
-}
-
-.card-secondary {
-    border-color: var(--secondary)
-}
-
-.card-secondary .card-header {
-    background-color: var(--secondary);
-    border-bottom: var(--border-weight) solid var(--secondary);
-    color: var(--color-white);
-}
-
-.card-success {
-    border-color: var(--success)
-}
-
-.card-success .card-header {
-    background-color: var(--success);
-    border-bottom: var(--border-weight) solid var(--success);
-    color: var(--color-white);
-}
-
-.card-info {
-    border-color: var(--info)
-}
-
-.card-info .card-header {
-    background-color: var(--info);
-    border-bottom: var(--border-weight) solid var(--info);
-    color: var(--color-white);
-}
-
-.card-warning {
-    border-color: var(--warning)
-}
-
-.card-warning .card-header {
-    background-color: var(--warning);
-    border-bottom: var(--border-weight) solid var(--warning);
-    color: var(--color-white);
-}
-
-.card-danger {
-    border-color: var(--danger)
-}
-
-.card-danger .card-header {
-    background-color: var(--danger);
-    border-bottom: var(--border-weight) solid var(--danger);
-    color: var(--color-white);
+.card-body {
+    padding: $padding-10;
 }

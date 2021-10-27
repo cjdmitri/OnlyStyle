@@ -1,4 +1,4 @@
-﻿
+﻿@import "__variable.scss";
 /**/
 .brand {
     display: flex;
@@ -27,7 +27,7 @@
 }
 
 .navbar {
-    background-color: var(--navbar-light);
+    background-color: $navbar-light;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -36,7 +36,7 @@
 }
 
 .navbar.dark {
-    background-color: var(--navbar-dark);
+    background-color: $navbar-dark;
 }
 
 .nav-dropdown, .nav-input {
@@ -56,7 +56,7 @@
 .nav-link {
     background: none;
     border: none;
-    color: var(--link-color);
+    color: $link-color;
     padding: 20px 15px;
     cursor: pointer;
     text-decoration: none;
@@ -67,17 +67,17 @@
 .dark .brand a,
 .dark .nav-btn-dropdown,
 .dark .nav-link{
-    color: var(--link-color-dark);
+    color: $link-color-dark;
 }
 
 .nav-btn-dropdown::after {
     content: ' \25be';
-    color: var(--link-color);
+    color:$link-color;
 }
 
 .dark .nav-btn-dropdown::after {
     content: ' \25be';
-    color: var(--link-color-dark);
+    color: $link-color-dark;
 }
 
 .nav-btn-dropdown:hover,
@@ -85,7 +85,7 @@
 .nav-link:hover,
 .nav-link:active,
 .nav-link.active {
-    background-color: var(--shadow-color);
+    background-color: $shadow-color;
 }
 
 .dark .nav-btn-dropdown:hover,
@@ -93,7 +93,7 @@
 .dark .nav-link:hover,
 .dark .nav-link:active,
 .dark .nav-link.active {
-    background-color: var(--navbar-hover-dark);
+    background-color: $navbar-hover-dark;
 }
 
 .nav-end{
@@ -116,7 +116,7 @@
 }
 
 .btn-menu > i.line {
-    border-bottom: 2px solid var(--link-color);
+    border-bottom: 2px solid $link-color;
     display: block;
     margin-top: 4px;
     width: 20px;
@@ -159,7 +159,7 @@
 
     .mega-menu, .dropdown-menu {
         display: none;
-        background-color: white;
+        background-color: $color-white;
         position: static;
         padding: 15px;
     }
@@ -175,10 +175,10 @@
         right: 0;
         display: none;
         padding: 15px;
-        border: 1px solid var(--border-color);
-        border-bottom-left-radius: var(--border-radius);
-        border-bottom-right-radius: var(--border-radius);
-        background-color: white;
+        border: $border-general;
+        border-bottom-left-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+        background-color: $color-white;
         z-index: 1050;
         /*box-shadow: 0px 4px 7px 1px var(--shadow-color);*/
     }
@@ -203,10 +203,10 @@
 .dropdown-menu li > a{
     display: block;
     padding:5px;
-    color:var(--text-color);
+    color:$text-color;
 }
 .dropdown-menu li > a:hover {
     display: block;
     padding: 5px;
-    background-color: var(--shadow-color);
+    background-color: $shadow-color;
 }

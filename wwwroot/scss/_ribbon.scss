@@ -1,10 +1,11 @@
-﻿.ribbon {
+﻿@import "__variable.scss";
+.ribbon {
     overflow-y: hidden;
     overflow-x: auto;
     white-space: nowrap;
-    background-color: white;
-    border-top: 1px solid var(--border-color);
-    border-bottom: 1px solid var(--border-color);
+    background-color: $color-white;
+    border-top: $border-general;
+    border-bottom: $border-general;
     -webkit-overflow-scrolling: touch;
     padding-left: 15px;
     padding-right: 15px;
@@ -15,7 +16,7 @@
     top:-1px;
     z-index:150;
 }
-.ribbon::-webkit-scrollbar {
+/*.ribbon::-webkit-scrollbar {
     height: 4px;
 }
 
@@ -28,7 +29,7 @@
 .ribbon::-webkit-scrollbar-thumb {
     border-radius: 2px;
     background: linear-gradient(180deg, #00c6fb, #005bea);
-}
+}*/
 
 .ribbon > a {
     display: inline-block;

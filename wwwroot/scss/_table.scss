@@ -1,10 +1,11 @@
-﻿.table {
+﻿@import "__variable.scss";
+.table {
     width: 100%;
-    border: 1px solid var(--border-color);
+    border: $border-general;
     overflow-x: auto;
     max-width: 100%;
     margin-bottom: 20px;
-    background-color: white;
+    background-color: $color-white;
     border-collapse: collapse;
 }
 
@@ -25,13 +26,13 @@ th {
 .table > tfoot > tr > td {
     padding: 8px;
     vertical-align: top;
-    border: 1px solid var(--border-color);
+    border: $border-general;
 }
 
 
 .table-striped > tbody tr:nth-child(odd),
 .table-striped > tbody tr:nth-child(odd) > td > input {
-    background-color: white;
+    background-color: $color-white;
 }
 
 .table-striped > tbody tr:nth-child(even),
