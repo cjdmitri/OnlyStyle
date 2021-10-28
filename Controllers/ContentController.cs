@@ -10,6 +10,10 @@ namespace OnlyStyle.Controllers
     public class ContentController : Controller
     {
 
+        public ActionResult Grid()
+        {
+            return View();
+        }
         public ActionResult Typography()
         {
             return View();

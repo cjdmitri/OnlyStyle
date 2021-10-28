@@ -1,4 +1,6 @@
 ﻿.item-empty {
     padding: 15px;
-    background-color: #d7d7d7;
+    background-color: #e3e2e2;
+    border-radius: var(--border-radius);
+    text-align: center;
 }

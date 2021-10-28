@@ -1,0 +1,73 @@
+﻿@import "__variable.scss";
+@import "__mixins.scss";
+
+$control-border-color: #66afe9;
+$control-placeholder-color: #737D85;
+$control-disabled-color: #ECEDEF;
+
+.form-control {
+    display: block;
+    padding: $padding-btn;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+    background-color: $color-white;
+    background-image: none;
+    border: $border-general;
+    border-radius: $border-radius;
+    width: 100%;
+}
+
+.form-control:focus {
+    border-color: $control-border-color;
+    outline: 0;
+    @include form-control-shadow();
+}
+
+.form-control::-moz-placeholder {
+    color: $control-placeholder-color;
+}
+
+.form-control::placeholder {
+    color: $control-placeholder-color;
+}
+
+.form-control:disabled, .form-control[readonly] {
+    background-color: $control-disabled-color;
+}
+
+textarea.form-control {
+    resize:vertical
+}
+
+.form-label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: .875rem;
+}
+
+.form-check {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.form-check > input[type=checkbox],
+.form-check > input[type=radio] {
+    display: inline-block;
+    vertical-align: central;
+    background-color: $color-white;
+}
+.form-check > input[type=checkbox]:focus,
+.form-check > input[type=radio]:focus {
+    @include form-control-shadow();
+}
+.form-check > input[type=checkbox]:disabled,
+.form-check > input[type=checkbox]:disabled {
+    opacity: 0.5;
+}
+
+.form-check > label {
+    font-size: .875rem;
+}

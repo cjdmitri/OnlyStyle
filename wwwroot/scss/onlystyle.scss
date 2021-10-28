@@ -14,68 +14,16 @@
 @import "_image.scss";
 @import "_grid.scss";
 @import "_card.scss";
+@import "_form-controls.scss";
+@import "_input-group.scss";
 @import "_listgroups.scss";
+@import "_margin-padding.scss";
 /*@import "_tooltip.scss";*/
 @import "_headers.scss";
+@import "_animations.scss";
 
 
-.form-control {
-    padding: 6px 12px;
-    font-size: 15px;
-    line-height: 1.42857143;
-    color: #333;
-    background-color: $color-white;
-    background-image: none;
-    border: $border-general;
-    border-radius: $border-radius;
-}
-
-.form-control:focus {
-    border-color: #66afe9;
-    outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, 0.6);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, 0.6);
-}
-
-.bottom-fixed {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 1050;
-}
-
-.hide-scrollbar::-webkit-scrollbar {
-    height: 0;
-    width: 0;
-}
-
-.shadow {
-    box-shadow: 0px 0px 10px 1px $shadow-color;
-}
-
-.hover:hover {
-    box-shadow: 0px 0px 10px 1px $shadow-color;
-}
 
 
-.bordered{
-    border:$border-general;
-}
-.border-10{
-    border-radius:10px;
-}
 
-.rounded{
-    border-radius:50%;
-}
-
-@for $i from 1 through 4 {
-    .pd-#{$i * 5} {
-        padding: 5px * $i;
-    }
-    .mg-#{$i * 5} {
-        margin: 5px * $i;
-    }
-}
 

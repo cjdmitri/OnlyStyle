@@ -1,0 +1,15 @@
+﻿
+
+@for $i from 1 through 4 {
+    .pd-#{$i * 5} {
+        padding: 5px * $i;
+    }
+
+    .mg-#{$i * 5} {
+        margin: 5px * $i;
+    }
+
+    .mb-#{$i * 5} {
+        margin-bottom: 5px * $i;
+    }
+}

@@ -9,47 +9,9 @@
     ViewBag.HideBottomRibbon = true;
 }
 <div class="container">
-    @* Tables *@
-    <div class="grid g-sm-1">
-        <h2 id="tables">Tables</h2>
-    </div>
-    <div class="grid g-sm-1">
-        <pre class="bordered pd-15">
-&lttable class="table">
-    &ltthead>
-        &lttr>
-            &ltth>#&lt/th>
-            &ltth>Name&lt/th>
-            &ltth>Date&lt/th>
-        &lt/tr>
-    &lt/thead>
-    &lttbody>
-        &lttr>
-            &lttd>1&lt/td>
-            &lttd>Dmitriy&lt/td>
-            &lttd>1985&lt/td>
-        &lt/tr>
-        &lttr>
-            &lttd>2&lt/td>
-            &lttd>Oleg&lt/td>
-            &lttd>2000&lt/td>
-        &lt/tr>
-        &lttr>
-            &lttd>3&lt/td>
-            &lttd>Mark&lt/td>
-            &lttd>1990&lt/td>
-        &lt/tr>
-        &lttr>
-            &lttd>4&lt/td>
-            &lttd>Anna&lt/td>
-            &lttd>2002&lt/td>
-        &lt/tr>
-    &lt/tbody>
-&lt/table>
-</pre>
-    </div>
     <div class="grid g-sm-1">
         <h3>Simple table</h3>
+        <code>.table</code>
         <table class="table">
             <thead>
                 <tr>
@@ -82,6 +44,7 @@
             </tbody>
         </table>
         <h3>Striped table</h3>
+        <code>.table .table-striped</code>
         <table class="table table-striped">
             <thead>
                 <tr>
@@ -114,6 +77,7 @@
             </tbody>
         </table>
         <h3>Hover table row</h3>
+        <code>.table .table-striped .table-hover</code>
         <table class="table table-striped table-hover">
             <thead>
                 <tr>
@@ -180,5 +144,44 @@
                     </tbody>
                 </table>
             </div>*@
+    </div>
+    @* Tables *@
+    <div class="grid g-sm-1">
+        <h3 id="tables">Code</h3>
+    </div>
+    <div class="grid g-sm-1">
+        <pre class="bordered pd-15">
+&lttable class="table">
+    &ltthead>
+        &lttr>
+            &ltth>#&lt/th>
+            &ltth>Name&lt/th>
+            &ltth>Date&lt/th>
+        &lt/tr>
+    &lt/thead>
+    &lttbody>
+        &lttr>
+            &lttd>1&lt/td>
+            &lttd>Dmitriy&lt/td>
+            &lttd>1985&lt/td>
+        &lt/tr>
+        &lttr>
+            &lttd>2&lt/td>
+            &lttd>Oleg&lt/td>
+            &lttd>2000&lt/td>
+        &lt/tr>
+        &lttr>
+            &lttd>3&lt/td>
+            &lttd>Mark&lt/td>
+            &lttd>1990&lt/td>
+        &lt/tr>
+        &lttr>
+            &lttd>4&lt/td>
+            &lttd>Anna&lt/td>
+            &lttd>2002&lt/td>
+        &lt/tr>
+    &lt/tbody>
+&lt/table>
+</pre>
     </div>
 </div>

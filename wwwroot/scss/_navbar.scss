@@ -1,4 +1,5 @@
 ﻿@import "__variable.scss";
+@import "__mixins.scss";
 /**/
 .brand {
     display: flex;
@@ -39,7 +40,7 @@
     background-color: $navbar-dark;
 }
 
-.nav-dropdown, .nav-input {
+.nav-dropdown, .nav-input, .dropdown {
     display: inline-block;
     position: relative;
 }
@@ -70,13 +71,18 @@
     color: $link-color-dark;
 }
 
-.nav-btn-dropdown::after {
+
+.nav-btn-dropdown::after,
+.dark .nav-btn-dropdown::after,
+.btn-dropdown::after {
     content: ' \25be';
-    color:$link-color;
+    white-space:nowrap;
+}
+.nav-btn-dropdown::after {
+    color: $link-color;
 }
 
 .dark .nav-btn-dropdown::after {
-    content: ' \25be';
     color: $link-color-dark;
 }
 
@@ -115,6 +121,7 @@
     display: none;
 }
 
+/*Костыль, вместо иконки, три линии*/
 .btn-menu > i.line {
     border-bottom: 2px solid $link-color;
     display: block;
@@ -131,6 +138,7 @@
         display: none;
     }
 
+    /*На маленьких экранах показываем кнопку для раскрытия меню*/
     .btn-menu {
         display: inline-block;
         background: none;
@@ -140,62 +148,75 @@
         cursor: pointer;
     }
 
-
+    /*При нажатии на костыль, показываем или скрываем меню*/
     #btnmenu:checked ~ div.nav-left,
     #btnmenu:checked ~ div.nav-end {
         display: flex;
         flex-direction: column;
-        opacity:1;
+        @include animation(fade-in, .5s);
     }
     .nav-end{
         margin-left:0;
     }
 
+    /*Делаем кнопку меню на всю ширину экрана*/
     .nav-btn-dropdown {
         display: block;
         width: 100%;
         text-align: left;
     }
 
-    .mega-menu, .dropdown-menu {
+    .nav-dropdown-full > .mega-menu,
+    nav-dropdown > .dropdown-menu,
+    .nav-end > .nav-dropdown > .dropdown-menu {
         display: none;
         background-color: $color-white;
         position: static;
         padding: 15px;
+        @include animation(fade-in, .5s);
     }
+
+
     .nav-input{
         width:100%;
     }
 }
 
-@media(min-width:769px) {
-    .mega-menu, .dropdown-menu {
-        position: absolute;
-        left: 0;
-        right: 0;
-        display: none;
-        padding: 15px;
-        border: $border-general;
-        border-bottom-left-radius: $border-radius;
-        border-bottom-right-radius: $border-radius;
-        background-color: $color-white;
-        z-index: 1050;
-        /*box-shadow: 0px 4px 7px 1px var(--shadow-color);*/
-    }
+/*@media(min-width:769px) {
+
+}*/
+
+.mega-menu, .dropdown-menu {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: none;
+    padding: 15px;
+    border: $border-general;
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+    background-color: $color-white;
+    z-index: 1050;
+    /*box-shadow: 0px 4px 7px 1px var(--shadow-color);*/
+    @include animation(fade-in, .5s);
+    @include dropdown-menu-shadow();
 }
 
+.dropdown>.dropdown-menu{
+    border-radius:$border-radius;
+}
 
 .dropdown-menu {
-    min-width: 170px;
+    min-width: 190px;
 }
 
 
 .nav-btn-dropdown:focus ~ .mega-menu,
 .nav-btn-dropdown:focus ~ .dropdown-menu,
+.btn-dropdown:focus ~ .dropdown-menu,
 .mega-menu:hover,
 .dropdown-menu:hover {
     display: block;
-    z-index: 1050;
 }
 
 

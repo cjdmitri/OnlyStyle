@@ -15,9 +15,8 @@
             <button type="button" class="nav-btn-dropdown text-upper">Content</button>
             <div class="dropdown-menu">
                 <ul class="list-unstyled">
+                    <li><a asp-controller="Content" asp-action="Grid">Grid</a></li>
                     <li><a asp-controller="Content" asp-action="Typography">Typography</a></li>
-                    <li><a href="#">Link 2 long title link</a></li>
-                    <li><a href="#">Link 3</a></li>
                 </ul>
             </div>
         </div>
@@ -27,6 +26,7 @@
                 <ul class="list-unstyled">
                     <li><a asp-controller="Components" asp-action="Buttons">Buttons</a></li>
                     <li><a asp-controller="Components" asp-action="Cards">Cards</a></li>
+                    <li><a asp-controller="Components" asp-action="Dropdown">Dropdown</a></li>
                     <li><a asp-controller="Components" asp-action="Table">Table</a></li>
                 </ul>
             </div>
@@ -68,7 +68,10 @@
         <div class="nav-dropdown">
             <button type="button" class="nav-btn-dropdown text-upper">Search</button>
             <div class="dropdown-menu">
-                <input type="text" class="form-control" placeholder="Search..." />
+                <div class="input-group">
+                    <input type="text" class="form-control" id="input1" placeholder="Search..." />
+                    <a class="btn" href="#">Go</a>
+                </div>
             </div>
         </div>
         <div class="nav-dropdown">

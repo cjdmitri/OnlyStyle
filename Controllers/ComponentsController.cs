@@ -17,6 +17,11 @@ namespace OnlyStyle.Controllers
             return View();
         }
 
+        public IActionResult Dropdown()
+        {
+            return View();
+        }
+
         public IActionResult Table()
         {
             return View();

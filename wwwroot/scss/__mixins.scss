@@ -3,3 +3,27 @@
     box-shadow: 0px 4px 10px -1px rgba(0,0,0,0.53);
 }
 
+
+@mixin animation($type, $time) {
+    animation: $type $time;
+    -moz-animation: $type $time; /* Firefox */
+    -webkit-animation: $type $time; /* Safari and Chrome */
+    -o-animation: $type $time; /* Opera */
+}
+
+@mixin form-control-shadow() {
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+@mixin dropdown-menu-shadow() {
+    box-shadow: 0px 2px 9px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 2px 9px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 2px 9px 0px rgba(0,0,0,0.5);
+}
+
+@mixin filter-blur($int) {
+    filter: blur($int);
+    -webkit-filter: blur($int);
+    -moz-filter: blur($int);
+}
