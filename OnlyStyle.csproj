@@ -23,23 +23,23 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\js\" />
+    <Folder Include="Helpers\" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="wwwroot\scss\onlystyle.scss" />
-    <None Include="wwwroot\scss\_buttons.scss" />
-    <None Include="wwwroot\scss\_card.scss" />
+    <None Include="wwwroot\scss\components\_buttons.scss" />
+    <None Include="wwwroot\scss\components\_card.scss" />
     <None Include="wwwroot\scss\_general.scss" />
-    <None Include="wwwroot\scss\_grid.scss" />
+    <None Include="wwwroot\scss\typography\_grid.scss" />
     <None Include="wwwroot\scss\_headers.scss" />
     <None Include="wwwroot\scss\_image.scss" />
-    <None Include="wwwroot\scss\_listgroups.scss" />
-    <None Include="wwwroot\scss\_navbar.scss" />
-    <None Include="wwwroot\scss\_ribbon.scss" />
-    <None Include="wwwroot\scss\_table.scss" />
+    <None Include="wwwroot\scss\components\_listgroups.scss" />
+    <None Include="wwwroot\scss\components\_navbar.scss" />
+    <None Include="wwwroot\scss\components\_ribbon.scss" />
+    <None Include="wwwroot\scss\typography\_table.scss" />
     <None Include="wwwroot\scss\_text.scss" />
-    <None Include="wwwroot\scss\_tooltip.scss" />
+    <None Include="wwwroot\scss\components\_tooltip.scss" />
     <None Include="wwwroot\scss\__mixins.scss" />
     <None Include="wwwroot\scss\__variable.scss" />
   </ItemGroup>

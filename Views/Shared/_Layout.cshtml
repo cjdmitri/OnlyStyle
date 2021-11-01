@@ -58,16 +58,18 @@
         await Html.RenderPartialAsync("_navbar");
         if (Convert.ToBoolean(ViewBag.HideTopRibbon) != true)
         {
-            await Html.RenderPartialAsync("_ribbonTop");
+            //await Html.RenderPartialAsync("_ribbonTop");
 
         }
         await Html.RenderPartialAsync("_header");
     }
-    @RenderBody()
+    <main class="container pos-relative">
+        @RenderBody()
+    </main>
     @{
         if (Convert.ToBoolean(ViewBag.HideBottomRibbon) !=true)
         {
-            await Html.RenderPartialAsync("_ribbonBottom");
+            //await Html.RenderPartialAsync("_ribbonBottom");
 
         }
         //await Html.RenderPartialAsync("_footer");

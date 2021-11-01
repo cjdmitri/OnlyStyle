@@ -1,150 +1,209 @@
-﻿@{
-    ViewBag.Title = "OnlyStyle Table";
-    ViewBag.Description = "OnlyStyle Components. Table";
-    ViewBag.Canonical = $"{Context.Request.Scheme}://{Context.Request.Host}{Context.Request.Path}".ToLower();
-    ViewBag.H1 = "OnlyStyle Table";
-    //ViewBag.Keywords = "";
-    ViewBag.UrlImage = null;
-    ViewBag.HideTopRibbon = true;
-    ViewBag.HideBottomRibbon = true;
-}
-<div class="container">
-    <div class="grid g-sm-1">
-        <h3>Simple table</h3>
-        <code>.table</code>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Name</th>
-                    <th>Date</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Dmitriy</td>
-                    <td>1985</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Oleg</td>
-                    <td>2000</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Mark</td>
-                    <td>1990</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Anna</td>
-                    <td>2002</td>
-                </tr>
-            </tbody>
-        </table>
-        <h3>Striped table</h3>
-        <code>.table .table-striped</code>
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Name</th>
-                    <th>Date</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Dmitriy</td>
-                    <td>1985</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Oleg</td>
-                    <td>2000</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Mark</td>
-                    <td>1990</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Anna</td>
-                    <td>2002</td>
-                </tr>
-            </tbody>
-        </table>
-        <h3>Hover table row</h3>
-        <code>.table .table-striped .table-hover</code>
-        <table class="table table-striped table-hover">
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Name</th>
-                    <th>Date</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Dmitriy</td>
-                    <td>1985</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Oleg</td>
-                    <td>2000</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Mark</td>
-                    <td>1990</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Anna</td>
-                    <td>2002</td>
-                </tr>
-            </tbody>
-        </table>
-        @*<div style="overflow-x:auto">
+﻿
+<div class="grid g-sm-1">
 
-                <h3>Editable table</h3>
-                <table class="table table-striped table-edit">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Name</th>
-                            <th>Date</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><input type="number" value="1" /></td>
-                            <td><input type="text" value="Dmitriy" /></td>
-                            <td><input type="number" value="1985" /></td>
-                        </tr>
-                        <tr>
-                            <td><input type="number" value="2" /></td>
-                            <td><input type="text" value="Oleg" /></td>
-                            <td><input type="number" value="2000" /></td>
-                        </tr>
-                        <tr>
-                            <td><input type="number" value="3" /></td>
-                            <td><input type="text" value="Mark" /></td>
-                            <td><input type="number" value="1990" /></td>
-                        </tr>
-                        <tr>
-                            <td><input type="number" value="4" /></td>
-                            <td><input type="text" value="Anna" /></td>
-                            <td><input type="number" value="2002" /></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>*@
-    </div>
+    <h3>Simple table</h3>
+    <code>.table</code>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Dmitriy</td>
+                <td>1985</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Oleg</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mark</td>
+                <td>1990</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Anna</td>
+                <td>2002</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>Table bordered</h3>
+    <code>.table .bordered</code>
+    <table class="table bordered">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Dmitriy</td>
+                <td>1985</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Oleg</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mark</td>
+                <td>1990</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Anna</td>
+                <td>2002</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>Striped table</h3>
+    <code>.table .table-striped</code>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Dmitriy</td>
+                <td>1985</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Oleg</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mark</td>
+                <td>1990</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Anna</td>
+                <td>2002</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>Hover table row</h3>
+    <code>.table .table-striped .table-hover</code>
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Dmitriy</td>
+                <td>1985</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Oleg</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mark</td>
+                <td>1990</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Anna</td>
+                <td>2002</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>Table colored row</h3>
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                int iter = 0;
+                foreach (string item in MyApp.ColorVariants)
+                {
+                    iter++;
+                    <tr class="bg-@item">
+                        <td>@iter</td>
+                        <td>bg-@item</td>
+                        <td>1985</td>
+                    </tr>
+                    <tr class="bg-@item-dark">
+                        <td>@iter</td>
+                        <td>bg-@item-dark</td>
+                        <td>1985</td>
+                    </tr>
+                    <tr class="bg-@item-light">
+                        <td>@iter</td>
+                        <td>bg-@item-light</td>
+                        <td>1985</td>
+                    </tr>
+
+                }
+            }
+        </tbody>
+    </table>
+    @*<div style="overflow-x:auto">
+
+            <h3>Editable table</h3>
+            <table class="table table-striped table-edit">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="number" value="1" /></td>
+                        <td><input type="text" value="Dmitriy" /></td>
+                        <td><input type="number" value="1985" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" value="2" /></td>
+                        <td><input type="text" value="Oleg" /></td>
+                        <td><input type="number" value="2000" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" value="3" /></td>
+                        <td><input type="text" value="Mark" /></td>
+                        <td><input type="number" value="1990" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" value="4" /></td>
+                        <td><input type="text" value="Anna" /></td>
+                        <td><input type="number" value="2002" /></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>*@
+</div>
     @* Tables *@
     <div class="grid g-sm-1">
         <h3 id="tables">Code</h3>
@@ -184,4 +243,3 @@
 &lt/table>
 </pre>
     </div>
-</div>

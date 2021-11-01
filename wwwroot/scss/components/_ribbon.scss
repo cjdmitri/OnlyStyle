@@ -1,4 +1,4 @@
-﻿@import "__variable.scss";
+﻿
 .ribbon {
     overflow-y: hidden;
     overflow-x: auto;
@@ -14,7 +14,7 @@
 .ribbon.sticky{
     position:sticky;
     top:-1px;
-    z-index:150;
+    z-index:300;
 }
 /*.ribbon::-webkit-scrollbar {
     height: 4px;

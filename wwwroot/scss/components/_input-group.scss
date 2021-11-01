@@ -1,5 +1,4 @@
-﻿@import "__variable.scss";
-@import "__mixins.scss";
+﻿
 
 /*
     **********
@@ -14,24 +13,26 @@
     width: 100%;
 }
 
-.input-group > * {
-    border-radius: 0!important;
+.input-group * {
+    border-radius: 0 !important;
+    border-right-width: 0!important;
 }
 
-.input-group *:first-child,
-.input-group *:first-child > btn {
+.input-group > *:first-child,
+.input-group > .dropdown:first-child > .btn {
     border-bottom-left-radius: $border-radius !important;
     border-top-left-radius: $border-radius !important;
     border-top-right-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
 }
 
-.input-group *:last-child,
-.input-group *:last-child > .btn {
+.input-group > *:last-child,
+.input-group > .dropdown:last-child > .btn{
     border-bottom-right-radius: $border-radius !important;
     border-top-right-radius: $border-radius !important;
     border-bottom-left-radius: 0 !important;
     border-top-left-radius: 0 !important;
+    border-right-width: 1px !important;
 }
 
 .input-group > .form-control,

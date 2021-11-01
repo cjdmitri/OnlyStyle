@@ -1,0 +1,93 @@
+﻿details {
+    display:block;
+    margin: 0 auto;
+    background-color: $color-white;
+    box-shadow: 0 .1rem 1rem -.5rem rgba(0,0,0,.4);
+    border-radius: $border-radius;
+    overflow: hidden;
+
+    
+}
+
+details:hover {
+    /*box-shadow: $shadow-btn-hover;
+    z-index:2;*/
+}
+
+summary {
+    padding: 15px;
+    display: block;
+    background-color: $color-white;
+    padding-left: 2.2rem;
+    position: relative;
+    cursor: pointer;
+    border: $border-general;
+    border-radius: $border-radius;
+}
+
+details {
+    summary {
+        list-style: none;
+
+        &:focus {
+            outline: none;
+        }
+
+        &::-webkit-details-marker {
+            display: none;
+        }
+    }
+}
+
+summary:before {
+    content: '';
+    border-width: .4rem;
+    border-style: solid;
+    border-color: transparent transparent transparent $text-color-muted;
+    position: absolute;
+    top: 1.3rem;
+    left: 1rem;
+    transform: rotate(0);
+    transform-origin: .2rem 50%;
+    transition: .25s transform ease;
+}
+
+details[open] {
+    border: $border-general;
+
+}
+/*details[open] > div {
+    animation-name: slideDown;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}*/
+
+/*@keyframes slideDown {
+    from {
+        opacity:0;
+        height: 0;
+    }
+
+    to {
+        opacity:1;
+        height: auto;
+    }
+}*/
+
+details[open] > summary {
+    border: 0;
+    font-weight:bold;
+}
+details:hover > summary {
+    font-weight: bold;
+}
+
+details[open] > summary:before {
+    transform: rotate(90deg);
+}
+
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+

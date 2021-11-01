@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace OnlyStyle.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : _TemplateController
     {
         private readonly ILogger<HomeController> _logger;
 
@@ -20,6 +20,7 @@ namespace OnlyStyle.Controllers
 
         public IActionResult Index()
         {
+            SetPageInfo("OnlyStyle Home Page", "Compact, fast framework. Without use JavaScript", "OnlyStyle Framework");
             return View();
         }
 

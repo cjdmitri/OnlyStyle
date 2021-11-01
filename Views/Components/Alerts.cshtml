@@ -1,0 +1,62 @@
+﻿@{ 
+    Dictionary<string, string> keyValues = new Dictionary<string, string>();
+    keyValues.Add("Simple alert", "#simplealert");
+    keyValues.Add("Bordered alert", "#bordered");
+    keyValues.Add("Alert and close button","#alertandclosebtn");
+}
+
+
+
+@{ await Html.RenderPartialAsync("_listLink", keyValues);}
+<div class="grid g-sm-1 g-md-2">
+    <div>
+        <h3 id="simplealert">Simple alert</h3>
+        <pre>
+&ltdiv class="alert bg-info-light">
+    &ltp>Simple alert no border, no close button.&lt/p>
+&lt/div>
+</pre>
+        @{
+            foreach (string item in MyApp.ColorVariants)
+            {
+                <div class="alert bg-@item-light">
+                    <p>Simple alert no border, no close button.</p>
+                </div>
+            }
+        }
+    </div>
+    <div>
+        <h3 id="bordered">Bordered alert</h3>
+        <pre>
+&ltdiv class="alert bg-info-light bordered border-info">
+    &ltp>Simple alert no border, no close button.&lt/p>
+&lt/div>
+</pre>
+        @{
+            foreach (string item in MyApp.ColorVariants)
+            {
+                <div class="alert bg-@item-light bordered border-@item">
+                    <p>Bordered alert, no close button.</p>
+                </div>
+            }
+        }
+    </div>
+    <div>
+        <h3 id="alertandclosebtn">Alert + close button</h3>
+        <pre>
+&ltdiv class="alert bg-info-light">
+    &ltp>Simple alert + close button.&lt/p>
+    &ltbutton class="close" onclick="this.parentElement.remove()">Close&lt/button>
+&lt/div>
+</pre>
+        @{
+            foreach (string item in MyApp.ColorVariants)
+            {
+                <div class="alert bg-@item-light">
+                    <p>Simple alert + close button.</p>
+                    <button class="close" onclick="this.parentElement.remove()">Close</button>
+                </div>
+            }
+        }
+    </div>
+</div>

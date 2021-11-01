@@ -1,0 +1,274 @@
+﻿
+
+<div class="grid g-sm-1 g-md-2">
+    <div>
+        <h3>Default details style</h3>
+        @{
+            for (int i = 0; i < 4; i++)
+            {
+                <details class="mg-b-15">
+                    <summary>Summary</summary>
+                    <div>
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                        </ul>
+
+                    </div>
+                </details>
+            }
+        }
+        <pre>
+&ltdetails class="mg-b-15">
+    &ltsummary>Summary&lt/summary>
+    &ltdiv>
+        &ltul>
+            &ltli>1&lt/li>
+            &ltli>2&lt/li>
+            &ltli>3&lt/li>
+            &ltli>4&lt/li>
+            &ltli>5&lt/li>
+        &lt/ul>
+
+    &lt/div>
+&lt/details>
+</pre>
+    </div>
+    <div>
+        <h3>Colored details style</h3>
+        @{
+            foreach (string item in MyApp.ColorVariants)
+            {
+                <details class="mg-b-15">
+                    <summary class="bg-@item text-white">Summary @item</summary>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                    </ul>
+                </details>
+            }
+        }
+    <pre>
+&ltdetails class="mg-b-15">
+    &ltsummary class="bg-primary text-white">Summary&lt/summary>
+    &ltdiv>
+        &ltul>
+            &ltli>1&lt/li>
+            &ltli>2&lt/li>
+            &ltli>3&lt/li>
+            &ltli>4&lt/li>
+            &ltli>5&lt/li>
+        &lt/ul>
+
+    &lt/div>
+&lt/details>
+</pre>
+    </div>
+    <div>
+        <h3>Colored light details style</h3>
+        @{
+            foreach (string item in MyApp.ColorVariants)
+            {
+                <details class="mg-b-15">
+                    <summary class="bg-@item-light">Summary @item light</summary>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                    </ul>
+                </details>
+            }
+        }
+        <pre>
+&ltdetails class="mg-b-15">
+    &ltsummary class="bg-primary-light">Summary&lt/summary>
+    &ltdiv>
+        &ltul>
+            &ltli>1&lt/li>
+            &ltli>2&lt/li>
+            &ltli>3&lt/li>
+            &ltli>4&lt/li>
+            &ltli>5&lt/li>
+        &lt/ul>
+
+    &lt/div>
+&lt/details>
+</pre>
+    </div>
+    <div>
+        <h3>Colored dark details style</h3>
+        @{
+            foreach (string item in MyApp.ColorVariants)
+            {
+                <details class="mg-b-15">
+                    <summary class="bg-@item-dark text-white">Summary @item dark</summary>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                    </ul>
+                </details>
+            }
+        }
+        <pre>
+&ltdetails class="mg-b-15">
+    &ltsummary class="bg-primary-dark text-white">Summary&lt/summary>
+    &ltdiv>
+        &ltul>
+            &ltli>1&lt/li>
+            &ltli>2&lt/li>
+            &ltli>3&lt/li>
+            &ltli>4&lt/li>
+            &ltli>5&lt/li>
+        &lt/ul>
+
+    &lt/div>
+&lt/details>
+</pre>
+    </div>
+    <div>
+        <h3>Colored border details style</h3>
+        @{
+            foreach (string item in MyApp.ColorVariants)
+            {
+                <details class="mg-b-15 border-@item">
+                    <summary class="border-@item text-@item">Summary border @item</summary>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                    </ul>
+                </details>
+            }
+        }
+        <pre>
+&ltdetails class="mg-b-15 border-primary">
+    &ltsummary class="border-primary text-primary">Summary&lt/summary>
+    &ltdiv>
+        &ltul>
+            &ltli>1&lt/li>
+            &ltli>2&lt/li>
+            &ltli>3&lt/li>
+            &ltli>4&lt/li>
+            &ltli>5&lt/li>
+        &lt/ul>
+
+    &lt/div>
+&lt/details>
+</pre>
+    </div>
+
+    <div>
+        <h3>Colored bold left border details style</h3>
+        @{
+            foreach (string item in MyApp.ColorVariants)
+            {
+                <details class="mg-b-15 border-@item">
+                    <summary class="border-@item text-@item border-left-5">Summary border @item</summary>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                    </ul>
+                </details>
+            }
+        }
+    <pre>
+&ltdetails class="mg-b-15 border-primary">
+    &ltsummary class="border-primary text-primary border-left-5">Summary&lt/summary>
+    &ltdiv>
+        &ltul>
+            &ltli>1&lt/li>
+            &ltli>2&lt/li>
+            &ltli>3&lt/li>
+            &ltli>4&lt/li>
+            &ltli>5&lt/li>
+        &lt/ul>
+
+    &lt/div>
+&lt/details>
+</pre>
+    </div>
+
+    <div>
+        <h3>No border details style</h3>
+        @{
+            foreach (string item in MyApp.ColorVariants)
+            {
+                <details class="border-hide shadow-hide">
+                    <summary class="border-hide">Summary no border</summary>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                    </ul>
+                </details>
+            }
+        }
+    <pre>
+&ltdetails class="mg-b-15 border-hide shadow-hide">
+    &ltsummary class="border-hide">Summary&lt/summary>
+    &ltdiv>
+        &ltul>
+            &ltli>1&lt/li>
+            &ltli>2&lt/li>
+            &ltli>3&lt/li>
+            &ltli>4&lt/li>
+            &ltli>5&lt/li>
+        &lt/ul>
+
+    &lt/div>
+&lt/details>
+</pre>
+    </div>
+
+    <div>
+        <h3>TreeView Details</h3>
+        <ul class="list-unstyled">
+            @{
+                foreach (string item in MyApp.ColorVariants)
+                {
+                    <li>
+                        <details class="border-hide shadow-hide">
+                            <summary class="border-hide">Summary no border</summary>
+                            <ul class="list-unstyled">
+                                @{
+                                    foreach (string item2 in MyApp.ColorVariants)
+                                    {
+                                        <li>
+                                            <details class="pd-l-25 border-hide shadow-hide">
+                                                <summary class="border-hide">Summary no border</summary>
+                                                <div class="pd-15 bordered">
+                                                    <h4>Hello!</h4>
+                                                </div>
+                                            </details>
+                                        </li>
+                                    }
+                                }
+                            </ul>
+                        </details>
+                    </li>
+
+                }
+            }
+        </ul>
+
+    </div>
+
+</div>

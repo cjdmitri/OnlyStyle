@@ -4,3 +4,12 @@
     border-radius: var(--border-radius);
     text-align: center;
 }
+/*Содержание страницы*/
+@media (min-width: 1400px) {
+    #contents-list {
+        position: fixed;
+        right: 0;
+        width: 250px;
+        z-index: 200;
+    }
+}

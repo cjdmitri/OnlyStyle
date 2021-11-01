@@ -1,5 +1,4 @@
-﻿@import "__variable.scss";
-@import "__mixins.scss";
+﻿
 /**/
 .brand {
     display: flex;
@@ -106,9 +105,9 @@
     margin-left:auto;
 }
 
-.nav-end > .nav-dropdown > .dropdown-menu{
-    right:0;
-    left:auto;
+.nav-end > .nav-dropdown > .nav-dropdown-menu {
+    right: 0;
+    left: auto;
 }
 
 
@@ -129,11 +128,16 @@
     width: 20px;
 }
 
-@media (max-width: 768px) {
-    .navbar{
-        flex-direction:column;
-        align-items:stretch;
+
+
+
+
+@media (max-width: $bp-md) {
+    .navbar {
+        flex-direction: column;
+        align-items: stretch;
     }
+
     .nav-left, .nav-end {
         display: none;
     }
@@ -155,8 +159,9 @@
         flex-direction: column;
         @include animation(fade-in, .5s);
     }
-    .nav-end{
-        margin-left:0;
+
+    .nav-end {
+        margin-left: 0;
     }
 
     /*Делаем кнопку меню на всю ширину экрана*/
@@ -166,32 +171,29 @@
         text-align: left;
     }
 
-    .nav-dropdown-full > .mega-menu,
-    nav-dropdown > .dropdown-menu,
-    .nav-end > .nav-dropdown > .dropdown-menu {
+    .nav-dropdown-menu {
         display: none;
         background-color: $color-white;
         position: static;
         padding: 15px;
+        border-radius: 0;
         @include animation(fade-in, .5s);
     }
 
 
-    .nav-input{
-        width:100%;
+    .nav-input {
+        width: 100%;
     }
 }
 
-/*@media(min-width:769px) {
 
-}*/
-
-.mega-menu, .dropdown-menu {
+.dropdown-menu, .nav-dropdown-menu {
     position: absolute;
     left: 0;
     right: 0;
     display: none;
     padding: 15px;
+    min-width: 120px;
     border: $border-general;
     border-bottom-left-radius: $border-radius;
     border-bottom-right-radius: $border-radius;
@@ -202,32 +204,34 @@
     @include dropdown-menu-shadow();
 }
 
-.dropdown>.dropdown-menu{
-    border-radius:$border-radius;
-}
-
 .dropdown-menu {
-    min-width: 190px;
+    border-radius: $border-radius;
+    min-width: 170px;
 }
 
 
-.nav-btn-dropdown:focus ~ .mega-menu,
-.nav-btn-dropdown:focus ~ .dropdown-menu,
+
+.nav-btn-dropdown:focus ~ .nav-dropdown-menu,
 .btn-dropdown:focus ~ .dropdown-menu,
-.mega-menu:hover,
+.nav-dropdown-menu:hover,
 .dropdown-menu:hover {
     display: block;
 }
 
 
-
-.dropdown-menu li > a{
-    display: block;
-    padding:5px;
-    color:$text-color;
-}
-.dropdown-menu li > a:hover {
+.dropdown-menu li > a,
+.nav-dropdown-menu li > a {
     display: block;
     padding: 5px;
-    background-color: $shadow-color;
+    color: $text-color;
 }
+
+.dropdown-menu li > a:hover,
+.nav-dropdown-menu li > a:hover {
+    background-color: $hover-color;
+}
+
+/*@media(min-width:769px) {
+
+}*/
+

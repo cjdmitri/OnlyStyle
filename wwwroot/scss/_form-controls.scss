@@ -17,6 +17,9 @@ $control-disabled-color: #ECEDEF;
     border-radius: $border-radius;
     width: 100%;
 }
+input.form-control{
+    min-width:80px;
+}
 
 .form-control:focus {
     border-color: $control-border-color;

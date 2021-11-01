@@ -1,0 +1,26 @@
+﻿
+<div class="grid g-1">
+    <div>
+        @{
+            foreach (string item in MyApp.ColorVariants)
+            {
+                <h3>@item <span class="badge bg-@item">Badge</span></h3>
+                <span class="badge">Badge</span>
+                <span class="badge bg-@item">Badge</span>
+                <span class="badge bg-@item-dark">dark</span>
+                <span class="badge bg-@item-light">light</span>
+                <span class="badge bg-@item-light rounded">rounded</span>
+                <span class="badge bordered bg-@item-light border-primary">bordered</span>
+                <pre class="mg-t-15">
+&ltspan class="badge bg-@item">Badge&lt/span>
+&ltspan class="badge bg-@item-dark">dark&lt/span>
+&ltspan class="badge bg-@item-light">light&lt/span>
+&ltspan class="badge bg-@item-light rounded">rounded&lt/span>
+&ltspan class="badge bordered bg-@item-light border-primary">bordered&lt/span>
+</pre>
+            }
+        }
+
+
+    </div>
+</div>

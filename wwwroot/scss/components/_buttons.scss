@@ -1,4 +1,4 @@
-﻿@import "__variable.scss";
+﻿
 .btn {
     display: inline-block;
     font-weight: 400;
@@ -43,6 +43,7 @@ fieldset:disabled a.btn {
 /*
     background-color hover
 */
+
 .btn.bg-primary:hover,
 .btn.bg-primary-light:hover {
     background-color: $primary-dark !important;

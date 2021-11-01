@@ -1,4 +1,4 @@
-﻿<nav class="navbar dark navbar-fixed">
+﻿<nav class="navbar dark">
     <input type="checkbox" id="btnmenu" />
     <div class="brand">
         <label for="btnmenu" class="btn-menu">
@@ -13,7 +13,7 @@
         <a href="/" class="nav-link text-upper">Home</a>
         <div class="nav-dropdown">
             <button type="button" class="nav-btn-dropdown text-upper">Content</button>
-            <div class="dropdown-menu">
+            <div class="nav-dropdown-menu">
                 <ul class="list-unstyled">
                     <li><a asp-controller="Content" asp-action="Grid">Grid</a></li>
                     <li><a asp-controller="Content" asp-action="Typography">Typography</a></li>
@@ -22,10 +22,13 @@
         </div>
         <div class="nav-dropdown">
             <button type="button" class="nav-btn-dropdown text-upper">Components</button>
-            <div class="dropdown-menu">
+            <div class="nav-dropdown-menu">
                 <ul class="list-unstyled">
+                    <li><a asp-controller="Components" asp-action="Alerts">Alerts</a></li>
+                    <li><a asp-controller="Components" asp-action="Badge">Badge</a></li>
                     <li><a asp-controller="Components" asp-action="Buttons">Buttons</a></li>
                     <li><a asp-controller="Components" asp-action="Cards">Cards</a></li>
+                    <li><a asp-controller="Components" asp-action="Details">Details</a></li>
                     <li><a asp-controller="Components" asp-action="Dropdown">Dropdown</a></li>
                     <li><a asp-controller="Components" asp-action="Table">Table</a></li>
                 </ul>
@@ -33,7 +36,7 @@
         </div>
         <div class="nav-dropdown-full">
             <button type="button" class="nav-btn-dropdown text-upper">Full Menu</button>
-            <div class="dropdown-menu">
+            <div class="nav-dropdown-menu">
                 <div class="grid g-sm-1 g-md-3">
                     <div>
                         <h4>Full menu</h4>
@@ -67,7 +70,7 @@
     <div class="nav-end">
         <div class="nav-dropdown">
             <button type="button" class="nav-btn-dropdown text-upper">Search</button>
-            <div class="dropdown-menu">
+            <div class="nav-dropdown-menu" style="min-width:300px">
                 <div class="input-group">
                     <input type="text" class="form-control" id="input1" placeholder="Search..." />
                     <a class="btn" href="#">Go</a>
@@ -76,7 +79,7 @@
         </div>
         <div class="nav-dropdown">
             <button type="button" class="nav-btn-dropdown text-upper">Account</button>
-            <div class="dropdown-menu">
+            <div class="nav-dropdown-menu">
                 <h4>Account</h4>
                 <ul class="list-unstyled">
                     <li><a href="#">Link 1</a></li>

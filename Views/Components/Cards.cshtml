@@ -1,22 +1,11 @@
-﻿@{
-    ViewBag.Title = "OnlyStyle Components. Cards";
-    ViewBag.Description = "Cards style";
-    ViewBag.Canonical = $"{Context.Request.Scheme}://{Context.Request.Host}{Context.Request.Path}".ToLower();
-    ViewBag.H1 = "OnlyStyle Components. Cards";
-    //ViewBag.Keywords = "";
-    ViewBag.UrlImage = null;
-    ViewBag.HideTopRibbon = true;
-    ViewBag.HideBottomRibbon = true;
-}
+﻿
 
-<div class="container">
     <div class="grid g-sm-1">
-        <h2>Cards</h2>
+        <h3>Cards</h3>
     </div>
     <div class="grid g-sm-2 g-md-3 g-lg-4">
         <div>
-<pre class="bordered pd-15">
-<code>
+<pre>
 &ltdiv class="card">
     &ltdiv class="card-header">
         &lth3>Default card&lt/h3>
@@ -25,7 +14,6 @@
         &ltp>Content&lt/p>
     &lt/div>
 &lt/div>
-</code>
 </pre>
         </div>
         <div class="card">
@@ -88,13 +76,12 @@
 
     @* Cards with image *@
     <div class="grid g-sm-1">
-        <h2>Cards with image</h2>
+        <h3>Cards with image</h3>
     </div>
 
     <div class="grid g-sm-2">
         <div>
-<pre class="bordered pd-15">
-<code>
+<pre>
 &ltdiv class="card border-primary">
     &ltdiv class="card-header">
         &lth3>Primary card&lt/h3>
@@ -104,7 +91,6 @@
         &ltp>Content&lt/p>
     &lt/div>
 &lt/div>
-</code>
 </pre>
         </div>
         <div class="card border-primary">
@@ -117,5 +103,3 @@
             </div>
         </div>
     </div>
-
-</div>

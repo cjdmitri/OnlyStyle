@@ -1,0 +1,19 @@
+﻿@model Dictionary<string, string>
+
+<div class="grid g-1" id="contents-list">
+    <div>
+        <details open>
+            <summary>Contents</summary>
+            <div class="pd-15">
+                <ul class="list-unstyled">
+                    @{
+                        foreach (KeyValuePair<string, string> keyValue in Model)
+                        {
+                            <li class="mg-b-10"><a href="@keyValue.Value">@keyValue.Key</a></li>
+                        }
+                    }
+                </ul>
+            </div>
+        </details>
+    </div>
+</div>

@@ -7,15 +7,17 @@ using System.Threading.Tasks;
 
 namespace OnlyStyle.Controllers
 {
-    public class ContentController : Controller
+    public class ContentController : _TemplateController
     {
 
         public ActionResult Grid()
         {
+            SetPageInfo("OnlyStyle Grid", "Grid style", "OnlyStyle Grid");
             return View();
         }
         public ActionResult Typography()
         {
+            SetPageInfo("OnlyStyle Typography", "Typography", "OnlyStyle Typography");
             return View();
         }
     }

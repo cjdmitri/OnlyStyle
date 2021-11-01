@@ -6,9 +6,9 @@
 
 @mixin animation($type, $time) {
     animation: $type $time;
-    -moz-animation: $type $time; /* Firefox */
-    -webkit-animation: $type $time; /* Safari and Chrome */
-    -o-animation: $type $time; /* Opera */
+    -moz-animation: $type $time;
+    -webkit-animation: $type $time;
+    -o-animation: $type $time;
 }
 
 @mixin form-control-shadow() {
