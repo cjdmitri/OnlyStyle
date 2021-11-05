@@ -35,6 +35,11 @@ namespace OnlyStyle.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
+        public FileResult DownloadLatestVersion()
+        {
+            return File("/versions/current/onlystyle.min.css", "text/plain", "onlystyle.min.css");
+        }
+
         public IActionResult ErrorStatus(int statusCode)
         {
             return View(statusCode);
