@@ -53,6 +53,8 @@ body {
     border-right: $border-general;
     border-bottom: $border-general;
     padding-bottom: 80px;
+    padding-left: $padding-general;
+    padding-right: $padding-general;
 }
 
 .container-full {
@@ -62,89 +64,12 @@ body {
     max-width:none;
 }
 
-h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
-    font-weight: 500;
-    line-height: 1.2;
-    margin-top: $padding-general;
-    margin-bottom: $padding-10;
-}
-
-a {
-    color: $a-color;
-    text-decoration: none;
-    &:hover{
-        color: $a-color-hover;
-        /*text-decoration:underline;*/
-        
-    }
-}
 
 
-b, strong {
-    font-weight: bolder;
-}
 
-small, .small {
-    font-size: small;
-}
 
-ul, ol{
-    margin:0;
-}
-pre {
-    display: block;
-    margin-top: 0;
-    margin-bottom: 15px;
-    overflow: auto;
-    font-size: 0.875em;
-    background-color: $background-color;
-    max-height: 400px;
-    border-radius: $border-radius;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    padding:10px;
-    border:$border-general;
-}
 
-pre code {
-    font-size: inherit;
-    color: inherit;
-    word-break: normal;
-}
 
-code {
-    font-size: 0.875em;
-    /*color: #000000;*/
-    word-wrap: break-word;
-    background-color: $background-color;
-    padding: 5px;
-    border-radius: $border-radius;
-}
-
-label {
-    display: inline-block;
-}
-[role=button] {
-    cursor: pointer;
-}
-
-textarea {
-    resize: vertical;
-    border-radius:$border-radius;
-}
-
-iframe {
-    border: 0;
-}
-summary {
-    display: list-item;
-    cursor: pointer;
-}
-
-p {
-    margin-top: 0;
-    margin-bottom: $padding-general;
-}
 
 footer, .footer {
     display: block;
@@ -197,4 +122,8 @@ footer, .footer {
 
 [hidden]{
     display:none;
+}
+
+.w-100{
+    width:100%;
 }

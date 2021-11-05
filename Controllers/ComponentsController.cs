@@ -39,6 +39,22 @@ namespace OnlyStyle.Controllers
             return View();
         }
 
+        public IActionResult Forms()
+        {
+            SetPageInfo("OnlyStyle Components. Forms", "Form elements style", "OnlyStyle Components. Forms");
+            return View();
+        }
+        public IActionResult Listgroup()
+        {
+            SetPageInfo("OnlyStyle Components. List group", "List group style", "OnlyStyle Components. List group");
+            return View();
+        }
+        public IActionResult Navbar()
+        {
+            SetPageInfo("OnlyStyle Components. Navbar", "Navbar style", "OnlyStyle Components. Navbar");
+            return View();
+        }
+
         public IActionResult Table()
         {
             SetPageInfo("OnlyStyle Components. Table", "Table style", "OnlyStyle Components. Table");

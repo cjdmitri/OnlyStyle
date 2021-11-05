@@ -1,0 +1,3 @@
+User-agent: *
+sitemap: https://onlystyle.site/sitemap.xml
+Host: https://onlystyle.site

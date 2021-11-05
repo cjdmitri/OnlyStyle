@@ -1,31 +1,31 @@
 ﻿
 
 
-    <div class="grid g-sm-1 g-md-2">
-        <div>
-            <h3>Default style</h3>
-            <div class="dropdown">
-                <button type="button" class="btn btn-dropdown">Dropdown</button>
-                <div class="dropdown-menu">
-                    <ul class="list-unstyled">
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                    </ul>
-                </div>
+<div class="grid g-1">
+    <div>
+        <h3 id="default">Default style</h3>
+        <div class="dropdown">
+            <button type="button" class="btn btn-dropdown">Dropdown</button>
+            <div class="dropdown-menu">
+                <ul class="list-unstyled">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
             </div>
-            <div class="dropdown">
-                <button type="button" class="btn btn-dropdown" disabled>Dropdown disabled</button>
-                <div class="dropdown-menu">
-                    <ul class="list-unstyled">
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                    </ul>
-                </div>
+        </div>
+        <div class="dropdown">
+            <button type="button" class="btn btn-dropdown" disabled>Dropdown disabled</button>
+            <div class="dropdown-menu">
+                <ul class="list-unstyled">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
             </div>
-            <p>
-                <pre class="bordered pd-15">
+        </div>
+        <p>
+            <pre class="bordered pd-15">
 &ltdiv class="dropdown">
     &ltbutton type="button" class="btn btn-dropdown">Dropdown btn&lt/button>
     &ltdiv class="dropdown-menu">
@@ -37,64 +37,30 @@
     &lt/div>
 &lt/div>
 </pre>
-            </p>
+        </p>
 
-        </div>
+    </div>
 
-        <div>
-            <h3>Border color style</h3>
-            <div class="dropdown">
-                <button type="button" class="btn btn-dropdown border-primary text-primary">Primary</button>
-                <div class="dropdown-menu">
-                    <ul class="list-unstyled">
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                    </ul>
+    <div>
+        <h3 id="bordercolor">Border color style</h3>
+        @{
+            foreach (string item in MyApp.ColorVariants)
+            {
+                <div class="dropdown">
+                    <button type="button" class="btn btn-dropdown border-@item text-@item">@item</button>
+                    <div class="dropdown-menu">
+                        <ul class="list-unstyled">
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 3</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="dropdown">
-                <button type="button" class="btn btn-dropdown border-success text-success">Success</button>
-                <div class="dropdown-menu">
-                    <ul class="list-unstyled">
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button type="button" class="btn btn-dropdown border-danger text-danger">Danger</button>
-                <div class="dropdown-menu">
-                    <ul class="list-unstyled">
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button type="button" class="btn btn-dropdown border-info text-info">Info</button>
-                <div class="dropdown-menu">
-                    <ul class="list-unstyled">
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button type="button" class="btn btn-dropdown border-secondary text-secondary">Secondary</button>
-                <div class="dropdown-menu">
-                    <ul class="list-unstyled">
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                    </ul>
-                </div>
-            </div>
-            <p>
-                <pre class="bordered pd-15">
+
+            }
+        }
+        <p>
+            <pre class="bordered pd-15">
 &ltdiv class="dropdown">
     &ltbutton type="button" class="btn btn-dropdown border-primary text-primary">Primary&lt/button>
     &ltdiv class="dropdown-menu">
@@ -106,64 +72,28 @@
     &lt/div>
 &lt/div>
 </pre>
-            </p>
+        </p>
+    </div>
 
-        </div>
-
-        <div>
-            <h3>Сolor style</h3>
-            <div class="dropdown">
-                <button type="button" class="btn btn-dropdown border-primary bg-primary text-white">Primary</button>
-                <div class="dropdown-menu">
-                    <ul class="list-unstyled">
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                    </ul>
+    <div>
+        <h3 id="colorstyle">Сolor style</h3>
+        @{
+            foreach (string item in MyApp.ColorVariants)
+            {
+                <div class="dropdown">
+                            <button type="button" class="btn btn-dropdown border-@item bg-@item text-white">@item</button>
+                    <div class="dropdown-menu">
+                        <ul class="list-unstyled">
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 3</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="dropdown">
-                <button type="button" class="btn btn-dropdown border-success bg-success text-white">Success</button>
-                <div class="dropdown-menu">
-                    <ul class="list-unstyled">
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button type="button" class="btn btn-dropdown border-danger bg-danger text-white">Danger</button>
-                <div class="dropdown-menu">
-                    <ul class="list-unstyled">
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button type="button" class="btn btn-dropdown border-info bg-info text-white">Info</button>
-                <div class="dropdown-menu">
-                    <ul class="list-unstyled">
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button type="button" class="btn btn-dropdown border-secondary bg-secondary text-white">Secondary</button>
-                <div class="dropdown-menu">
-                    <ul class="list-unstyled">
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                    </ul>
-                </div>
-            </div>
-            <p>
-                <pre class="bordered pd-15">
+            }
+        }
+        <p>
+            <pre class="bordered pd-15">
 &ltdiv class="dropdown">
     &ltbutton type="button" class="btn btn-dropdown border-primary bg-primary text-white">Primary&lt/button>
     &ltdiv class="dropdown-menu">
@@ -175,63 +105,30 @@
     &lt/div>
 &lt/div>
 </pre>
-            </p>
+        </p>
 
-        </div>
-        <div>
-            <h3>Light color style</h3>
-            <div class="dropdown">
-                <button type="button" class="btn btn-dropdown border-primary bg-primary-light text-white">Primary</button>
-                <div class="dropdown-menu">
-                    <ul class="list-unstyled">
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                    </ul>
+    </div>
+    <div>
+        <h3 id="lightcolor">Light color style</h3>
+        @{
+            foreach (string item in MyApp.ColorVariants)
+            {
+                <div class="dropdown">
+                            <button type="button" class="btn btn-dropdown border-@item bg-@item-light text-white">@item</button>
+                    <div class="dropdown-menu">
+                        <ul class="list-unstyled">
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 3</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="dropdown">
-                <button type="button" class="btn btn-dropdown border-success bg-success-light text-white">Success</button>
-                <div class="dropdown-menu">
-                    <ul class="list-unstyled">
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button type="button" class="btn btn-dropdown border-danger bg-danger-light text-white">Danger</button>
-                <div class="dropdown-menu">
-                    <ul class="list-unstyled">
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button type="button" class="btn btn-dropdown border-info bg-info-light text-white">Info</button>
-                <div class="dropdown-menu">
-                    <ul class="list-unstyled">
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button type="button" class="btn btn-dropdown border-secondary bg-secondary-light text-white">Secondary</button>
-                <div class="dropdown-menu">
-                    <ul class="list-unstyled">
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                    </ul>
-                </div>
-            </div>
-            <p>
-                <pre class="bordered pd-15">
+
+            }
+
+        }
+        <p>
+            <pre class="bordered pd-15">
 &ltdiv class="dropdown">
     &ltbutton type="button" class="btn btn-dropdown border-primary bg-primary-light text-white">Primary&lt/button>
     &ltdiv class="dropdown-menu">
@@ -243,7 +140,7 @@
     &lt/div>
 &lt/div>
 </pre>
-            </p>
+        </p>
 
-        </div>
     </div>
+</div>

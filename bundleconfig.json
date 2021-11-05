@@ -1,0 +1,15 @@
+[
+  {
+    "outputFileName": "wwwroot/css/bundle.min.css",
+    "inputFiles": [
+      "wwwroot/css/onlystyle.css",
+      "wwwroot/css/style.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/pagenavigator.min.js",
+    "inputFiles": [
+      "wwwroot/js/pagenavigator.js"
+    ]
+  }
+]

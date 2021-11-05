@@ -34,5 +34,10 @@ namespace OnlyStyle.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        public IActionResult ErrorStatus(int statusCode)
+        {
+            return View(statusCode);
+        }
     }
 }

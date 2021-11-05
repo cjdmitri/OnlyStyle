@@ -1,14 +1,8 @@
-﻿@{ 
-    Dictionary<string, string> keyValues = new Dictionary<string, string>();
-    keyValues.Add("Simple alert", "#simplealert");
-    keyValues.Add("Bordered alert", "#bordered");
-    keyValues.Add("Alert and close button","#alertandclosebtn");
-}
+﻿
 
 
 
-@{ await Html.RenderPartialAsync("_listLink", keyValues);}
-<div class="grid g-sm-1 g-md-2">
+<div class="grid g-1">
     <div>
         <h3 id="simplealert">Simple alert</h3>
         <pre>

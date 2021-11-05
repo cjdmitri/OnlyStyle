@@ -1,86 +1,86 @@
 ﻿
-
-    <div class="grid g-sm-1">
-        <h3>Cards</h3>
+<h3 id="cards">Default card</h3>
+<div class="grid g-md-2 g-sm-1">
+    <div class="card">
+        <div class="card-header">
+            Default card
+        </div>
+        <div class="card-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
     </div>
-    <div class="grid g-sm-2 g-md-3 g-lg-4">
-        <div>
-<pre>
+    <pre>
 &ltdiv class="card">
     &ltdiv class="card-header">
-        &lth3>Default card&lt/h3>
+        Default card
     &lt/div>
     &ltdiv class="card-body">
         &ltp>Content&lt/p>
     &lt/div>
 &lt/div>
 </pre>
-        </div>
-        <div class="card">
-            <div class="card-header">
-                <h3>Default card</h3>
-            </div>
-            <div class="card-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-        </div>
-        <div class="card border-primary hover">
-            <div class="card-header bg-primary text-white">
-                <h3>Primary card + .hover</h3>
-            </div>
-            <div class="card-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-        </div>
-        <div class="card border-secondary">
-            <div class="card-header bg-secondary">
-                <h3>Secondary card</h3>
-            </div>
-            <div class="card-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-        </div>
-        <div class="card border-success">
-            <div class="card-header bg-success">
-                <h3>Success card</h3>
-            </div>
-            <div class="card-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-        </div>
-        <div class="card border-info">
-            <div class="card-header bg-info">
-                <h3>Info card</h3>
-            </div>
-            <div class="card-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-        </div>
-        <div class="card border-warning">
-            <div class="card-header bg-warning">
-                <h3>Warning card</h3>
-            </div>
-            <div class="card-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-        </div>
-        <div class="card border-danger">
-            <div class="card-header bg-danger">
-                <h3>Danger card</h3>
-            </div>
-            <div class="card-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-        </div>
-    </div>
+</div>
 
-    @* Cards with image *@
-    <div class="grid g-sm-1">
-        <h3>Cards with image</h3>
-    </div>
+<h3 id="colorheader">Color header card</h3>
+<div class="grid g-md-2 g-sm-1">
+    @{
+        foreach (string item in MyApp.ColorVariants)
+        {
+            <div class="card border-@item">
+                <div class="card-header bg-@item">
+                    @item card
+                </div>
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
 
-    <div class="grid g-sm-2">
-        <div>
+            <pre>
+&ltdiv class="card border-@item">
+    &ltdiv class="card-header bg-@item">
+         @item card
+    &lt/div>
+    &ltdiv class="card-body">
+        &ltp>Content&lt/p>
+    &lt/div>
+&lt/div>
+</pre>
+        }
+    }
+</div>
+
+<h3 id="onlybordercolor">Only border color card</h3>
+<div class="grid g-md-2 g-sm-1">
+    @{
+        foreach (string item in MyApp.ColorVariants)
+        {
+            <div class="card border-@item">
+                <div class="card-header">
+                    @item card
+                </div>
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+
+            <pre>
+&ltdiv class="card border-@item">
+    &ltdiv class="card-header">
+         @item card
+    &lt/div>
+    &ltdiv class="card-body">
+        &ltp>Content&lt/p>
+    &lt/div>
+&lt/div>
+</pre>
+        }
+    }
+</div>
+
+<h3 id="cardwimage">Cards with image</h3>
+
+<div class="grid g-md-2 g-sm-1">
+    <div>
 <pre>
 &ltdiv class="card border-primary">
     &ltdiv class="card-header">
@@ -92,14 +92,14 @@
     &lt/div>
 &lt/div>
 </pre>
+    </div>
+    <div class="card border-primary">
+        <div class="card-header">
+            <h3>Primary border card</h3>
         </div>
-        <div class="card border-primary">
-            <div class="card-header">
-                <h3>Primary border card</h3>
-            </div>
-            <img class="img-full" src="~/img/back1-min.jpg" />
-            <div class="card-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
+        <img class="img-full" src="~/img/back1-min.jpg" />
+        <div class="card-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
     </div>
+</div>

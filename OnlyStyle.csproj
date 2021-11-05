@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="bundleconfig.json" />
     <Content Remove="wwwroot\scss\onlystyle.scss" />
     <Content Remove="wwwroot\scss\_buttons.scss" />
     <Content Remove="wwwroot\scss\_card.scss" />
@@ -24,9 +25,11 @@
 
   <ItemGroup>
     <Folder Include="Helpers\" />
+    <Folder Include="wwwroot\versions\current\" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="bundleconfig.json" />
     <None Include="wwwroot\scss\onlystyle.scss" />
     <None Include="wwwroot\scss\components\_buttons.scss" />
     <None Include="wwwroot\scss\components\_card.scss" />

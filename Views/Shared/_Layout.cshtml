@@ -43,15 +43,27 @@
     <link rel="manifest" href="~/manifest.json" />
     <link rel="apple-touch-icon" href="~/img/icons/ios/192.png" />
 
+
+
     <environment include="Development">
         <link href="~/css/onlystyle.css" rel="stylesheet">
+        <link href="~/css/style.css" rel="stylesheet" />
     </environment>
     <environment exclude="Development">
         <cache expires-after="@TimeSpan.FromDays(10)">
-            <link href="~/css/onlystyle.min.css" rel="stylesheet" asp-append-version="true">
+            <link href="~/css/bundle.min.css" rel="stylesheet" asp-append-version="true">
         </cache>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-72H05FV0SL"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-72H05FV0SL');
+        </script>
     </environment>
-    <link href="~/css/style.css" rel="stylesheet" />
 </head>
 <body>
     @{
@@ -61,10 +73,21 @@
             //await Html.RenderPartialAsync("_ribbonTop");
 
         }
-        await Html.RenderPartialAsync("_header");
+
     }
     <main class="container pos-relative">
-        @RenderBody()
+        @{ 
+            await Html.RenderPartialAsync("_header");
+
+            }
+        <div class="grid g-md-9 g-sm-1">
+            <div class="col-md-span-2">
+                @{await Html.RenderPartialAsync("_listLink"); }
+            </div>
+            <div class="col-md-span-7">
+                @RenderBody()
+            </div>
+        </div>
     </main>
     @{
         if (Convert.ToBoolean(ViewBag.HideBottomRibbon) !=true)
@@ -79,6 +102,7 @@
             navigator.serviceWorker.register("/service-worker.js");
         }
     </script>
+    <script src="~/js/pagenavigator.min.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 

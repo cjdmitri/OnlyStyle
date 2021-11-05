@@ -1,0 +1,43 @@
+﻿@model int 
+
+@{ 
+    switch (Model) 
+    { 
+        case 400: 
+            ViewData["Icon"] = " text-danger"; 
+            ViewData["Title"] = "Произошла ошибка!"; 
+            ViewData["Description"] = "В процессе обработки запроса произошла ошибка. Попробуйте позже."; 
+            break; 
+        case 401: 
+            ViewData["Icon"] = "text-danger"; 
+            ViewData["Title"] = "Доступ запрещен!"; 
+            ViewData["Description"] = "Извините, но страница требует аутентификации."; 
+            break; 
+        case 403: 
+            ViewData["Icon"] = "text-danger"; 
+            ViewData["Title"] = "Доступ запрещен"; 
+            ViewData["Description"] = "Извините, но у вас нет прав на доступ к этой странице."; 
+            break; 
+        case 404: 
+            ViewData["Icon"] = "text-danger"; 
+            ViewData["Title"] = "Страница не найдена"; 
+            ViewData["Description"] = "Извините, но страница, которую вы искали, не найдена."; 
+            break; 
+        case 500: 
+        default: 
+            ViewData["Icon"] = "text-danger"; 
+            ViewData["Title"] = "Произошла ошибка"; 
+            ViewData["Description"] = "В процессе обработки запроса произошла ошибка."; 
+            break; 
+    } 
+} 
+
+<div class="card border-danger">
+    <div class="card-header">
+        @ViewData["Title"]
+    </div>
+    <div class="card-body text-danger">
+        <p>@ViewData["Description"]</p>
+        <a class="btn border-primary" href="@Url.Action("Index", "Home")">Home</a>
+    </div>
+</div> 

@@ -180,6 +180,23 @@
         @include animation(fade-in, .5s);
     }
 
+    .nav-btn-dropdown:focus ~ .nav-dropdown-menu,
+    .nav-dropdown-menu:hover {
+        display: block;
+        position:static!important;
+        border-radius:0;
+        border-width:0;
+    }
+
+/*    .dark .nav-dropdown-menu {
+        color: $color-white!important;
+        background-color: $navbar-hover-dark;
+    }
+
+    .dark .nav-dropdown-menu * {
+        color: $color-white !important;
+    }*/
+
 
     .nav-input {
         width: 100%;

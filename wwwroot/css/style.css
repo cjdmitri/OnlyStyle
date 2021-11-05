@@ -4,12 +4,40 @@
     border-radius: var(--border-radius);
     text-align: center;
 }
+#pagenavigator{
+    display: block;
+/*    padding:15px;
+    background-color:white;*/
+}
+    #pagenavigator ul {
+        list-style: none;
+        padding-inline-start: 15px;
+    }
+    #pagenavigator ul li {
+        margin-bottom:10px;
+    }
+
+        #pagenavigator ul li:before {
+            content: "- ";
+            color: #ccc;
+        }
+
+#pagenavigator a {
+    text-decoration: none;
+}
+
+    #pagenavigator a:hover {
+        text-decoration: underline;
+    }
+
 /*Содержание страницы*/
-@media (min-width: 1400px) {
-    #contents-list {
+/*@media (min-width: 1400px) {
+    #pagenavigator {
         position: fixed;
         right: 0;
         width: 250px;
         z-index: 200;
+        margin:15px;
+        border:1px solid #ccc
     }
-}
+}*/
