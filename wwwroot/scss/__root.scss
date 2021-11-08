@@ -1,8 +1,8 @@
-﻿@import "__variable.scss";
+﻿
 :root {
     --font-family: $font-general;
     --background-color: $background-color; /*Фон страницы*/
-    --color-white: $color-white; /*Белый цвет, для всего, что использует белый цвет))*/
+    --white: $white; /*Белый цвет, для всего, что использует белый цвет))*/
     --container-width: $container-width; /*Ширина фиксированной страницы*/
     --text-color: $text-color; /*Цвет текста по умолчанию, для всей страницы*/
     --text-color-muted: $text-color-muted; /**/
@@ -14,16 +14,12 @@
     --padding-btn: $padding-btn;
     --padding-btn-lg: $padding-btn-lg;
     --padding-btn-sm: $padding-btn-sm;
-    --navbar-light: $navbar-light; /**/
-    --navbar-dark: $navbar-dark; /**/
-    --navbar-hover-dark: $navbar-hover-dark; /**/
-    --link-color: $link-color; /**/
-    --link-color-dark: $link-color-dark; /**/
-    --link-color-hover: $link-color-hover; /**/
+    --navbar-light: $navbar-color; /**/
+    --link-color: $nav-link-color; /**/
+    --link-color-hover: $nav-link-color-hover; /**/
     --shadow-color: $shadow-color; /**/
     --shadow-btn-hover: $shadow-btn-hover;
     --hover-color: $hover-color; /**/
-    --navbar-background-color-dark: $navbar-background-color-dark; /**/
     /*Colors*/
     --primary: $primary;
     --secondary: $secondary;
@@ -31,4 +27,5 @@
     --info: $info;
     --warning: $warning;
     --danger: $danger;
+
 }

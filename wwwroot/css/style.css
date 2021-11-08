@@ -1,8 +1,16 @@
 ﻿.item-empty {
     padding: 15px;
     background-color: #e3e2e2;
-    border-radius: var(--border-radius);
+    border-radius: 5px;
     text-align: center;
+    color:black!important;
+}
+.item-color {
+    display: inline-block;
+    height: 100px;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 35px;
 }
 #pagenavigator{
     display: block;

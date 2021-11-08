@@ -1,181 +1,37 @@
-﻿@import "__variable.scss";
-@import "__mixins.scss";
-/*
-    background-color
-*/
-.bg-primary {
-    background-color: $primary !important;
-}
+﻿
 
-.bg-secondary {
-    background-color: $secondary !important;
-}
+@each $name, $value in $colors{
+    .bg-#{$name} {
+        background-color: $value !important;
+    }
 
-.bg-success {
-    background-color: $success !important;
-}
+    .bg-#{$name}-light {
+        background-color: lighten($value, $percent-color) !important;
+    }
 
-.bg-info {
-    background-color: $info !important;
-}
+    .bg-#{$name}-dark {
+        background-color: darken($value, $percent-color) !important;
+    }
 
-.bg-warning {
-    background-color: $warning !important;
-}
+    .bg-#{$name}-glass {
+        background-color: transparentize($value,$glassy) !important;
+    }
 
-.bg-danger {
-    background-color: $danger !important;
-}
+    .border-#{$name} {
+        border-color: $value !important;
+    }
 
-.bg-white {
-    background-color: #FFFFFF !important;
-}
-
-/*
-    background-color-light
-*/
-.bg-primary-light {
-    background-color: $primary-light !important;
-}
-
-.bg-secondary-light {
-    background-color: $secondary-light !important;
-}
-
-.bg-success-light {
-    background-color: $success-light !important;
-}
-
-.bg-info-light {
-    background-color: $info-light !important;
-}
-
-.bg-warning-light {
-    background-color: $warning-light !important;
-}
-
-.bg-danger-light {
-    background-color: $danger-light !important;
-}
-
-/*
-    background-color-dark
-*/
-.bg-primary-dark {
-    background-color: $primary-dark !important;
-}
-
-.bg-secondary-dark {
-    background-color: $secondary-dark !important;
-}
-
-.bg-success-dark {
-    background-color: $success-dark !important;
-}
-
-.bg-info-dark {
-    background-color: $info-dark !important;
-}
-
-.bg-warning-dark {
-    background-color: $warning-dark !important;
-}
-
-.bg-danger-dark {
-    background-color: $danger-dark !important;
-}
-
-/*
-    background-color-glass
-*/
-.bg-primary-glass {
-    background-color: transparentize($primary,$glassy) !important;
-}
-
-.bg-secondary-glass {
-    background-color: transparentize($secondary,$glassy) !important;
-}
-
-.bg-success-glass {
-    background-color: transparentize($success,$glassy) !important;
-}
-
-.bg-info-glass {
-    background-color: transparentize($info,$glassy) !important;
-}
-
-.bg-warning-glass {
-    background-color: transparentize($warning,$glassy) !important;
-}
-
-.bg-danger-glass {
-    background-color: transparentize($danger,$glassy) !important;
-}
-
-.bg-white-glass {
-    background-color: transparentize(#FFFFFF,$glassy) !important;
+    .text-#{$name} {
+        color: $value !important;
+    }
 }
 
 
-/*
-    border-color
-*/
-.border-primary {
-    border-color: $primary !important;
-}
-
-.border-secondary {
-    border-color: $secondary !important;
-}
-
-.border-success {
-    border-color: $success !important;
-}
-
-.border-info {
-    border-color: $info !important;
-}
-
-.border-warning {
-    border-color: $warning !important;
-}
-
-.border-danger {
-    border-color: $danger !important;
-}
-
-/*
-    Text colors
-*/
 .text-muted {
     color: $text-color-muted !important;
 }
 
-.text-primary {
-    color: $primary !important;
-}
-
-.text-secondary {
-    color: $secondary !important;
-}
-
-.text-success {
-    color: $success !important;
-}
-
-.text-info {
-    color: $info !important;
-}
-
-.text-warning {
-    color: $warning !important;
-}
-
-.text-danger {
-    color: $danger !important;
-}
-
 .text-white {
-    color: #FFFFFF !important;
+    color: $white !important;
 }
 

@@ -1,4 +1,5 @@
 ﻿
+
 .btn {
     display: inline-block;
     font-weight: 400;
@@ -9,7 +10,7 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: $color-white;
+    background-color: $white;
     border: $border-general;
     padding: $padding-btn;
     font-size: 0.875rem;
@@ -20,6 +21,7 @@
 
 .btn:hover {
     text-decoration: none;
+    z-index:2;
     box-shadow: $shadow-btn-hover;
 }
 
@@ -44,7 +46,7 @@ fieldset:disabled a.btn {
     background-color hover
 */
 
-.btn.bg-primary:hover,
+/*.btn.bg-primary:hover,
 .btn.bg-primary-light:hover {
     background-color: $primary-dark !important;
 }
@@ -72,7 +74,7 @@ fieldset:disabled a.btn {
 .btn.bg-danger:hover,
 .btn.bg-danger-light:hover {
     background-color: $danger-dark !important;
-}
+}*/
 
 .btn-lg, .btn-group-lg > .btn,
 .btn-group-lg > .form-control {

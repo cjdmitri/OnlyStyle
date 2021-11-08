@@ -21,7 +21,7 @@
                 </details>
             }
         }
-        <pre>
+        <pre><code>
 &ltdetails class="mg-b-15">
     &ltsummary>Summary&lt/summary>
     &ltdiv>
@@ -35,7 +35,7 @@
 
     &lt/div>
 &lt/details>
-</pre>
+</code></pre>
     </div>
     <div>
         <h3 id="colored">Colored details style</h3>
@@ -54,7 +54,7 @@
                 </details>
             }
         }
-        <pre>
+        <pre><code>
 &ltdetails class="mg-b-15">
     &ltsummary class="bg-primary text-white">Summary&lt/summary>
     &ltdiv>
@@ -68,7 +68,7 @@
 
     &lt/div>
 &lt/details>
-</pre>
+</code></pre>
     </div>
     <div>
         <h3 id="coloredlight">Colored light details style</h3>
@@ -87,7 +87,7 @@
                 </details>
             }
         }
-        <pre>
+        <pre><code>
 &ltdetails class="mg-b-15">
     &ltsummary class="bg-primary-light">Summary&lt/summary>
     &ltdiv>
@@ -101,7 +101,7 @@
 
     &lt/div>
 &lt/details>
-</pre>
+</code></pre>
     </div>
     <div>
         <h3 id="coloreddark">Colored dark details style</h3>
@@ -120,7 +120,7 @@
                 </details>
             }
         }
-        <pre>
+        <pre><code>
 &ltdetails class="mg-b-15">
     &ltsummary class="bg-primary-dark text-white">Summary&lt/summary>
     &ltdiv>
@@ -134,7 +134,7 @@
 
     &lt/div>
 &lt/details>
-</pre>
+</code></pre>
     </div>
     <div>
         <h3 id="coloredborder">Colored border details style</h3>
@@ -153,7 +153,7 @@
                 </details>
             }
         }
-        <pre>
+        <pre><code>
 &ltdetails class="mg-b-15 border-primary">
     &ltsummary class="border-primary text-primary">Summary&lt/summary>
     &ltdiv>
@@ -167,7 +167,7 @@
 
     &lt/div>
 &lt/details>
-</pre>
+</code></pre>
     </div>
 
     <div>
@@ -187,7 +187,7 @@
                 </details>
             }
         }
-        <pre>
+        <pre><code>
 &ltdetails class="mg-b-15 border-primary">
     &ltsummary class="border-primary text-primary border-left-5">Summary&lt/summary>
     &ltdiv>
@@ -201,7 +201,7 @@
 
     &lt/div>
 &lt/details>
-</pre>
+</code></pre>
     </div>
 
     <div>
@@ -221,7 +221,7 @@
                 </details>
             }
         }
-        <pre>
+        <pre><code>
 &ltdetails class="mg-b-15 border-hide shadow-hide">
     &ltsummary class="border-hide">Summary&lt/summary>
     &ltdiv>
@@ -235,7 +235,27 @@
 
     &lt/div>
 &lt/details>
-</pre>
+</code></pre>
+    </div>
+    <div>
+        <h3 id="megadd">Details mega dropdown</h3>
+        @{
+            foreach (string item in MyApp.ColorVariants)
+            {
+                <details class="mg-b-15 border-@item">
+                    <summary class="border-@item text-@item">Mega dropdown</summary>
+                    <div class="mega border-@item">
+                            <h4>Mega dropdown details</h4>
+                            <div class="grid g-4">
+                                <div class="item-empty">Item 1</div>
+                                <div class="item-empty">Item 2</div>
+                                <div class="item-empty">Item 3</div>
+                                <div class="item-empty">Item 4</div>
+                            </div>
+                    </div>
+                </details>
+            }
+        }
     </div>
 
     <div>

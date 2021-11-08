@@ -1,7 +1,10 @@
-﻿details {
+﻿
+
+
+details {
     display:block;
     margin: 0 auto;
-    background-color: $color-white;
+    background-color: $white;
     box-shadow: 0 .1rem 1rem -.5rem rgba(0,0,0,.4);
     border-radius: $border-radius;
     overflow: hidden;
@@ -15,9 +18,9 @@ details:hover {
 }
 
 summary {
-    padding: 15px;
+    padding: $padding-general;
     display: block;
-    background-color: $color-white;
+    background-color: $white;
     padding-left: 2.2rem;
     position: relative;
     cursor: pointer;
@@ -43,7 +46,7 @@ summary:before {
     content: '';
     border-width: .4rem;
     border-style: solid;
-    border-color: transparent transparent transparent $text-color-muted;
+    border-color: transparent transparent transparent $text-color;
     position: absolute;
     top: 1.3rem;
     left: 1rem;
@@ -52,9 +55,14 @@ summary:before {
     transition: .25s transform ease;
 }
 
+@each $name, $value in $colors{
+    summary.text-#{$name}:before, {
+        border-color: transparent transparent transparent $value;
+    }
+}
+
 details[open] {
     border: $border-general;
-
 }
 /*details[open] > div {
     animation-name: slideDown;
@@ -91,3 +99,24 @@ details summary::-webkit-details-marker {
     display: none;
 }
 
+details>.mega{
+    position:absolute;
+    z-index:200;
+    background-color:$white;
+    padding:$padding-general;
+    margin-top:5px;
+    border:$border-general;
+    border-radius:$border-radius;
+    overflow:auto;
+    @include form-control-shadow;
+}
+
+// x small
+@media (max-width: $bp-sm - 1) {
+    details > .mega {
+        left: 0;
+        right: 0;
+        margin-left: $padding-general;
+        margin-right: $padding-general;
+    }
+}

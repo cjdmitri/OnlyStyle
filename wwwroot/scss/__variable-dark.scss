@@ -2,16 +2,16 @@
 //General
 $font-general: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 $font-size:15px;
-$background-color: #f7f7f7;
+$background-color: #1e1717;
 
 $container-width: 1200px; //Fixed container width
 $percent-color: 20%;
-$text-color: #444444;
+$text-color: #d5d5d5;
 $text-color-invert: invert($text-color);
 $text-color-muted: lighten($text-color, 30%);
 
 //Borders
-$border-color: #ccc; //general border color
+$border-color: #5A5A5A; //general border color
 $border-radius:5px;
 $border-weight:1px;
 $border-general: $border-weight solid $border-color;
@@ -23,14 +23,16 @@ $padding-btn:6px 10px;
 $padding-btn-lg: 7px 14px;
 $padding-btn-sm: 4px 8px;
 
+
 //navbar
-$navbar-color: #FFFFFF;
-$a-color: #0056B6;
+$navbar-color: #2a2020;
+$a-color: #70a6e1;
 $a-color-hover: darken($a-color, $percent-color);
-$nav-link-color: #7e7e7e;
-$nav-link-color-hover: #130041;
+$nav-link-color: #BBC1C8;
+$nav-link-color-active: #263241;
+$nav-link-color-hover: #8262CE;
 $shadow-color: #E0CEFF;
-$hover-color: #E0CEFF;
+$hover-color: #423754;
 $shadow-btn-hover: 0px 0px 10px 1px $shadow-color;
 
 //Form controls
@@ -48,13 +50,13 @@ $breakpoints: (sm: $bp-sm, md: $bp-md, lg: $bp-lg, xl: $bp-xl, xxl: $bp-xxl);
 
 //Colors
 $glassy:.75;
-$white: #FFFFFF;
-$primary: #593196;
-$secondary: #a991d4;
-$success: #13b955;
-$info: #009cdc;
+$white: #282828;
+$primary: #482e70;
+$secondary: #937bbf;
+$success: #00993d;
+$info: #006791;
 $warning: #efa31d;
-$danger: #fc3939;
+$danger: #bb7f15;
 $colors: (white: $white, primary: $primary, secondary: $secondary, success: $success, info: $info, warning: $warning, danger: $danger );
 
 //Colors light

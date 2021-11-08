@@ -1,25 +1,26 @@
-﻿@import "__variable.scss";
-@import "__mixins.scss";
+﻿
 
-$control-border-color: #66afe9;
-$control-placeholder-color: #737D85;
-$control-disabled-color: #ECEDEF;
+
+
+input[type="text"]{
+    min-width:100px;
+}
 
 .form-control {
     display: block;
     padding: $padding-btn;
     font-size: 15px;
     line-height: 1.5;
-    color: #333;
-    background-color: $color-white;
+    color: $text-color;
+    background-color: $white;
     background-image: none;
     border: $border-general;
     border-radius: $border-radius;
     width: 100%;
 }
-input.form-control{
+/*input.form-control{
     min-width:80px;
-}
+}*/
 
 .form-control:focus {
     border-color: $control-border-color;
@@ -60,7 +61,7 @@ textarea.form-control {
 .form-check > input[type=radio] {
     display: inline-block;
     vertical-align: central;
-    background-color: $color-white;
+    background-color: $white;
 }
 .form-check > input[type=checkbox]:focus,
 .form-check > input[type=radio]:focus {

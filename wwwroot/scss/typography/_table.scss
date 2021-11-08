@@ -1,4 +1,5 @@
 ﻿
+
 .table {
     width: 100%;
     border: $border-general;
@@ -7,7 +8,7 @@
     overflow-x: auto;
     max-width: 100%;
     margin-bottom: 20px;
-    background-color: $color-white;
+    background-color: $white;
 }
 
 th {
@@ -46,17 +47,17 @@ th {
 
 .table-striped > tbody tr:nth-child(odd),
 .table-striped > tbody tr:nth-child(odd) > td > input {
-    background-color: $color-white;
+    background-color: $white;
 }
 
 .table-striped > tbody tr:nth-child(even),
 .table-striped > tbody tr:nth-child(even) > td > input {
-    background-color: #F1F1F1;
+    background-color: darken($white, 5%);
 }
 
 
 .table-hover > tbody tr:hover {
-    background-color: #DFE2FF;
+    background-color: $hover-color;
 }
 
 

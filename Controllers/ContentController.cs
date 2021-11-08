@@ -9,7 +9,11 @@ namespace OnlyStyle.Controllers
 {
     public class ContentController : _TemplateController
     {
-
+        public ActionResult Colors()
+        {
+            SetPageInfo("OnlyStyle Colors", "Colors style", "OnlyStyle Colors");
+            return View();
+        }
         public ActionResult Grid()
         {
             SetPageInfo("OnlyStyle Grid", "Grid style", "OnlyStyle Grid");

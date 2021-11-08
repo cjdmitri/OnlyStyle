@@ -1,19 +1,19 @@
 ﻿@charset "UTF-8";
-/*
-*OnlyStyle Framework
-*Site: onlystyle.site
+/*!
+*   OnlyStyle Framework
+*   Site: onlystyle.site
 */
 
-@import "__variable.scss";
+@import "__variable-dark.scss";
 @import "__mixins.scss";
-@import "__root.scss";
+//@import "__root.scss";
 @import "_colors.scss";
 @import "_general.scss";
 @import "typography/_typography.scss";
 @import "typography/_grid.scss";
 @import "typography/_table.scss";
 @import "components/_alert.scss";
-@import "components/_ribbon.scss";
+//@import "components/_ribbon.scss";
 @import "components/_buttons.scss";
 @import "components/_navbar.scss";
 @import "components/_details.scss";
@@ -23,10 +23,10 @@
 @import "components/_close.scss";
 @import "components/_badge.scss";
 @import "_margin-padding.scss";
-/*@import "components/_tooltip.scss";*/
+//@import "components/_tooltip.scss";
 @import "_text.scss";
 @import "_form-controls.scss";
-@import "_headers.scss";
+//@import "_headers.scss";
 @import "_animations.scss";
 @import "_positions.scss";
 @import "_image.scss";

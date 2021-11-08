@@ -3,13 +3,13 @@
 
 
 <div class="grid g-1">
-    <div>
+    <div class="overflow-auto">
         <h3 id="simplealert">Simple alert</h3>
-        <pre>
+        <pre><code>
 &ltdiv class="alert bg-info-light">
     &ltp>Simple alert no border, no close button.&lt/p>
 &lt/div>
-</pre>
+</code></pre>
         @{
             foreach (string item in MyApp.ColorVariants)
             {
@@ -19,13 +19,14 @@
             }
         }
     </div>
-    <div>
+    <div class="overflow-auto">
         <h3 id="bordered">Bordered alert</h3>
-        <pre>
+            <pre><code>
 &ltdiv class="alert bg-info-light bordered border-info">
     &ltp>Simple alert no border, no close button.&lt/p>
 &lt/div>
-</pre>
+</code></pre>
+      
         @{
             foreach (string item in MyApp.ColorVariants)
             {
@@ -35,14 +36,14 @@
             }
         }
     </div>
-    <div>
+    <div class="overflow-auto">
         <h3 id="alertandclosebtn">Alert + close button</h3>
-        <pre>
+        <pre><code>
 &ltdiv class="alert bg-info-light">
     &ltp>Simple alert + close button.&lt/p>
     &ltbutton class="close" onclick="this.parentElement.remove()">Close&lt/button>
 &lt/div>
-</pre>
+</code></pre>
         @{
             foreach (string item in MyApp.ColorVariants)
             {

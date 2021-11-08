@@ -1,5 +1,4 @@
 ﻿
-/**/
 .brand {
     display: flex;
     flex-direction: row;
@@ -20,24 +19,24 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    color:$nav-link-color;
 }
 .brand a > img {
     max-width: 30px;
     height: auto;
+    margin-right:10px;
 }
 
 .navbar {
-    background-color: $navbar-light;
+    background-color: $navbar-color;
     display: flex;
     flex-direction: row;
     align-items: center;
     position: relative;
-    z-index:200;
+    z-index: 200;
+    border-bottom: $border-general;
 }
 
-.navbar.dark {
-    background-color: $navbar-dark;
-}
 
 .nav-dropdown, .nav-input, .dropdown {
     display: inline-block;
@@ -56,50 +55,32 @@
 .nav-link {
     background: none;
     border: none;
-    color: $link-color;
+    color: $nav-link-color;
     padding: 20px 15px;
     cursor: pointer;
     text-decoration: none;
     font-size: 14px;
 }
 
-
-.dark .brand a,
-.dark .nav-btn-dropdown,
-.dark .nav-link{
-    color: $link-color-dark;
-}
-
-
 .nav-btn-dropdown::after,
-.dark .nav-btn-dropdown::after,
 .btn-dropdown::after {
     content: ' \25be';
     white-space:nowrap;
 }
 .nav-btn-dropdown::after {
-    color: $link-color;
+    color: $nav-link-color;
 }
 
-.dark .nav-btn-dropdown::after {
-    color: $link-color-dark;
-}
 
 .nav-btn-dropdown:hover,
 .nav-btn-dropdown:active,
 .nav-link:hover,
 .nav-link:active,
 .nav-link.active {
-    background-color: $shadow-color;
+    background-color: $nav-link-color-active;
+    color: $nav-link-color;
 }
 
-.dark .nav-btn-dropdown:hover,
-.dark .nav-btn-dropdown:active,
-.dark .nav-link:hover,
-.dark .nav-link:active,
-.dark .nav-link.active {
-    background-color: $navbar-hover-dark;
-}
 
 .nav-end{
     margin-left:auto;
@@ -122,13 +103,28 @@
 
 /*Костыль, вместо иконки, три линии*/
 .btn-menu > i.line {
-    border-bottom: 2px solid $link-color;
+    border-bottom: 2px solid $nav-link-color;
     display: block;
     margin-top: 4px;
     width: 20px;
 }
 
+.nav-input {
+    padding: $padding-btn;
+    font-size: $font-size;
+    line-height: 1.5;
+    color: $text-color;
+    background-color: $white;
+    background-image: none;
+    border: $border-general;
+    border-radius: $border-radius;
+}
 
+.nav-input:focus {
+    border-color: $control-border-color;
+    outline: 0;
+    @include form-control-shadow();
+}
 
 
 
@@ -141,7 +137,6 @@
     .nav-left, .nav-end {
         display: none;
     }
-
     /*На маленьких экранах показываем кнопку для раскрытия меню*/
     .btn-menu {
         display: inline-block;
@@ -151,7 +146,6 @@
         padding: 20px 15px;
         cursor: pointer;
     }
-
     /*При нажатии на костыль, показываем или скрываем меню*/
     #btnmenu:checked ~ div.nav-left,
     #btnmenu:checked ~ div.nav-end {
@@ -163,7 +157,6 @@
     .nav-end {
         margin-left: 0;
     }
-
     /*Делаем кнопку меню на всю ширину экрана*/
     .nav-btn-dropdown {
         display: block;
@@ -173,7 +166,7 @@
 
     .nav-dropdown-menu {
         display: none;
-        background-color: $color-white;
+        background-color: $white;
         position: static;
         padding: 15px;
         border-radius: 0;
@@ -183,18 +176,17 @@
     .nav-btn-dropdown:focus ~ .nav-dropdown-menu,
     .nav-dropdown-menu:hover {
         display: block;
-        position:static!important;
-        border-radius:0;
-        border-width:0;
+        position: static !important;
+        border-radius: 0;
+        border-width: 0;
     }
-
-/*    .dark .nav-dropdown-menu {
-        color: $color-white!important;
+    /*    .dark .nav-dropdown-menu {
+        color: $white!important;
         background-color: $navbar-hover-dark;
     }
 
     .dark .nav-dropdown-menu * {
-        color: $color-white !important;
+        color: $white !important;
     }*/
 
 
@@ -214,7 +206,7 @@
     border: $border-general;
     border-bottom-left-radius: $border-radius;
     border-bottom-right-radius: $border-radius;
-    background-color: $color-white;
+    background-color: $white;
     z-index: 1050;
     /*box-shadow: 0px 4px 7px 1px var(--shadow-color);*/
     @include animation(fade-in, .5s);
@@ -248,7 +240,4 @@
     background-color: $hover-color;
 }
 
-/*@media(min-width:769px) {
-
-}*/
 

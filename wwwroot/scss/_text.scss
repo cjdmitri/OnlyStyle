@@ -1,19 +1,33 @@
-﻿@import "__variable.scss";
+﻿
+
 .text-upper{
-    text-transform:uppercase;
+    text-transform:uppercase!important;
 }
-
 .text-center {
-    text-align: center;
-
+    text-align: center!important;
     & * {
-        text-align: center;
+        text-align: center!important;
+    }
+}
+.text-right {
+    text-align: right !important;
+    & * {
+        text-align: right !important;
     }
 }
 .text-small{
-    font-size:small;
+    font-size:small!important;
 }
-
 .text-bold{
-    font-weight:bold;
+    font-weight:bold!important;
+}
+.text-lower{
+    text-transform:lowercase!important;
+}
+.text-italic {
+    font-style: italic!important;
+}
+.text-underline{
+    text-decoration:underline!important;
+    
 }

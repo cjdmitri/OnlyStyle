@@ -4,11 +4,10 @@
     display: inline-block;
     white-space: nowrap;
     vertical-align: baseline;
-   /* border-width: 0;*/
-    color: white;
+    color: $text-color;
     border-radius: 0;
     font-size: .7rem;
-    background-color: #ccc;
+    background-color: $background-color;
     text-align: center;
     padding: 3px 10px;
     font-weight: bold;

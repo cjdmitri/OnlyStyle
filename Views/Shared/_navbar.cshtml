@@ -1,4 +1,4 @@
-﻿<nav class="navbar dark">
+﻿<nav class="navbar">
     <input type="checkbox" id="btnmenu" />
     <div class="brand">
         <label for="btnmenu" class="btn-menu">
@@ -15,6 +15,7 @@
             <button type="button" class="nav-btn-dropdown text-upper">Content</button>
             <div class="nav-dropdown-menu">
                 <ul class="list-unstyled">
+                    <li><a asp-controller="Content" asp-action="Colors">Colors</a></li>
                     <li><a asp-controller="Content" asp-action="Grid">Grid</a></li>
                     <li><a asp-controller="Content" asp-action="Typography">Typography</a></li>
                 </ul>
@@ -65,6 +66,7 @@
                 </div>
             </div>
         </div>
+        <input type="text" class="nav-input" placeholder="Search..." />
     </div>
     @* right toolbar *@
     <div class="nav-end">
