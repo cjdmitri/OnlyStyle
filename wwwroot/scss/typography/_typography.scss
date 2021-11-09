@@ -3,8 +3,8 @@
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     font-weight: $heading-weight;
     line-height: $heading-line-height;
-    margin-top: $padding-general;
-    margin-bottom: $padding-10;
+    margin-top: $padding-general * 2;
+    margin-bottom: $padding-general;
 }
 
 h1, .h1{

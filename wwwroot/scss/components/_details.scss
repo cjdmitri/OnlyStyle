@@ -28,6 +28,10 @@ summary {
     border-radius: $border-radius;
 }
 
+summary.hide-marker {
+    padding: $padding-general;
+}
+
 details {
     summary {
         list-style: none;
@@ -55,6 +59,12 @@ summary:before {
     transition: .25s transform ease;
 }
 
+summary.hide-marker:before {
+    border:none;
+    display:none;
+    border-style:none;
+    border-width:0;
+}
 
 @each $name, $value in $colors{
     summary.text-#{$name}:before, {
