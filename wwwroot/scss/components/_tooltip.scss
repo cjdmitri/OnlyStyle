@@ -184,15 +184,15 @@
     transform: translateX(12px);
 }
 
-/* Move directional arrows down a bit for left/right tooltips */
 .tooltip-left:before,
 .tooltip-right:before {
     top: 3px;
 }
 
-/* Vertically center tooltip content for left/right tooltips */
 .tooltip-left:after,
 .tooltip-right:after {
     margin-left: 0;
     margin-bottom: -16px;
 }
+
+

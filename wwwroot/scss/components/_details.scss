@@ -55,6 +55,7 @@ summary:before {
     transition: .25s transform ease;
 }
 
+
 @each $name, $value in $colors{
     summary.text-#{$name}:before, {
         border-color: transparent transparent transparent $value;
@@ -84,11 +85,14 @@ details[open] {
 
 details[open] > summary {
     border: 0;
-    font-weight:bold;
+    font-weight: bold;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 details:hover > summary {
     font-weight: bold;
 }
+
 
 details[open] > summary:before {
     transform: rotate(90deg);

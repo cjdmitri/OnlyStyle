@@ -1,19 +1,19 @@
 ﻿
 
 @each $name, $value in $colors{
-    .bg-#{$name} {
+    .bg-#{$name}, .bg-#{$name}::after, .bg-#{$name}::before{
         background-color: $value !important;
     }
 
-    .bg-#{$name}-light {
+    .bg-#{$name}-light, .bg-#{$name}-light::after, .bg-#{$name}-light::before {
         background-color: lighten($value, $percent-color) !important;
     }
 
-    .bg-#{$name}-dark {
+    .bg-#{$name}-dark, .bg-#{$name}-dark::after, .bg-#{$name}-dark::before {
         background-color: darken($value, $percent-color) !important;
     }
 
-    .bg-#{$name}-glass {
+    .bg-#{$name}-glass, .bg-#{$name}-glass::after, .bg-#{$name}-glass::before {
         background-color: transparentize($value,$glassy) !important;
     }
 
@@ -21,17 +21,17 @@
         border-color: $value !important;
     }
 
-    .text-#{$name} {
+    .text-#{$name}, .text-#{$name}::after, .text-#{$name}::before {
         color: $value !important;
     }
 }
 
 
-.text-muted {
+.text-muted, .text-muted::after, .text-muted::before {
     color: $text-color-muted !important;
 }
 
-.text-white {
+.text-white, .text-white::after, .text-white::before {
     color: $white !important;
 }
 

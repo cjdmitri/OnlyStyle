@@ -1,7 +1,9 @@
 ﻿
 
 .btn {
-    display: inline-block;
+    /*display: inline-block;*/
+    display:inline-flex;
+    align-items:center;
     font-weight: 400;
     color: $text-color;
     text-align: center;
@@ -14,15 +16,17 @@
     border: $border-general;
     padding: $padding-btn;
     font-size: 0.875rem;
-    line-height: 1.5;
+    line-height: 1.6;
     border-radius: $border-radius;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.btn:hover {
+.btn:hover,
+a.btn:hover {
     text-decoration: none;
-    z-index:2;
+    z-index: 2;
     box-shadow: $shadow-btn-hover;
+    color: $text-color;
 }
 
 .btn:focus, .btn.focus {
@@ -42,39 +46,6 @@ a.btn.disabled,
 fieldset:disabled a.btn {
     pointer-events: none;
 }
-/*
-    background-color hover
-*/
-
-/*.btn.bg-primary:hover,
-.btn.bg-primary-light:hover {
-    background-color: $primary-dark !important;
-}
-
-.btn.bg-secondary:hover,
-.btn.bg-secondary-light:hover {
-    background-color: $secondary-dark !important;
-}
-
-.btn.bg-success:hover,
-.btn.bg-success-light:hover {
-    background-color: $success-dark !important;
-}
-
-.btn.bg-info:hover,
-.btn.bg-info-light:hover {
-    background-color: $info-dark !important;
-}
-
-.btn.bg-warning:hover,
-.btn.bg-warning-light:hover {
-    background-color: $warning-dark !important;
-}
-
-.btn.bg-danger:hover,
-.btn.bg-danger-light:hover {
-    background-color: $danger-dark !important;
-}*/
 
 .btn-lg, .btn-group-lg > .btn,
 .btn-group-lg > .form-control {

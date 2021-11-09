@@ -42,5 +42,20 @@
 
         </div>
     </div>
+
+    <div class="overflow-auto">
+        <h3 id="glasscolors">Glass colors</h3>
+        <div class="grid g-md-6 g-sm-3 g-xsm-2">
+            @{
+                foreach (string item in MyApp.ColorVariants)
+                {
+                    <div class="item-color bg-@item-glass">
+                        <p>@item</p>
+                    </div>
+                }
+            }
+
+        </div>
+    </div>
 </div>
 

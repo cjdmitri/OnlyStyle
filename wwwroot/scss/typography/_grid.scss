@@ -23,6 +23,10 @@
     grid-gap: $padding-general + 10;
 }
 
+.grid-gap-0 {
+    grid-gap: 0;
+}
+
 /*default. No responsive*/
 .g-1 {
     grid-template-columns: 1fr;

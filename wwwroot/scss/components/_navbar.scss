@@ -63,13 +63,19 @@
 }
 
 .nav-btn-dropdown::after,
+.nav-btn-dropdown::before,
+.nav-link::after,
+.nav-link::before {
+    transition: all .5s;
+}
+
+.nav-btn-dropdown::after,
 .btn-dropdown::after {
     content: ' \25be';
-    white-space:nowrap;
-}
-.nav-btn-dropdown::after {
+    white-space: nowrap;
     color: $nav-link-color;
 }
+
 
 
 .nav-btn-dropdown:hover,
@@ -168,7 +174,7 @@
         display: none;
         background-color: $white;
         position: static;
-        padding: 15px;
+        padding: $padding-general;
         border-radius: 0;
         @include animation(fade-in, .5s);
     }
@@ -201,8 +207,8 @@
     left: 0;
     right: 0;
     display: none;
-    padding: 15px;
-    min-width: 120px;
+    padding: $padding-general;
+    min-width: 150px;
     border: $border-general;
     border-bottom-left-radius: $border-radius;
     border-bottom-right-radius: $border-radius;
@@ -231,8 +237,9 @@
 .dropdown-menu li > a,
 .nav-dropdown-menu li > a {
     display: block;
-    padding: 5px;
+    padding: $padding-btn;
     color: $text-color;
+    border-radius: $border-radius !important;
 }
 
 .dropdown-menu li > a:hover,

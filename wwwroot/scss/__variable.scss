@@ -2,13 +2,15 @@
 //General
 $font-general: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 $font-size:15px;
+$heading-weight:400;
+$heading-line-height: 1.2;
 $background-color: #f7f7f7;
 
 $container-width: 1200px; //Fixed container width
 $percent-color: 20%;
 $text-color: #444444;
 $text-color-invert: invert($text-color);
-$text-color-muted: lighten($text-color, 30%);
+$text-color-muted: transparentize($text-color,.4);
 
 //Borders
 $border-color: #ccc; //general border color
@@ -28,6 +30,7 @@ $navbar-color: #FFFFFF;
 $a-color: #0056B6;
 $a-color-hover: darken($a-color, $percent-color);
 $nav-link-color: #7e7e7e;
+$nav-link-color-active: #E0CEFF;
 $nav-link-color-hover: #130041;
 $shadow-color: #E0CEFF;
 $hover-color: #E0CEFF;

@@ -23,6 +23,11 @@ namespace OnlyStyle.Controllers
             SetPageInfo("OnlyStyle Components. Buttons", "Buttons style", "OnlyStyle Components. Buttons");
             return View();
         }
+        public IActionResult ButtonsGroup()
+        {
+            SetPageInfo("OnlyStyle Components. Buttons group", "Buttons group style", "OnlyStyle Components. Buttons group");
+            return View();
+        }
         public IActionResult Cards()
         {
             SetPageInfo("OnlyStyle Components. Cards", "Cards style", "OnlyStyle Components. Cards");
@@ -52,6 +57,11 @@ namespace OnlyStyle.Controllers
         public IActionResult Navbar()
         {
             SetPageInfo("OnlyStyle Components. Navbar", "Navbar style", "OnlyStyle Components. Navbar");
+            return View();
+        }
+        public IActionResult Spinner()
+        {
+            SetPageInfo("OnlyStyle Components. Spinner", "Spinner style", "OnlyStyle Components. Spinner");
             return View();
         }
 

@@ -2,9 +2,11 @@
 /*!
 *   OnlyStyle Framework
 *   Site: onlystyle.site
+*   Version: 0.1.0
+*   Author: cjdmitri@gmail.com
 */
 
-@import "__variable-dark.scss";
+@import "__variable.scss";
 @import "__mixins.scss";
 //@import "__root.scss";
 @import "_colors.scss";
@@ -22,8 +24,9 @@
 @import "components/_listgroups.scss";
 @import "components/_close.scss";
 @import "components/_badge.scss";
+@import "components/_tooltip.scss";
+@import "components/_spinner.scss";
 @import "_margin-padding.scss";
-//@import "components/_tooltip.scss";
 @import "_text.scss";
 @import "_form-controls.scss";
 //@import "_headers.scss";

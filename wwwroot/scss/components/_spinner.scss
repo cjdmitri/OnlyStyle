@@ -1,0 +1,34 @@
+﻿$spinner-width:3px;
+$spinner-color: #120089;
+$spinner-back-color: #ccc;
+$spinner-size: 2rem;
+$spinner-speed: 1s;
+
+
+
+.spinner {
+    content: '';
+    display:inline-block;
+    width: $spinner-size;
+    height: $spinner-size;
+    border-radius: 50%;
+    border: $spinner-width solid $spinner-back-color;
+    border-top-color: $spinner-color;
+    animation: spinner $spinner-speed linear infinite;
+}
+
+.spinner-lg {
+    width: $spinner-size + 1;
+    height: $spinner-size + 1;
+}
+
+.spinner-sm {
+    width: $spinner-size - 1;
+    height: $spinner-size - 1;
+}
+
+@each $name, $value in $colors{
+    .spinner-#{$name}{
+        border-top-color:$value!important;
+    }
+}

@@ -6,14 +6,14 @@
     <div class="overflow-auto">
         <h3 id="simplealert">Simple alert</h3>
         <pre><code>
-&ltdiv class="alert bg-info-light">
+&ltdiv class="alert bg-info-glass">
     &ltp>Simple alert no border, no close button.&lt/p>
 &lt/div>
 </code></pre>
         @{
             foreach (string item in MyApp.ColorVariants)
             {
-                <div class="alert bg-@item-light">
+                <div class="alert bg-@item-glass">
                     <p>Simple alert no border, no close button.</p>
                 </div>
             }
@@ -22,7 +22,7 @@
     <div class="overflow-auto">
         <h3 id="bordered">Bordered alert</h3>
             <pre><code>
-&ltdiv class="alert bg-info-light bordered border-info">
+&ltdiv class="alert bg-info-glass bordered border-info">
     &ltp>Simple alert no border, no close button.&lt/p>
 &lt/div>
 </code></pre>
@@ -30,7 +30,7 @@
         @{
             foreach (string item in MyApp.ColorVariants)
             {
-                <div class="alert bg-@item-light bordered border-@item">
+                <div class="alert bg-@item-glass bordered border-@item">
                     <p>Bordered alert, no close button.</p>
                 </div>
             }
@@ -39,7 +39,7 @@
     <div class="overflow-auto">
         <h3 id="alertandclosebtn">Alert + close button</h3>
         <pre><code>
-&ltdiv class="alert bg-info-light">
+&ltdiv class="alert bg-info-glass">
     &ltp>Simple alert + close button.&lt/p>
     &ltbutton class="close" onclick="this.parentElement.remove()">Close&lt/button>
 &lt/div>
@@ -47,7 +47,7 @@
         @{
             foreach (string item in MyApp.ColorVariants)
             {
-                <div class="alert bg-@item-light">
+                <div class="alert bg-@item-glass">
                     <p>Simple alert + close button.</p>
                     <button class="close" onclick="this.parentElement.remove()">Close</button>
                 </div>

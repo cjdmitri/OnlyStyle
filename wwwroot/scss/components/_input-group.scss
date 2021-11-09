@@ -1,6 +1,4 @@
 ﻿
-
-
 //.input-group
 
 .input-group {
@@ -10,6 +8,7 @@
     align-items: stretch;
     width: 100%;
 }
+
 
 .input-group * {
     border-radius: 0 !important;
@@ -45,20 +44,6 @@
 .input-group > *:focus {
     z-index: 2;
 }
-
-/*.input-group > .form-control:focus,
-.input-group > .form-select:focus {
-    z-index: 3;
-}
-
-.input-group .btn {
-    position: relative;
-    z-index: 2;
-}
-
-.input-group .btn:focus {
-    z-index: 3;
-}*/
 
 .input-group-text {
     display: flex;
