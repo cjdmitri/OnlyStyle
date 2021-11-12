@@ -1,0 +1,21 @@
+﻿$progress-background: $background-color;
+$progress-height:20px;
+$progress-border-radius: $border-radius;
+$progress-bar-color: $info;
+
+
+.progress {
+    display: flex;
+    align-items: center;
+    height: $progress-height;
+    background-color: $progress-background;
+    border-radius: $progress-border-radius;
+    overflow: hidden;
+}
+
+.progress-bar {
+    display: inline-block;
+    height: 100%;
+    background-color: $progress-bar-color;
+    border-radius: $progress-border-radius;
+}

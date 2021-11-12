@@ -1,11 +1,14 @@
 ﻿
 <div class="grid g-1">
+    <div>
+        <h3 id="simplebadge">Simple badge</h3>
+        <span class="badge">Badge</span>
+    </div>
     <div class="overflow-auto">
         @{
             foreach (string item in MyApp.ColorVariants)
             {
-                <h3 id="badge-@item">@item <span class="badge bg-@item">Badge</span></h3>
-                <span class="badge">Badge</span>
+                <h3 id="badge-@item">@item</h3>
                 <span class="badge bg-@item">Badge</span>
                 <span class="badge bg-@item-dark">dark</span>
                 <span class="badge bg-@item-light">light</span>

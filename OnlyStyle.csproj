@@ -11,7 +11,6 @@
     <Content Remove="wwwroot\scss\_card.scss" />
     <Content Remove="wwwroot\scss\_general.scss" />
     <Content Remove="wwwroot\scss\_grid.scss" />
-    <Content Remove="wwwroot\scss\_headers.scss" />
     <Content Remove="wwwroot\scss\_image.scss" />
     <Content Remove="wwwroot\scss\_listgroups.scss" />
     <Content Remove="wwwroot\scss\_navbar.scss" />
@@ -36,12 +35,11 @@
     <None Include="wwwroot\scss\components\_card.scss" />
     <None Include="wwwroot\scss\_general.scss" />
     <None Include="wwwroot\scss\typography\_grid.scss" />
-    <None Include="wwwroot\scss\_headers.scss" />
     <None Include="wwwroot\scss\_image.scss" />
     <None Include="wwwroot\scss\components\_listgroups.scss" />
     <None Include="wwwroot\scss\components\_navbar.scss" />
     <None Include="wwwroot\scss\components\_ribbon.scss" />
-    <None Include="wwwroot\scss\typography\_table.scss" />
+    <None Include="wwwroot\scss\components\_table.scss" />
     <None Include="wwwroot\scss\_text.scss" />
     <None Include="wwwroot\scss\components\_tooltip.scss" />
     <None Include="wwwroot\scss\__mixins.scss" />

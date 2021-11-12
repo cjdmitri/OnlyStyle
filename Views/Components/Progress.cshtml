@@ -1,0 +1,98 @@
+﻿<div class="g-1">
+    <div>
+        <h3 id="progress">Progress default style</h3>
+        @{
+            for (int i = 0; i < 4; i++)
+            {
+                int percent = i * 25;
+                string p = $"{percent}%";
+                <div class="progress mg-b-15">
+                    <div class="progress-bar" style="width: @p"></div>
+                </div>
+            }
+        }
+        <pre><code>
+&ltdiv class="progress">
+    &ltdiv class="progress-bar" style="width: 0">&lt/div>
+&lt/div>
+&ltdiv class="progress">
+    &ltdiv class="progress-bar" style="width: 25%">&lt/div>
+&lt/div>
+&ltdiv class="progress">
+    &ltdiv class="progress-bar" style="width: 50%">&lt/div>
+&lt/div>
+&ltdiv class="progress">
+    &ltdiv class="progress-bar" style="width: 75%">&lt/div>
+&lt/div>
+&ltdiv class="progress">
+    &ltdiv class="progress-bar" style="width: 100%">&lt/div>
+&lt/div>
+</code></pre>
+    </div>
+    <div>
+        <h3 id="progresscolored">Progress colored style</h3>
+        @{
+            foreach (string item in MyApp.ColorVariants)
+            {
+                <div class="progress mg-b-15">
+                    <div class="progress-bar bg-@item" style="width: 25%"></div>
+                </div>
+                <pre><code>
+&ltdiv class="progress">
+    &ltdiv class="progress-bar bg-@item" style="width: 25%">&lt/div>
+&lt/div>
+</code></pre>
+            }
+        }
+    </div>
+    <div>
+        <h3 id="progresscoloredandborder">Progress colored and bordered style</h3>
+        @{
+            foreach (string item in MyApp.ColorVariants)
+            {
+                <div class="progress bordered border-@item mg-b-15">
+                    <div class="progress-bar bg-@item" style="width: 35%"></div>
+                </div>
+                <pre><code>
+&ltdiv class="progress bordered border-@item">
+    &ltdiv class="progress-bar bg-@item" style="width: 35%">&lt/div>
+&lt/div>
+</code></pre>
+            }
+        }
+    </div>
+    <div>
+        <h3 id="progresscombination">Progress combination style</h3>
+        @{
+            foreach (string item in MyApp.ColorVariants)
+            {
+                <div class="progress bordered border-@item bg-@item-glass mg-b-15">
+                    <div class="progress-bar bg-@item-dark" style="width: 42%"></div>
+                </div>
+                <pre><code>
+&ltdiv class="progress bordered border-@item bg-@item-glass">
+    &ltdiv class="progress-bar bg-@item-dark" style="width: 42%">&lt/div>
+&lt/div>
+</code></pre>
+            }
+        }
+    </div>
+    <div>
+        <h3 id="progressandlabel">Progress and label</h3>
+        @{
+            foreach (string item in MyApp.ColorVariants)
+            {
+                <div class="progress bordered border-@item bg-@item-glass mg-b-15">
+                    <div class="progress-bar bg-@item-dark" style="width: 42%"></div>
+                    <span class="mg-l-10 text-small">42%</span>
+                </div>
+                <pre><code>
+&ltdiv class="progress bordered border-@item bg-@item-glass">
+    &ltdiv class="progress-bar bg-@item-dark" style="width: 42%">&lt/div>
+    &ltspan class="mg-l-10 text-small">42%&lt/span>
+&lt/div>
+</code></pre>
+            }
+        }
+    </div>
+</div>

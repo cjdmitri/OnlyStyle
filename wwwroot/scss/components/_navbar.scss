@@ -15,16 +15,17 @@
 .brand a {
     font-size: 1.1rem;
     font-weight: 500;
-    padding: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    color:$nav-link-color;
+    color: $nav-link-color;
 }
 .brand a > img {
-    max-width: 30px;
-    height: auto;
-    margin-right:10px;
+    max-height: 30px;
+    width: auto;
+    margin-right: 10px;
 }
 
 .navbar {
@@ -197,7 +198,7 @@
 
 
     .nav-input {
-        width: 100%;
+        margin: 0 $padding-general;
     }
 }
 

@@ -1,12 +1,13 @@
 ﻿<div class="grid g-1">
     <div class="overflow-auto">
         <h3 id="gencolor">General colors</h3>
-        <div class="grid g-md-6 g-sm-3 g-xsm-2">
+        <code>.bg-success</code>
+        <div class="grid g-md-6 g-sm-3 g-xsm-2 mg-t-15">
             @{
                 foreach (string item in MyApp.ColorVariants)
                 {
                     <div class="item-color bg-@item">
-                        <p>@item</p>
+                        <p class="text-bold text-shadow">@item</p>
                     </div>
                 }
             }
@@ -15,12 +16,13 @@
     </div>
     <div class="overflow-auto">
         <h3 id="colordark">Dark colors</h3>
-        <div class="grid g-md-6 g-sm-3 g-xsm-2">
+        <code>.bg-success-dark</code>
+        <div class="grid g-md-6 g-sm-3 g-xsm-2 mg-t-15">
             @{
                 foreach (string item in MyApp.ColorVariants)
                 {
                     <div class="item-color bg-@item-dark">
-                        <p>@item</p>
+                        <p class="text-bold text-shadow">@item</p>
                     </div>
                 }
             }
@@ -30,12 +32,13 @@
 
     <div class="overflow-auto">
         <h3 id="colorlight">Light colors</h3>
-        <div class="grid g-md-6 g-sm-3 g-xsm-2">
+        <code>.bg-success-light</code>
+        <div class="grid g-md-6 g-sm-3 g-xsm-2 mg-t-15">
             @{
                 foreach (string item in MyApp.ColorVariants)
                 {
                     <div class="item-color bg-@item-light">
-                        <p>@item</p>
+                        <p class="text-bold text-shadow">@item</p>
                     </div>
                 }
             }
@@ -45,16 +48,16 @@
 
     <div class="overflow-auto">
         <h3 id="glasscolors">Glass colors</h3>
-        <div class="grid g-md-6 g-sm-3 g-xsm-2">
+        <code>.bg-success-glass</code>
+        <div class="grid g-md-6 g-sm-3 g-xsm-2 mg-t-15">
             @{
                 foreach (string item in MyApp.ColorVariants)
                 {
                     <div class="item-color bg-@item-glass">
-                        <p>@item</p>
+                        <p class="text-bold text-shadow">@item</p>
                     </div>
                 }
             }
-
         </div>
     </div>
 </div>

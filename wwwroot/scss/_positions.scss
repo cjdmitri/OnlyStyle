@@ -6,7 +6,6 @@
 
 .pos-absolute {
     position: absolute !important;
-    z-index: 200;
 }
 
 .pos-fixed {
@@ -17,58 +16,23 @@
     float:right;
 }
 
-.pos-top-0 {
-    top: 0 !important;
+.pos-sticky {
+    position: sticky;
 }
 
-.pos-top-25 {
-    top: 25% !important;
+@for $i from 0 through 4{
+    .pos-top-#{$i * 25} {
+        top: $i * 25 !important;
+    }
+    .pos-right-#{$i * 25} {
+        right: $i * 25 !important;
+    }
+    .pos-bottom-#{$i * 25} {
+        bottom: $i * 25 !important;
+    }
+    .pos-left-#{$i * 25} {
+        left: $i * 25 !important;
+    }
 }
 
-.pos-top-50 {
-    top: 50% !important;
-}
 
-.pos-top-75 {
-    top: 75% !important;
-}
-
-.pos-top-100 {
-    top: 100% !important;
-}
-
-.pos-left-0 {
-    left: 0 !important;
-}
-
-.pos-left-50 {
-    left: 50% !important;
-}
-
-.pos-left-100 {
-    left: 100% !important;
-}
-
-.pos-right-0 {
-    right: 0 !important;
-}
-
-.pos-right-50 {
-    right: 50% !important;
-}
-
-.pos-right-100 {
-    right: 100% !important;
-}
-
-.pos-bottom-0 {
-    bottom: 0 !important;
-}
-
-.pos-bottom-50 {
-    bottom: 50% !important;
-}
-
-.pos-bottom-100 {
-    bottom: 100% !important;
-}

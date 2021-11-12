@@ -9,38 +9,42 @@
         <a href="/"><img src="~/img/icons/ios/87.png" class="hidden-md"/>OnlyStyle</a>
     </div>
     @* Left toolbar *@
-    <div class="nav-left">
-        <a href="/" class="nav-link text-upper">Home</a>
-        <div class="nav-dropdown">
-            <button type="button" class="nav-btn-dropdown text-upper">Content</button>
-            <div class="nav-dropdown-menu">
-                <ul class="list-unstyled">
-                    <li><a asp-controller="Content" asp-action="Colors">Colors</a></li>
-                    <li><a asp-controller="Content" asp-action="Grid">Grid</a></li>
-                    <li><a asp-controller="Content" asp-action="Typography">Typography</a></li>
-                </ul>
-            </div>
+<div class="nav-left">
+    <a href="/" class="nav-link text-upper">Home</a>
+    <div class="nav-dropdown">
+        <button type="button" class="nav-btn-dropdown text-upper">Content</button>
+        <div class="nav-dropdown-menu">
+            <ul class="list-unstyled">
+                <li><a asp-controller="Content" asp-action="Colors">Colors</a></li>
+                <li><a asp-controller="Content" asp-action="Grid">Grid</a></li>
+                <li><a asp-controller="Content" asp-action="Typography">Typography</a></li>
+            </ul>
         </div>
-        <div class="nav-dropdown">
-            <button type="button" class="nav-btn-dropdown text-upper">Components</button>
-            <div class="nav-dropdown-menu">
-                <ul class="list-unstyled">
-                    <li><a asp-controller="Components" asp-action="Alerts">Alerts</a></li>
-                    <li><a asp-controller="Components" asp-action="Badge">Badge</a></li>
-                    <li><a asp-controller="Components" asp-action="Buttons">Buttons</a></li>
-                    <li><a asp-controller="Components" asp-action="ButtonsGroup">Buttons group</a></li>
-                    <li><a asp-controller="Components" asp-action="Cards">Cards</a></li>
-                    <li><a asp-controller="Components" asp-action="Details">Details</a></li>
-                    <li><a asp-controller="Components" asp-action="Dropdown">Dropdown</a></li>
-                    <li><a asp-controller="Components" asp-action="Forms">Forms</a></li>
-                    <li><a asp-controller="Components" asp-action="Listgroup">List group</a></li>
-                    <li><a asp-controller="Components" asp-action="Navbar">Navbar</a></li>
-                    <li><a asp-controller="Components" asp-action="Spinner">Spinner</a></li>
-                    <li><a asp-controller="Components" asp-action="Table">Table</a></li>
-                </ul>
-            </div>
+    </div>
+    <div class="nav-dropdown">
+        <button type="button" class="nav-btn-dropdown text-upper">Components</button>
+        <div class="nav-dropdown-menu">
+            <ul class="list-unstyled">
+                <li><a asp-controller="Components" asp-action="Alerts">Alerts</a></li>
+                <li><a asp-controller="Components" asp-action="Badge">Badge</a></li>
+                <li><a asp-controller="Components" asp-action="Breadcrumb">Breadcrumb</a></li>
+                <li><a asp-controller="Components" asp-action="Buttons">Buttons</a></li>
+                <li><a asp-controller="Components" asp-action="ButtonsGroup">Buttons group</a></li>
+                <li><a asp-controller="Components" asp-action="Cards">Cards</a></li>
+                <li><a asp-controller="Components" asp-action="Details">Details</a></li>
+                <li><a asp-controller="Components" asp-action="Dropdown">Dropdown</a></li>
+                <li><a asp-controller="Components" asp-action="Forms">Forms</a></li>
+                <li><a asp-controller="Components" asp-action="Listgroup">List group</a></li>
+                <li><a asp-controller="Components" asp-action="Navbar">Navbar</a></li>
+                <li><a asp-controller="Components" asp-action="Progress">Progress</a></li>
+                <li><a asp-controller="Components" asp-action="Spinner">Spinner</a></li>
+                <li><a asp-controller="Components" asp-action="Table">Table</a></li>
+                <li><a asp-controller="Components" asp-action="Tooltip">Tooltip</a></li>
+            </ul>
         </div>
-        <div class="nav-dropdown-full">
+    </div>
+    <a href="/examples/index.html" class="nav-link text-upper">Examples</a>
+    @*<div class="nav-dropdown-full">
             <button type="button" class="nav-btn-dropdown text-upper">Full Menu</button>
             <div class="nav-dropdown-menu">
                 <div class="grid g-sm-1 g-md-3">
@@ -68,10 +72,10 @@
                 </div>
             </div>
         </div>
-        <input type="text" class="nav-input" placeholder="Search..." />
-    </div>
+        <input type="text" class="nav-input" placeholder="Search..." />*@
+</div>
     @* right toolbar *@
-    <div class="nav-end">
+    @*<div class="nav-end">
         <div class="nav-dropdown">
             <button type="button" class="nav-btn-dropdown text-upper">Search</button>
             <div class="nav-dropdown-menu" style="min-width:300px">
@@ -91,5 +95,5 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </div>*@
 </nav>

@@ -12,10 +12,10 @@
     text-align: center;
     padding-top: 35px;
 }
-#pagenavigator{
+#pagenavigator {
     display: block;
-/*    padding:15px;
-    background-color:white;*/
+    position: sticky;
+    top: 15px;
 }
     #pagenavigator ul {
         list-style: none;

@@ -1,0 +1,25 @@
+﻿$breadcrumb-margin:$padding-general;
+$breadcrumb-divider:'/';
+
+.breadcrumb {
+    list-style: none;
+    display: flex;
+    flex-wrap:wrap;
+    padding:0;
+    margin:0;
+    align-items: center;
+}
+
+.breadcrumb > li {
+    margin-right: $breadcrumb-margin;
+}
+
+.breadcrumb > li::after {
+    margin-left: $breadcrumb-margin;
+    content: $breadcrumb-divider;
+}
+
+.breadcrumb > li:last-child::after {
+    margin-left: 0;
+    content: '';
+}

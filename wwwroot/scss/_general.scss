@@ -68,12 +68,6 @@ body {
 }
 
 
-
-
-
-
-
-
 footer, .footer {
     display: block;
     padding: $padding-general;
@@ -101,10 +95,6 @@ footer, .footer {
     border-radius: $border-radius;
 }
 
-.border-10 {
-    border-radius: 10px !important;
-}
-
 .border-rounded {
     border-radius: $border-radius !important;
 }
@@ -119,7 +109,7 @@ footer, .footer {
 }
 
 .rounded {
-    border-radius: 25px !important;
+    border-radius: 50rem !important;
 }
 
 .list-unstyled {

@@ -18,6 +18,12 @@ namespace OnlyStyle.Controllers
             SetPageInfo("OnlyStyle Components. Badge", "Badges style", "OnlyStyle Components. Badge");
             return View();
         }
+        //Breadcrumb
+        public IActionResult Breadcrumb()
+        {
+            SetPageInfo("OnlyStyle Components. Breadcrumb", "Breadcrumb style", "OnlyStyle Components. Breadcrumb");
+            return View();
+        }
         public IActionResult Buttons()
         {
             SetPageInfo("OnlyStyle Components. Buttons", "Buttons style", "OnlyStyle Components. Buttons");
@@ -59,15 +65,25 @@ namespace OnlyStyle.Controllers
             SetPageInfo("OnlyStyle Components. Navbar", "Navbar style", "OnlyStyle Components. Navbar");
             return View();
         }
+        public IActionResult Progress()
+        {
+            SetPageInfo("OnlyStyle Components. Navbar", "Navbar style", "OnlyStyle Components. Navbar");
+            return View();
+        }
         public IActionResult Spinner()
         {
-            SetPageInfo("OnlyStyle Components. Spinner", "Spinner style", "OnlyStyle Components. Spinner");
+            SetPageInfo("OnlyStyle Components. Progress", "Progress style", "OnlyStyle Components. Progress");
             return View();
         }
 
         public IActionResult Table()
         {
             SetPageInfo("OnlyStyle Components. Table", "Table style", "OnlyStyle Components. Table");
+            return View();
+        }
+        public IActionResult Tooltip()
+        {
+            SetPageInfo("OnlyStyle Components. Tooltip", "Tooltip style", "OnlyStyle Components. Tooltip");
             return View();
         }
     }

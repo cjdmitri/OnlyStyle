@@ -1,0 +1,29 @@
+﻿
+/*.btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    border-radius: 50%;
+    //$hover-color
+    background-color: transparentize($hover-color,$glassy) !important;
+    transition: all .2s ease-in-out;
+    transform: scale(0);
+    transform-origin: left;
+}
+
+.btn:hover::before {
+    transform: scale(1);
+    border-radius: $border-radius;
+}*/
+
+/*.btn:focus::before,
+.btn:active::before {
+    background-color: $hover-color;
+    box-shadow: 0px 0px 5px 4px $hover-color;
+    -webkit-box-shadow: 0px 0px 5px 4px $hover-color;
+    -moz-box-shadow: 0px 0px 5px 4px $hover-color;
+}*/
