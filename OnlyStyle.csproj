@@ -5,46 +5,32 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\scss\**" />
+    <Compile Remove="wwwroot\versions\**" />
+    <Content Remove="wwwroot\scss\**" />
+    <Content Remove="wwwroot\versions\**" />
+    <EmbeddedResource Remove="wwwroot\scss\**" />
+    <EmbeddedResource Remove="wwwroot\versions\**" />
+    <None Remove="wwwroot\scss\**" />
+    <None Remove="wwwroot\versions\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Remove="bundleconfig.json" />
-    <Content Remove="wwwroot\scss\onlystyle.scss" />
-    <Content Remove="wwwroot\scss\_buttons.scss" />
-    <Content Remove="wwwroot\scss\_card.scss" />
-    <Content Remove="wwwroot\scss\_general.scss" />
-    <Content Remove="wwwroot\scss\_grid.scss" />
-    <Content Remove="wwwroot\scss\_image.scss" />
-    <Content Remove="wwwroot\scss\_listgroups.scss" />
-    <Content Remove="wwwroot\scss\_navbar.scss" />
-    <Content Remove="wwwroot\scss\_ribbon.scss" />
-    <Content Remove="wwwroot\scss\_table.scss" />
-    <Content Remove="wwwroot\scss\_text.scss" />
-    <Content Remove="wwwroot\scss\_tooltip.scss" />
-    <Content Remove="wwwroot\scss\__mixins.scss" />
-    <Content Remove="wwwroot\scss\__variable-dark.scss" />
-    <Content Remove="wwwroot\scss\__variable.scss" />
+    <Content Remove="compilerconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="compilerconfig.json.bindings" />
+    <None Remove="compilerconfig.json.defaults" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Helpers\" />
-    <Folder Include="wwwroot\versions\current\" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="bundleconfig.json" />
-    <None Include="wwwroot\scss\onlystyle.scss" />
-    <None Include="wwwroot\scss\components\_buttons.scss" />
-    <None Include="wwwroot\scss\components\_card.scss" />
-    <None Include="wwwroot\scss\_general.scss" />
-    <None Include="wwwroot\scss\typography\_grid.scss" />
-    <None Include="wwwroot\scss\_image.scss" />
-    <None Include="wwwroot\scss\components\_listgroups.scss" />
-    <None Include="wwwroot\scss\components\_navbar.scss" />
-    <None Include="wwwroot\scss\components\_ribbon.scss" />
-    <None Include="wwwroot\scss\components\_table.scss" />
-    <None Include="wwwroot\scss\_text.scss" />
-    <None Include="wwwroot\scss\components\_tooltip.scss" />
-    <None Include="wwwroot\scss\__mixins.scss" />
-    <None Include="wwwroot\scss\__variable-dark.scss" />
-    <None Include="wwwroot\scss\__variable.scss" />
   </ItemGroup>
 
 </Project>

@@ -1,13 +1,13 @@
-﻿[
-  {
-    "outputFile": "wwwroot/css/onlystyle.css",
-    "inputFile": "wwwroot/scss/onlystyle.scss",
-    "options": { "sourceMap": true }
-  },
-  {
-    "outputFile": "wwwroot/versions/current/onlystyle.css",
-    "inputFile": "wwwroot/scss/onlystyle.scss",
-    "options": { "sourceMap": true }
-  }
-]
+﻿//[
+//  {
+//    "outputFile": "wwwroot/css/onlystyle.css",
+//    "inputFile": "wwwroot/scss/onlystyle.scss",
+//    "options": { "sourceMap": true }
+//  },
+//  {
+//    "outputFile": "wwwroot/versions/current/onlystyle.css",
+//    "inputFile": "wwwroot/scss/onlystyle.scss",
+//    "options": { "sourceMap": true }
+//  }
+//]
 
