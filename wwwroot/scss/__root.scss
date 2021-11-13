@@ -1,31 +1,49 @@
-﻿
+﻿@import "__variable.scss";
 :root {
     --font-family: $font-general;
-    --background-color: $background-color; /*Фон страницы*/
-    --white: $white; /*Белый цвет, для всего, что использует белый цвет))*/
-    --container-width: $container-width; /*Ширина фиксированной страницы*/
-    --text-color: $text-color; /*Цвет текста по умолчанию, для всей страницы*/
-    --text-color-muted: $text-color-muted; /**/
-    --border-color: $border-color; /*Цвет для всех элементов*/
-    --border-radius: $border-radius; /**/
-    --border-weight: $border-weight; /**/
-    --padding-general: $padding-general; /*Отступ для всех элементов*/
-    --padding-10: $padding-10; /**/
+    --font-size: $font-size;
+    --heading-weight: $heading-weight;
+    --heading-line-height: $heading-line-height;
+    --background-color: $background-color;
+    --container-width: $container-width;
+    --percent-color: $percent-color;
+    --text-color: $text-color;
+    --text-color-invert: $text-color-invert;
+    --text-color-muted: $text-color-muted;
+    --border-color: $border-color;
+    --border-radius: $border-radius;
+    --border-weight: $border-weight;
+    --border-general: $border-general;
+    --padding-general: $padding-general;
+    --padding-10: $padding-10;
     --padding-btn: $padding-btn;
     --padding-btn-lg: $padding-btn-lg;
     --padding-btn-sm: $padding-btn-sm;
-    --navbar-light: $navbar-color; /**/
-    --link-color: $nav-link-color; /**/
-    --link-color-hover: $nav-link-color-hover; /**/
-    --shadow-color: $shadow-color; /**/
+    --navbar-color: $navbar-color;
+    --a-color: $a-color;
+    --a-color-hover: $a-color-hover;
+    --nav-link-color: $nav-link-color;
+    --nav-link-color-active: $nav-link-color-active;
+    --nav-link-color-hover: $nav-link-color-hover;
+    --shadow-color: $shadow-color;
+    --hover-color: $hover-color;
+    --text-shadow: $text-shadow;
     --shadow-btn-hover: $shadow-btn-hover;
-    --hover-color: $hover-color; /**/
+    --control-border-color: $control-border-color;
+    --control-placeholder-color: $control-placeholder-color;
+    --control-disabled-color: $control-disabled-color;
+    --bp-sm: $bp-sm;
+    --bp-md: $bp-md;
+    --bp-lg: $bp-lg;
+    --bp-xl: $bp-xl;
+    --bp-xxl: $bp-xxl;
     /*Colors*/
+    --glassy: $glassy;
+    --white: $white;
     --primary: $primary;
     --secondary: $secondary;
     --success: $success;
     --info: $info;
     --warning: $warning;
     --danger: $danger;
-
 }

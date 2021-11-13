@@ -62,22 +62,31 @@ $danger: #fc3939;
 $colors: (white: $white, primary: $primary, secondary: $secondary, success: $success, info: $info, warning: $warning, danger: $danger );
 
 //Colors light
-//$primary-light: lighten($primary, $percent-color);
-//$secondary-light: lighten($secondary, $percent-color);
-//$success-light: lighten($success, $percent-color);
-//$info-light: lighten($info, $percent-color);
-//$warning-light: lighten($warning, $percent-color);
-//$danger-light: lighten($danger, $percent-color);
-//$colors-light: ( primary-light: $primary-light, secondary-light: $secondary-light, success-light: $success-light, info-light: $info-light, warning-light: $warning-light, danger-light: $danger-light );
+$primary-light: lighten($primary, $percent-color);
+$secondary-light: lighten($secondary, $percent-color);
+$success-light: lighten($success, $percent-color);
+$info-light: lighten($info, $percent-color);
+$warning-light: lighten($warning, $percent-color);
+$danger-light: lighten($danger, $percent-color);
+$colors-light: ( primary-light: $primary-light, secondary-light: $secondary-light, success-light: $success-light, info-light: $info-light, warning-light: $warning-light, danger-light: $danger-light );
 
 //Colors dark
-//$primary-dark: darken($primary, $percent-color);
-//$secondary-dark: darken($secondary, $percent-color);
-//$success-dark: darken($success, $percent-color);
-//$info-dark: darken($info, $percent-color);
-//$warning-dark: darken($warning, $percent-color);
-//$danger-dark: darken($danger, $percent-color);
-//$colors-dark: ( primary-dark: $primary-dark, secondary-dark: $secondary-dark, success-dark: $success-dark, info-dark: $info-dark, warning-dark: $warning-dark, danger-dark: $danger-dark );
+$primary-dark: darken($primary, $percent-color);
+$secondary-dark: darken($secondary, $percent-color);
+$success-dark: darken($success, $percent-color);
+$info-dark: darken($info, $percent-color);
+$warning-dark: darken($warning, $percent-color);
+$danger-dark: darken($danger, $percent-color);
+$colors-dark: ( primary-dark: $primary-dark, secondary-dark: $secondary-dark, success-dark: $success-dark, info-dark: $info-dark, warning-dark: $warning-dark, danger-dark: $danger-dark );
+
+//Colors glass
+$primary-glass: transparentize($primary, $glassy);
+$secondary-glass: transparentize($secondary, $glassy);
+$success-glass: transparentize($success, $glassy);
+$info-glass: transparentize($info, $glassy);
+$warning-glass: transparentize($warning, $glassy);
+$danger-glass: transparentize($danger, $glassy);
+$colors-glass: ( primary-glass: $primary-glass, secondary-glass: $secondary-glass, success-glass: $success-glass, info-glass: $info-glass, warning-glass: $warning-glass, danger-glass: $danger-glass );
 
 
 

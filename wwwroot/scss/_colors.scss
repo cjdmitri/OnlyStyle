@@ -26,6 +26,9 @@
     }
 }
 
+.bg-none{
+    background-color: inherit!important;
+}
 
 .text-muted, .text-muted::after, .text-muted::before {
     color: $text-color-muted !important;

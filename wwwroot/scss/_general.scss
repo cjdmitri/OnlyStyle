@@ -95,6 +95,9 @@ footer, .footer {
     border-radius: $border-radius;
 }
 
+.no-border{
+    border-width:0;
+}
 .border-rounded {
     border-radius: $border-radius !important;
 }
@@ -127,4 +130,17 @@ footer, .footer {
 
 .overflow-auto{
     overflow:auto;
+}
+.align-right{
+    float:right;
+}
+
+.inline-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap:wrap;
+}
+.inline-right {
+    margin-left: auto;
 }

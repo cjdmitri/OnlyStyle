@@ -76,23 +76,6 @@ summary.hide-marker:before {
 details[open] {
     border: $border-general;
 }
-/*details[open] > div {
-    animation-name: slideDown;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-}*/
-
-/*@keyframes slideDown {
-    from {
-        opacity:0;
-        height: 0;
-    }
-
-    to {
-        opacity:1;
-        height: auto;
-    }
-}*/
 
 details[open] > summary {
     border: 0;

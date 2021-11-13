@@ -1,5 +1,4 @@
-﻿$breadcrumb-margin:$padding-general;
-$breadcrumb-divider:'/';
+﻿
 
 .breadcrumb {
     list-style: none;
@@ -11,12 +10,12 @@ $breadcrumb-divider:'/';
 }
 
 .breadcrumb > li {
-    margin-right: $breadcrumb-margin;
+    margin-right: var(--padding-general);
 }
 
 .breadcrumb > li::after {
-    margin-left: $breadcrumb-margin;
-    content: $breadcrumb-divider;
+    margin-left: var(--padding-general);
+    content: '/';
 }
 
 .breadcrumb > li:last-child::after {

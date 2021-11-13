@@ -67,12 +67,12 @@ namespace OnlyStyle.Controllers
         }
         public IActionResult Progress()
         {
-            SetPageInfo("OnlyStyle Components. Navbar", "Navbar style", "OnlyStyle Components. Navbar");
+            SetPageInfo("OnlyStyle Components. Progress", "Progress style", "OnlyStyle Components. Progress");
             return View();
         }
         public IActionResult Spinner()
         {
-            SetPageInfo("OnlyStyle Components. Progress", "Progress style", "OnlyStyle Components. Progress");
+            SetPageInfo("OnlyStyle Components. Spinner", "Spinner style", "OnlyStyle Components. Spinner");
             return View();
         }
 
