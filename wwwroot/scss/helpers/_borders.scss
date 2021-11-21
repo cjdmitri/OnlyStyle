@@ -1,0 +1,39 @@
+﻿.bordered {
+    border: $border-general;
+    border-radius: $border-radius;
+}
+
+.border-rounded {
+    border-radius: $border-radius !important;
+}
+
+.border-hide, .no-border {
+    border-width: 0 !important;
+}
+
+.border-white {
+    border-color: white;
+}
+
+.border-left-5 {
+    border-left-style: solid;
+    border-left-width: 5px;
+}
+
+
+.rounded {
+    border-radius: 50rem !important;
+}
+
+.border-left {
+    border-left: $border-general;
+}
+.border-right {
+    border-right: $border-general;
+}
+.border-top {
+    border-top: $border-general;
+}
+.border-bottom {
+    border-bottom: $border-general;
+}

@@ -1,23 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
+	  <Nullable>enable</Nullable>
+	  <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="wwwroot\scss\**" />
-    <Compile Remove="wwwroot\versions\**" />
-    <Content Remove="wwwroot\scss\**" />
-    <Content Remove="wwwroot\versions\**" />
-    <EmbeddedResource Remove="wwwroot\scss\**" />
-    <EmbeddedResource Remove="wwwroot\versions\**" />
-    <None Remove="wwwroot\scss\**" />
-    <None Remove="wwwroot\versions\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Content Remove="bundleconfig.json" />
-    <Content Remove="compilerconfig.json" />
   </ItemGroup>
 
   <ItemGroup>
@@ -31,6 +21,37 @@
 
   <ItemGroup>
     <None Include="bundleconfig.json" />
+    <None Include="wwwroot\scss\components\_alert.scss" />
+    <None Include="wwwroot\scss\components\_badge.scss" />
+    <None Include="wwwroot\scss\components\_breadcrumb.scss" />
+    <None Include="wwwroot\scss\components\_buttons.scss" />
+    <None Include="wwwroot\scss\components\_card.scss" />
+    <None Include="wwwroot\scss\components\_close.scss" />
+    <None Include="wwwroot\scss\components\_details.scss" />
+    <None Include="wwwroot\scss\components\_input-group.scss" />
+    <None Include="wwwroot\scss\components\_listgroups.scss" />
+    <None Include="wwwroot\scss\components\_navbar.scss" />
+    <None Include="wwwroot\scss\components\_progress.scss" />
+    <None Include="wwwroot\scss\components\_ribbon.scss" />
+    <None Include="wwwroot\scss\components\_spinner.scss" />
+    <None Include="wwwroot\scss\components\_table.scss" />
+    <None Include="wwwroot\scss\components\_tooltip.scss" />
+    <None Include="wwwroot\scss\onlystyle.scss" />
+    <None Include="wwwroot\scss\_grid.scss" />
+    <None Include="wwwroot\scss\typography\_typography.scss" />
+    <None Include="wwwroot\scss\helpers\_animations.scss" />
+    <None Include="wwwroot\scss\helpers\_colors.scss" />
+    <None Include="wwwroot\scss\components\_form-controls.scss" />
+    <None Include="wwwroot\scss\_general.scss" />
+    <None Include="wwwroot\scss\helpers\_hover.scss" />
+    <None Include="wwwroot\scss\helpers\_image.scss" />
+    <None Include="wwwroot\scss\helpers\_margin-padding.scss" />
+    <None Include="wwwroot\scss\helpers\_positions.scss" />
+    <None Include="wwwroot\scss\typography\_text.scss" />
+    <None Include="wwwroot\scss\__mixins.scss" />
+    <None Include="wwwroot\scss\__root.scss" />
+    <None Include="wwwroot\scss\__variable-dark.scss" />
+    <None Include="wwwroot\scss\__variable.scss" />
   </ItemGroup>
 
 </Project>

@@ -1,6 +1,4 @@
 ﻿
-
-
 *, ::after, ::before {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -15,11 +13,11 @@ body {
     padding: 0%;
     font-size: $font-size;
     font-family: $font-general;
-    background-color: $background-color;
-    color: $text-color;
-    line-height: 1.5;
-}
-
+    background-color: $background-color; 
+    color: $text-color; 
+    line-height: 1.5;    
+} 
+ 
 
 ::-webkit-scrollbar {
     width: 5px;
@@ -52,9 +50,9 @@ body {
     max-width: $container-width;
     margin-left: auto;
     margin-right: auto;
-    border-left: $border-general;
-    border-right: $border-general;
-    border-bottom: $border-general;
+    //border-left: $border-general;
+    //border-right: $border-general;
+    //border-bottom: $border-general;
     padding-bottom: 80px;
     padding-left: $padding-general;
     padding-right: $padding-general;
@@ -85,35 +83,8 @@ footer, .footer {
     box-shadow: none;
 }
 
-.hover:hover {
-    box-shadow: $shadow-btn-hover
-}
 
 
-.bordered {
-    border: $border-general;
-    border-radius: $border-radius;
-}
-
-.no-border{
-    border-width:0;
-}
-.border-rounded {
-    border-radius: $border-radius !important;
-}
-
-.border-hide {
-    border-width: 0 !important;
-}
-
-.border-left-5{
-    border-left-style:solid;
-    border-left-width:5px;
-}
-
-.rounded {
-    border-radius: 50rem !important;
-}
 
 .list-unstyled {
     padding-left: 0px;
@@ -141,6 +112,7 @@ footer, .footer {
     align-items: center;
     flex-wrap:wrap;
 }
+
 .inline-right {
     margin-left: auto;
 }

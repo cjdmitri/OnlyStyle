@@ -15,11 +15,6 @@ th {
     text-align: left;
 }
 
-/*tbody, td, tfoot, th, thead, tr {
-    border-color: inherit;
-    border-style: solid;
-}*/
-
 .table > thead > tr > th,
 .table > tbody > tr > th,
 .table > tfoot > tr > th,
@@ -69,7 +64,6 @@ th {
     border: none;
     display: block;
     padding: 8px;
-
     width: 100%;
 }
 

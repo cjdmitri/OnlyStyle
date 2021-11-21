@@ -60,7 +60,8 @@
     padding: 20px 15px;
     cursor: pointer;
     text-decoration: none;
-    font-size: 14px;
+    font-size: .9rem;
+    line-height: inherit;
 }
 
 .nav-btn-dropdown::after,
@@ -88,6 +89,11 @@
     color: $nav-link-color;
 }
 
+.nav-left{
+    display: flex;
+    align-items: center;
+    justify-items: baseline;
+}
 
 .nav-end{
     margin-left:auto;
@@ -133,8 +139,6 @@
     @include form-control-shadow();
 }
 
-
-
 @media (max-width: $bp-md) {
     .navbar {
         flex-direction: column;
@@ -158,6 +162,7 @@
     #btnmenu:checked ~ div.nav-end {
         display: flex;
         flex-direction: column;
+        align-items: inherit;
         @include animation(fade-in, .5s);
     }
 
@@ -187,15 +192,6 @@
         border-radius: 0;
         border-width: 0;
     }
-    /*    .dark .nav-dropdown-menu {
-        color: $white!important;
-        background-color: $navbar-hover-dark;
-    }
-
-    .dark .nav-dropdown-menu * {
-        color: $white !important;
-    }*/
-
 
     .nav-input {
         margin: 0 $padding-general;

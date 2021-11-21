@@ -1,0 +1,31 @@
+body {
+    height: 100vh;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80d0a5 100%);
+}
+
+.login-block {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    min-width: 300px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 340px) {
+    .login-block {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin: 20px;
+        transform: translate(0, -50%);
+    }
+}
+
+input {
+    opacity: .5;
+}

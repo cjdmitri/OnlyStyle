@@ -3,21 +3,21 @@
 .card {
     //position: relative;
     display: block;
-    background-color: var(--white);
+    background-color: $white;
     word-wrap: break-word;
-    border: var(--border-general);
-    border-radius: var(--border-radius);
+    border: $border-general;
+    border-radius: $border-radius;
     /*overflow: auto;*/
 }
 
 .card-header {
-    background-color: var(--background-color);
-    border-bottom: var(--border-general);
-    padding: var(--padding-general);
-    border-top-left-radius: var(--border-radius);
-    border-top-right-radius: var(--border-radius);
+    background-color: $background-color;
+    border-bottom: $border-general;
+    padding: $padding-general;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
 }
 
 .card-body {
-    padding: var(--padding-general);
+    padding: $padding-general;
 }

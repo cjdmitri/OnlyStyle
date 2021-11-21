@@ -1,0 +1,13 @@
+body {
+    height: 100vh;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80d0a5 100%);
+}
+
+.img-item {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+    position: relative;
+}

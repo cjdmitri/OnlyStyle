@@ -10,11 +10,11 @@
 }
 
 .breadcrumb > li {
-    margin-right: var(--padding-general);
+    margin-right: $padding-general;
 }
 
 .breadcrumb > li::after {
-    margin-left: var(--padding-general);
+    margin-left: $padding-general;
     content: '/';
 }
 

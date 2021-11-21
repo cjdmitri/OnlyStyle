@@ -12,11 +12,6 @@ details {
     
 }
 
-details:hover {
-    /*box-shadow: $shadow-btn-hover;
-    z-index:2;*/
-
-}
 
 summary {
     padding: $padding-general;
@@ -68,13 +63,13 @@ summary.hide-marker:before {
 }
 
 @each $name, $value in $colors{
-    summary.text-#{$name}:before, {
+    summary.text-#{$name}:before {
         border-color: transparent transparent transparent $value;
     }
 }
 
 details[open] {
-    border: $border-general;
+    border: $border-general; 
 }
 
 details[open] > summary {
@@ -100,11 +95,11 @@ details summary::-webkit-details-marker {
 details>.mega{
     position:absolute;
     z-index:200;
-    background-color:$white;
-    padding:$padding-general;
+    background-color: $white;
+    padding: $padding-general;
     margin-top:5px;
-    border:$border-general;
-    border-radius:$border-radius;
+    border: $border-general;
+    border-radius: $border-radius;
     overflow:auto;
     @include form-control-shadow;
 }

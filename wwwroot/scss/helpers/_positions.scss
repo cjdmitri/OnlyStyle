@@ -1,0 +1,55 @@
+﻿
+
+.pos-relative {
+    position: relative ;
+}
+
+.pos-absolute {
+    position: absolute;
+}
+
+.pos-fixed {
+    position: fixed ;
+    z-index: 200;
+}
+.pos-float-right{
+    float:right;
+}
+
+.pos-sticky {
+    position: sticky;
+}
+
+.pos-top-0{
+    top: 0;
+}
+
+.pos-right-0 {
+    right: 0;
+}
+
+.pos-bottom-0 {
+    bottom: 0
+}
+
+.pos-left-0 {
+    left: 0;
+}
+
+@for $i from 1 through 4{
+
+    .pos-top-#{$i * 25} {
+        top: $i * 25%;
+    }
+    .pos-right-#{$i * 25} {
+        right: $i * 25%;
+    }
+    .pos-bottom-#{$i * 25} {
+        bottom: $i * 25%;
+    }
+    .pos-left-#{$i * 25} {
+        left: $i * 25%;
+    }
+}
+
+

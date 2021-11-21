@@ -6,34 +6,36 @@
     position:relative;
     align-items:center;
     font-weight: 400;
-    color: var(--text-color);
+    color: $text-color;
     text-align: center;
     vertical-align: middle;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: var(--white);
-    border: var(--border-general);
-    padding: var(--padding-btn);
+    background-color: $white;
+    border: $border-general;
+    padding: $padding-btn;
     font-size: 0.875rem;
     line-height: 1.6;
-    border-radius: var(--border-radius);
+    border-radius: $border-radius;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .btn:hover,
-a.btn:hover {
+a.btn:hover,
+.btn.active{
     text-decoration: none;
     z-index: 2;
-    box-shadow: var(--shadow-btn-hover);
-    color: var(--text-color);
+    box-shadow: $shadow-btn-hover;
+    filter:invert(.08);
+    //color: $text-color;
 }
 
 .btn:focus, .btn.focus {
     outline: 0;
     /* box-shadow: 0 0 0 0.2rem rgba(89, 49, 150, 0.25);*/
-    box-shadow: var(--shadow-btn-hover);
+    box-shadow: $shadow-btn-hover;
 }
 .btn.disabled, .btn:disabled {
     opacity: 0.65;
@@ -50,18 +52,18 @@ fieldset:disabled a.btn {
 
 .btn-lg, .btn-group-lg > .btn,
 .btn-group-lg > .form-control {
-    padding: var(--padding-btn-lg);
+    padding: $padding-btn-lg;
     font-size: 1.09375rem;
     line-height: 1.5;
-    border-radius: var(--border-radius);
+    border-radius: $border-radius;
 }
 
 .btn-sm, .btn-group-sm > .btn,
 .btn-group-sm > .form-control {
-    padding: var(--padding-btn-sm);
+    padding: $padding-btn-sm;
     font-size: 0.765625rem;
     line-height: 1.5;
-    border-radius: var(--border-radius);
+    border-radius: $border-radius;
 }
 
 .btn-block {
