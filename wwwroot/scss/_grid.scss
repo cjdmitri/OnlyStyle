@@ -1,4 +1,6 @@
 ﻿@import "__variable.scss";
+//Максимальное количество столбцов в сетке
+$grid-col: 12;
 
 .grid {
     display: grid;
@@ -6,6 +8,9 @@
     margin-bottom: $padding-general;
 }
 
+.hidden {
+    display: none;
+}
 
 /*.grid-inline {
     display: grid;
@@ -40,7 +45,7 @@
     grid-row: span 1;
 }
 
-@for $i from 2 through 12 {
+@for $i from 2 through $grid-col {
     .g-#{$i} {
         grid-template-columns: repeat($i, 1fr);
     }
@@ -54,83 +59,38 @@
     }
 }
 
-// x small
-@media (max-width: $bp-sm - 1) {
-    .g-xsm-1 {
-        grid-template-columns: 1fr;
-    }
-
-    .col-xsm-span-1 {
-        grid-column: span 1;
-    }
-
-    .row-xsm-span-1 {
-        grid-row: span 1;
-    }
-
-    @for $i from 2 through 12 {
-        .g-xsm-#{$i} {
+//Единица итерации медиа-запроса
+@mixin iteration-media($bpname) {
+    @for $i from 1 through $grid-col {
+        .g-#{$bpname}-#{$i} {
             grid-template-columns: repeat($i, 1fr);
         }
 
-        .col-xsm-span-#{$i} {
+        .col-#{$bpname}-span-#{$i} {
             grid-column: span $i;
         }
 
-        .row-xsm-span-#{$i} {
+        .row-#{$bpname}-span-#{$i} {
             grid-row: span $i;
         }
-    }
-}
 
-@each $bpname, $value in $breakpoints {
-    @media (min-width: $value) {
-        @for $i from 1 through 12 {
-            .g-#{$bpname}-#{$i} {
-                grid-template-columns: repeat($i, 1fr);
-            }
-
-            .col-#{$bpname}-span-#{$i} {
-                grid-column: span $i;
-            }
-
-            .row-#{$bpname}-span-#{$i} {
-                grid-row: span $i;
-            }
+        .hidden-#{$bpname} {
+            display: none;
         }
     }
 }
 
-.hidden {
-    display: none;
-}
 
-@media (max-width: $bp-md) {
-    .hidden-sm {
-        display: none;
+@each $bpname, $value in $breakpoints {
+    @if $bpname == xsm {
+        @media (max-width:$bp-sm - 1) {
+            @include iteration-media($bpname)
+        }
+    }
+    @else {
+        @media (min-width: $value) {
+            @include iteration-media($bpname)
+        }
     }
 }
 
-@media (max-width: $bp-lg) {
-    .hidden-md {
-        display: none;
-    }
-}
-
-@media (max-width: $bp-xl) {
-    .hidden-lg {
-        display: none;
-    }
-}
-
-@media (max-width: $bp-xxl) {
-    .hidden-xl {
-        display: none;
-    }
-}
-
-@media (min-width: $bp-xxl) {
-    .hidden-xxl {
-        display: none;
-    }
-}
