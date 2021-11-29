@@ -1,5 +1,4 @@
 ﻿
-
 @each $name, $value in $colors{
     .bg-#{$name}, .bg-#{$name}::after, .bg-#{$name}::before{
         background-color: $value !important;

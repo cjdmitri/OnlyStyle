@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <Folder Include="Helpers\" />
+    <Folder Include="wwwroot\templates\img\" />
   </ItemGroup>
 
   <ItemGroup>

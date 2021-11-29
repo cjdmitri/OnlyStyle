@@ -10,6 +10,11 @@
     /*overflow: auto;*/
 }
 
+.card > img {
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+}
+
 .card-header {
     background-color: $background-color;
     border-bottom: $border-general;

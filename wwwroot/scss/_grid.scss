@@ -73,14 +73,10 @@ $grid-col: 12;
         .row-#{$bpname}-span-#{$i} {
             grid-row: span $i;
         }
-
-        .hidden-#{$bpname} {
-            display: none;
-        }
     }
 }
 
-
+//Основная сетка 
 @each $bpname, $value in $breakpoints {
     @if $bpname == xsm {
         @media (max-width:$bp-sm - 1) {
@@ -94,3 +90,11 @@ $grid-col: 12;
     }
 }
 
+//Сокрытие элементов
+@each $bpname, $value in $breakpoints {
+        @media (max-width: $value) {
+            .hidden-#{$bpname} {
+                display: none;
+            }
+    }
+}

@@ -75,6 +75,12 @@ namespace OnlyStyle.Controllers
             SetPageInfo("OnlyStyle Components. Spinner", "Spinner style", "OnlyStyle Components. Spinner");
             return View();
         }
+        //Switch
+        public IActionResult Switch()
+        {
+            SetPageInfo("OnlyStyle Components. Switch", "Switch style", "OnlyStyle Components. Switch");
+            return View();
+        }
 
         public IActionResult Table()
         {

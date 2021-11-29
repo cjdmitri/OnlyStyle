@@ -1,0 +1,52 @@
+﻿$switch-background: $background-color;
+$switch-checked-background: $shadow-color;
+$switch-color: $white;
+
+
+input[type="checkbox"].switch {
+    position: relative;
+    width: 2rem;
+    height: 1rem;
+    -webkit-appearance: none;
+    background: $switch-background;
+    outline: none;
+    border-radius: 50rem;
+    box-shadow: inset 0 0 5px rgba(0,0,0, .2);
+    transition: .3s;
+}
+
+input[type="checkbox"].switch-lg {
+    width: 4rem;
+    height: 2rem;
+}
+
+
+input:checked[type="checkbox"].switch {
+    background: $switch-checked-background;
+}
+
+input[type="checkbox"].switch:before {
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    background-color: $switch-color;
+    transition: .3s;
+    // transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0,0,0, .2);
+}
+
+input[type="checkbox"].switch-lg:before {
+    width: 2rem;
+    height: 2rem;
+}
+
+input:checked[type="checkbox"].switch:before {
+    left: 1rem;
+}
+input:checked[type="checkbox"].switch-lg:before {
+    left: 2rem;
+}
