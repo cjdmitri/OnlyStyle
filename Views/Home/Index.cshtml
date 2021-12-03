@@ -128,12 +128,12 @@
         </div>
         <div class="card-body">
             <h4>Outline buttons</h4>
-            <button type="button" class="btn border-primary">Primary</button>
-            <button type="button" class="btn border-secondary">Secondary</button>
-            <button type="button" class="btn border-success">Success</button>
-            <button type="button" class="btn border-info">Info</button>
-            <button type="button" class="btn border-warning">Warning</button>
-            <button type="button" class="btn border-danger">Danger</button>
+            <button type="button" class="btn border-primary text-primary">Primary</button>
+            <button type="button" class="btn border-secondary text-secondary">Secondary</button>
+            <button type="button" class="btn border-success text-success">Success</button>
+            <button type="button" class="btn border-info text-info">Info</button>
+            <button type="button" class="btn border-warning text-warning">Warning</button>
+            <button type="button" class="btn border-danger text-danger">Danger</button>
         </div>
         <div class="card-footer">
             <a asp-controller="Components" asp-action="Buttons">More Buttons styles</a>
@@ -169,6 +169,96 @@
         </div>
         <div class="card-footer">
             <a asp-controller="Components" asp-action="Buttonsgroup">More Input group styles</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <span class="text-bold">Details</span>
+        </div>
+        <div class="card-body">
+            <details class="mg-b-15">
+                <summary>Default style</summary>
+                <div>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                    </ul>
+                </div>
+            </details>
+            <details class="mg-b-15">
+                <summary class="bg-primary text-white">Colored style</summary>
+                <div>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                    </ul>
+                </div>
+            </details>
+            <details class="mg-b-15 border-primary">
+                <summary class="border-primary text-primary">Colored outline</summary>
+                <div>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                    </ul>
+                </div>
+            </details>
+            <details class="mg-b-15 border-primary">
+                <summary class="border-primary text-primary border-left-5">Left border bold</summary>
+                <div>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                    </ul>
+                </div>
+            </details>
+            <details class="mg-b-15 border-hide shadow-hide">
+                <summary class="border-hide">Hidden style</summary>
+                <div>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                    </ul>
+                </div>
+            </details>
+        </div>
+        <div class="card-footer">
+            <a asp-controller="Components" asp-action="Details">More Details styles</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <span class="text-bold">Listgroup</span>
+        </div>
+        <div>
+            <ul class="list-group list-group-link">
+                <li><a href="#">List link item 1</a></li>
+                <li><a href="#">List link item 2</a></li>
+                <li><a href="#">List link item 3</a></li>
+                <li><a href="#">List link item 4</a></li>
+                <li><a href="#">List link item 5</a></li>
+                <li><a href="#">List link item 6</a></li>
+            </ul>
+        </div>
+        <div class="card-footer">
+            <a asp-controller="Components" asp-action="Listgroup">More Listgroup styles</a>
         </div>
     </div>
 </div>

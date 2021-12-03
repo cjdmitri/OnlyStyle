@@ -38,3 +38,11 @@
 .card-body {
     padding: $padding-general;
 }
+
+.card  .list-group  li {
+    border-left: none;
+    border-right: none;
+}
+.card .list-group:first-child li {
+    border-top:none;
+}
