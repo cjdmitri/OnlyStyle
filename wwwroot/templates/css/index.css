@@ -11,6 +11,8 @@
 .item{
     /*padding:15px;*/
 }
+
+
 .card>img{
     transition:all .5s;
 }

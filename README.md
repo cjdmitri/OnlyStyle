@@ -24,6 +24,7 @@
   <li><a href="https://onlystyle.site/components/navbar" target="_blank">Navbar</a></li>
   <li><a href="https://onlystyle.site/components/progress" target="_blank">Progress</a></li>
   <li><a href="https://onlystyle.site/components/spinner" target="_blank">Spinner</a></li>
+  <li><a href="https://onlystyle.site/components/switch" target="_blank">Spinner</a></li>
   <li><a href="https://onlystyle.site/components/table" target="_blank">Table</a></li>
   <li><a href="https://onlystyle.site/components/tooltip" target="_blank">Tooltip</a></li>
 </ol>

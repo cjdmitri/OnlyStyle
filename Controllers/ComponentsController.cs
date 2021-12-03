@@ -60,6 +60,11 @@ namespace OnlyStyle.Controllers
             SetPageInfo("OnlyStyle Components. List group", "List group style", "OnlyStyle Components. List group");
             return View();
         }
+        public IActionResult Material()
+        {
+            SetPageInfo("OnlyStyle Components. Material input", "Material input style", "OnlyStyle Components. Material input");
+            return View();
+        }
         public IActionResult Navbar()
         {
             SetPageInfo("OnlyStyle Components. Navbar", "Navbar style", "OnlyStyle Components. Navbar");

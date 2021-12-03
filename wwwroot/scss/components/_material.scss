@@ -1,0 +1,41 @@
+﻿.material-group {
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-material {
+    display: block;
+    width: 100%;
+    font-size: $font-size;
+    line-height: 1.5;
+    padding: $padding-btn;
+    border: none;
+    border-bottom: $border-general;
+    background: none;
+}
+
+.material-group > label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .3s;
+    line-height: 1.5;
+    padding: $padding-btn;
+    cursor: text;
+}
+
+.input-material:focus {
+    outline: 0;
+    border-bottom: 2px solid $shadow-color;
+}
+
+.input-material:focus ~ label,
+.input-material:active ~ label,
+.input-material:valid ~ label {
+    transform: scale(0.75) translateY(-100%);
+    left: 0;
+    padding-left: 0;
+    color: $shadow-color;
+    cursor:default;
+}

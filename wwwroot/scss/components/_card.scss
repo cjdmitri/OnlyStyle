@@ -2,7 +2,8 @@
 
 .card {
     //position: relative;
-    display: block;
+    display: flex;
+    flex-direction:column;
     background-color: $white;
     word-wrap: break-word;
     border: $border-general;
@@ -10,9 +11,9 @@
     /*overflow: auto;*/
 }
 
-.card > img {
-    border-top-left-radius: $border-radius;
-    border-top-right-radius: $border-radius;
+.card:first-child {
+    border-top-left-radius: $border-radius !important;
+    border-top-right-radius: $border-radius !important;
 }
 
 .card-header {
@@ -21,6 +22,17 @@
     padding: $padding-general;
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
+}
+
+.card-footer {
+    background-color: $background-color;
+    border-top: $border-general;
+    padding: $padding-general;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+    margin-block-start: auto;
 }
 
 .card-body {

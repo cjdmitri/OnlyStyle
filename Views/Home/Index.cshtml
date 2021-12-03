@@ -71,3 +71,104 @@
 
 </details>
 
+<h3 id="compexam">Component examples</h3>
+<div class="grid  g-sm-2 g-xsm-1">
+    <div class="card">
+        <div class="card-header">
+            <span class="text-bold">Alert</span>
+        </div>
+        <div class="card-body">
+            <div class="alert bg-danger-glass">
+                <p class="text-bold">Allert</p>
+                <p>Simple alert + close button.</p>
+                <button class="close" onclick="this.parentElement.remove()">Close</button>
+            </div>
+        </div>
+        <div class="card-footer">
+            <a asp-controller="Components" asp-action="Alerts">More allerts styles</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <span class="text-bold">Badge</span>
+        </div>
+        <div class="card-body">
+            <span class="badge bg-info">info</span>
+            <span class="badge bg-info-dark">dark</span>
+            <span class="badge bg-info-light">light</span>
+            <span class="badge bg-info-light rounded">rounded</span>
+            <span class="badge bordered bg-info-light border-primary">bordered</span>
+        </div>
+        <div class="card-body">
+            <span class="badge bg-warning">warning</span>
+            <span class="badge bg-warning-dark">dark</span>
+            <span class="badge bg-warning-light">light</span>
+            <span class="badge bg-warning-light rounded">rounded</span>
+            <span class="badge bordered bg-warning-light border-primary">bordered</span>
+        </div>
+        <div class="card-footer">
+            <a asp-controller="Components" asp-action="Badge">More badge styles</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <span class="text-bold">Buttons</span>
+        </div>
+        <div class="card-body">
+            <h4>Default style</h4>
+            <button type="button" class="btn">Default</button>
+            <button type="button" class="btn bg-primary text-white">Primary</button>
+            <button type="button" class="btn bg-secondary text-white">Secondary</button>
+            <button type="button" class="btn bg-success text-white">Success</button>
+            <button type="button" class="btn bg-info text-white">Info</button>
+            <button type="button" class="btn bg-warning text-white">Warning</button>
+            <button type="button" class="btn bg-danger text-white">Danger</button>
+        </div>
+        <div class="card-body">
+            <h4>Outline buttons</h4>
+            <button type="button" class="btn border-primary">Primary</button>
+            <button type="button" class="btn border-secondary">Secondary</button>
+            <button type="button" class="btn border-success">Success</button>
+            <button type="button" class="btn border-info">Info</button>
+            <button type="button" class="btn border-warning">Warning</button>
+            <button type="button" class="btn border-danger">Danger</button>
+        </div>
+        <div class="card-footer">
+            <a asp-controller="Components" asp-action="Buttons">More Buttons styles</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <span class="text-bold">Input group</span>
+        </div>
+        <div class="card-body">
+            <div class="input-group">
+                <label class="input-group-text">Text</label>
+                <input type="text" class="form-control" placeholder="Search..." />
+                <a class="btn" href="#">Search</a>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="input-group">
+                <a class="btn" href="#">1</a>
+                <a class="btn" href="#">2</a>
+                <a class="btn" href="#">3</a>
+                <a class="btn" href="#">4</a>
+                <a class="btn" href="#">5</a>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="input-group">
+                <a class="btn" href="#">Button 1</a>
+                <a class="btn" href="#">Button 2</a>
+                <a class="btn" href="#">Button 3</a>
+            </div>
+        </div>
+        <div class="card-footer">
+            <a asp-controller="Components" asp-action="Buttonsgroup">More Input group styles</a>
+        </div>
+    </div>
+</div>
