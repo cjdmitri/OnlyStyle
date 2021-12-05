@@ -1,22 +1,22 @@
 ﻿[
   {
     "outputFile": "wwwroot/css/onlystyle.css",
-    "inputFile": "wwwroot/scss/onlystyle.scss",
+    "inputFile": "scss/onlystyle.scss",
     "options": { "sourceMap": true }
   },
   {
     "outputFile": "wwwroot/versions/current/onlystyle.css",
-    "inputFile": "wwwroot/scss/onlystyle.scss",
+    "inputFile": "scss/onlystyle.scss",
     "options": { "sourceMap": true }
   },
   {
     "outputFile": "wwwroot/css/onlystyle.grid.css",
-    "inputFile": "wwwroot/scss/_grid.scss",
+    "inputFile": "scss/_grid.scss",
     "options": { "sourceMap": true }
   },
   {
     "outputFile": "wwwroot/css/onlystyle.grid.min.css",
-    "inputFile": "wwwroot/scss/_grid.scss",
+    "inputFile": "scss/_grid.scss",
     "options": { "sourceMap": true, "outputStyle": "compressed" }
   }
 ]

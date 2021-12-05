@@ -14,43 +14,49 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="scss\components\_alert.scss" />
+    <Content Include="scss\components\_badge.scss" />
+    <Content Include="scss\components\_breadcrumb.scss" />
+    <Content Include="scss\components\_buttons.scss" />
+    <Content Include="scss\components\_card.scss" />
+    <Content Include="scss\components\_close.scss" />
+    <Content Include="scss\components\_details.scss" />
+    <Content Include="scss\components\_form-controls.scss" />
+    <Content Include="scss\components\_input-group.scss" />
+    <Content Include="scss\components\_listgroups.scss" />
+    <Content Include="scss\components\_material.scss" />
+    <Content Include="scss\components\_navbar.scss" />
+    <Content Include="scss\components\_progress.scss" />
+    <Content Include="scss\components\_ribbon.scss" />
+    <Content Include="scss\components\_spinner.scss" />
+    <Content Include="scss\components\_switch.scss" />
+    <Content Include="scss\components\_table.scss" />
+    <Content Include="scss\components\_tooltip.scss" />
+    <Content Include="scss\helpers\_animations.scss" />
+    <Content Include="scss\helpers\_borders.scss" />
+    <Content Include="scss\helpers\_colors.scss" />
+    <Content Include="scss\helpers\_hover.scss" />
+    <Content Include="scss\helpers\_image.scss" />
+    <Content Include="scss\helpers\_margin-padding.scss" />
+    <Content Include="scss\helpers\_positions.scss" />
+    <Content Include="scss\onlystyle.scss" />
+    <Content Include="scss\typography\_text.scss" />
+    <Content Include="scss\typography\_typography.scss" />
+    <Content Include="scss\_general.scss" />
+    <Content Include="scss\_grid.scss" />
+    <Content Include="scss\__mixins.scss" />
+    <Content Include="scss\__root.scss" />
+    <Content Include="scss\__variable-dark.scss" />
+    <Content Include="scss\__variable.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Helpers\" />
     <Folder Include="wwwroot\templates\img\" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="bundleconfig.json" />
-    <None Include="wwwroot\scss\components\_alert.scss" />
-    <None Include="wwwroot\scss\components\_badge.scss" />
-    <None Include="wwwroot\scss\components\_breadcrumb.scss" />
-    <None Include="wwwroot\scss\components\_buttons.scss" />
-    <None Include="wwwroot\scss\components\_card.scss" />
-    <None Include="wwwroot\scss\components\_close.scss" />
-    <None Include="wwwroot\scss\components\_details.scss" />
-    <None Include="wwwroot\scss\components\_input-group.scss" />
-    <None Include="wwwroot\scss\components\_listgroups.scss" />
-    <None Include="wwwroot\scss\components\_navbar.scss" />
-    <None Include="wwwroot\scss\components\_progress.scss" />
-    <None Include="wwwroot\scss\components\_ribbon.scss" />
-    <None Include="wwwroot\scss\components\_spinner.scss" />
-    <None Include="wwwroot\scss\components\_table.scss" />
-    <None Include="wwwroot\scss\components\_tooltip.scss" />
-    <None Include="wwwroot\scss\onlystyle.scss" />
-    <None Include="wwwroot\scss\_grid.scss" />
-    <None Include="wwwroot\scss\typography\_typography.scss" />
-    <None Include="wwwroot\scss\helpers\_animations.scss" />
-    <None Include="wwwroot\scss\helpers\_colors.scss" />
-    <None Include="wwwroot\scss\components\_form-controls.scss" />
-    <None Include="wwwroot\scss\_general.scss" />
-    <None Include="wwwroot\scss\helpers\_hover.scss" />
-    <None Include="wwwroot\scss\helpers\_image.scss" />
-    <None Include="wwwroot\scss\helpers\_margin-padding.scss" />
-    <None Include="wwwroot\scss\helpers\_positions.scss" />
-    <None Include="wwwroot\scss\typography\_text.scss" />
-    <None Include="wwwroot\scss\__mixins.scss" />
-    <None Include="wwwroot\scss\__root.scss" />
-    <None Include="wwwroot\scss\__variable-dark.scss" />
-    <None Include="wwwroot\scss\__variable.scss" />
   </ItemGroup>
 
 </Project>
