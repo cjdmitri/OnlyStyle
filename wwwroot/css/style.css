@@ -21,10 +21,10 @@
         list-style: none;
         padding-inline-start: 15px;
     }
-    #pagenavigator ul li {
-        margin-bottom:10px;
+        #pagenavigator ul li {
+            margin-bottom: 10px;
+        }
 
-    }
 
         /*#pagenavigator ul li:before {
             content: "- ";

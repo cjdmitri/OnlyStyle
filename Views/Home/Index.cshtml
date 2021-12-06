@@ -17,7 +17,7 @@
 @* Code grid *@
 <div class="grid g-1">
     <details class="w-100">
-        <summary>Code</summary>
+        <summary>Code this grid</summary>
         <div class="pd-15 overflow-auto">
             <pre><code>
 &ltdiv class="grid g-sm-2 g-md-6 g-lg-8">
@@ -71,6 +71,191 @@
 
 </details>
 
+<h3 id="colors">Colors style</h3>
+<div class="grid g-1">
+    <div class="overflow-auto">
+        <h4 id="gencolor">General colors</h4>
+        <code>.bg-success</code>
+        <div class="grid g-md-6 g-sm-3 g-xsm-2 mg-t-15">
+            @{
+                foreach (string item in MyApp.ColorVariants)
+                {
+                    <div class="item-color bg-@item">
+                        <p class="text-bold text-shadow">@item</p>
+                    </div>
+                }
+            }
+
+        </div>
+    </div>
+    <div class="overflow-auto">
+        <h4 id="colordark">Dark colors</h4>
+        <code>.bg-success-dark</code>
+        <div class="grid g-md-6 g-sm-3 g-xsm-2 mg-t-15">
+            @{
+                foreach (string item in MyApp.ColorVariants)
+                {
+                    <div class="item-color bg-@item-dark">
+                        <p class="text-bold text-shadow">@item</p>
+                    </div>
+                }
+            }
+
+        </div>
+    </div>
+
+    <div class="overflow-auto">
+        <h4 id="colorlight">Light colors</h4>
+        <code>.bg-success-light</code>
+        <div class="grid g-md-6 g-sm-3 g-xsm-2 mg-t-15">
+            @{
+                foreach (string item in MyApp.ColorVariants)
+                {
+                    <div class="item-color bg-@item-light">
+                        <p class="text-bold text-shadow">@item</p>
+                    </div>
+                }
+            }
+
+        </div>
+    </div>
+
+    <div class="overflow-auto">
+        <h4 id="glasscolors">Glass colors</h4>
+        <code>.bg-success-glass</code>
+        <div class="grid g-md-6 g-sm-3 g-xsm-2 mg-t-15">
+            @{
+                foreach (string item in MyApp.ColorVariants)
+                {
+                    <div class="item-color bg-@item-glass">
+                        <p class="text-bold text-shadow">@item</p>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>
+
+@* Typography *@
+<div class="grid g-1">
+    <h3 id="typography">Typography</h3>
+    <div>
+        <h4 id="headings">Headings</h4>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Heading</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>&lt;h1>Heading&lt;/h1></code></td>
+                    <td><h1>h1 heading</h1></td>
+                </tr>
+                <tr>
+                    <td><code>&lt;h2>Heading&lt;/h2></code></td>
+                    <td><h2>h2 heading</h2></td>
+                </tr>
+                <tr>
+                    <td><code>&lt;h3>Heading&lt;/h3></code></td>
+                    <td><h3>h3 heading</h3></td>
+                </tr>
+                <tr>
+                    <td><code>&lt;h4>Heading&lt;/h4></code></td>
+                    <td><h4>h4 heading</h4></td>
+                </tr>
+                <tr>
+                    <td><code>&lt;h5>Heading&lt;/h5></code></td>
+                    <td><h5>h5 heading</h5></td>
+                </tr>
+                <tr>
+                    <td><code>&lt;h6>Heading&lt;/h6></code></td>
+                    <td><h6>h6 heading</h6></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <h4 id="textstyle">Text style</h4>
+        <div class="card">
+            <div class="card-body">
+                <p class="text-muted"><code>.text-muted</code> Lorem ipsum dolor sit amet.</p>
+                <p class="text-primary"><code>.text-primary</code> Lorem ipsum dolor sit amet.</p>
+                <p class="text-secondary"><code>.text-secondary</code> Lorem ipsum dolor sit amet.</p>
+                <p class="text-success"><code>.text-success</code> Lorem ipsum dolor sit amet.</p>
+                <p class="text-info"><code>.text-info</code> Lorem ipsum dolor sit amet.</p>
+                <p class="text-warning"><code>.text-warning</code> Lorem ipsum dolor sit amet.</p>
+                <p class="text-danger"><code>.text-danger</code> Lorem ipsum dolor sit amet.</p>
+                <p><code>&lt;p>&lt;/p></code> Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h4 id="lists">List (ul)</h4>
+        <pre class="bordered pd-15">
+<code>
+&ltul>
+    &ltli>List item 1&lt/li>
+&lt/ul>
+</code>
+</pre>
+
+        <ul>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+            <li>List item 1</li>
+            <li>List item 5</li>
+            <li>List item 6</li>
+            <li>List item 7</li>
+        </ul>
+    </div>
+    <div>
+        <h4 id="listsol">List (ol)</h4>
+        <pre class="bordered pd-15">
+        <code>
+&ltol>
+    &ltli>List item 1&lt/li>
+&lt/ol>
+                </code>
+</pre>
+
+        <ol>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+            <li>List item 1</li>
+            <li>List item 5</li>
+            <li>List item 6</li>
+            <li>List item 7</li>
+        </ol>
+    </div>
+    <div class="overflow-auto">
+        <h3 id="blockquote">Blockquote</h3>
+        <blockquote>This Blockquote element</blockquote>
+
+        @{
+            foreach (string item in MyApp.ColorVariants)
+            {
+                <blockquote class="bg-@item-glass border-@item">This Blockquote element. Background @item glass </blockquote>
+                <p><pre>&ltblockquote class="bg-@item-glass border-@item">This Blockquote element. Background @item glass &lt/blockquote></pre></p>
+            }
+        }
+        <h4>Example blockquote tag in content</h4>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not only five centuries,
+            but also the leap into electronic typesetting, remaining essentially unchanged.
+            <blockquote>This Blockquote element</blockquote>
+            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+    </div>
+</div>
+
+@* Component examples *@
 <h3 id="compexam">Component examples</h3>
 <div class="grid  g-sm-2 g-xsm-1">
     <div class="card">
@@ -259,6 +444,111 @@
         </div>
         <div class="card-footer">
             <a asp-controller="Components" asp-action="Listgroup">More Listgroup styles</a>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <div class="card-header">
+            <span class="text-bold">Dropdown</span>
+        </div>
+        <div class="card-body">
+            <div class="dropdown">
+                <button type="button" class="btn btn-dropdown">Dropdown</button>
+                <div class="dropdown-menu">
+                    <ul class="list-unstyled">
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button type="button" class="btn btn-dropdown border-primary text-primary">Dropdown</button>
+                <div class="dropdown-menu">
+                    <ul class="list-unstyled">
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <a asp-controller="Components" asp-action="Dropdown">More Dropdown styles</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <span class="text-bold">Material</span>
+        </div>
+        <div class="card-body">
+            <div class="material-group">
+                <input type="email" id="email" class="input-material" required />
+                <label class="text-muted" for="email">Email</label>
+            </div>
+            <div class="material-group">
+                <input type="password" id="password" class="input-material" required />
+                <label class="text-muted" for="password">Password</label>
+            </div>
+            <div class="material-group">
+                <input type="text" id="text" class="input-material" required />
+                <label class="text-muted" for="text">Name</label>
+            </div>
+            <div class="material-group">
+                <input type="number" id="text" class="input-material" required />
+                <label class="text-muted" for="number">Number</label>
+            </div>
+        </div>
+        <div class="card-footer">
+            <a asp-controller="Components" asp-action="Material">More Material styles</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <span class="text-bold">Spinner</span>
+        </div>
+        <div class="card-body">
+            @{
+                foreach (string item in MyApp.ColorVariants)
+                {
+                    <span class="spinner spinner-@item"></span>
+                }
+            }
+        </div>
+        <div class="card-footer">
+            <a asp-controller="Components" asp-action="Spinner">More Spinner styles</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <span class="text-bold">Switch</span>
+        </div>
+        <div class="card-body">
+            <input type="checkbox" class="switch" /> <input type="checkbox" class="switch" checked />
+            <input type="checkbox" class="switch switch-lg" /> <input type="checkbox" class="switch switch-lg" checked />
+        </div>
+        <div class="card-footer">
+            <a asp-controller="Components" asp-action="Switch">More Switch styles</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <span class="text-bold">Tooltip</span>
+        </div>
+        <div class="card-body">
+            <button type="button" class="btn tooltip" data-tooltip="Tooltip text">Hover me</button>
+            <button type="button" class="btn tooltip-top" data-tooltip="Tooltip text">tooltip-top</button>
+            <button type="button" class="btn tooltip-bottom" data-tooltip="Tooltip text">tooltip-bottom</button>
+            <button type="button" class="btn tooltip-left" data-tooltip="Tooltip text">tooltip-left</button>
+            <button type="button" class="btn tooltip-right" data-tooltip="Tooltip text">tooltip-right</button>
+        </div>
+        <div class="card-footer">
+            <a asp-controller="Components" asp-action="Tooltip">More Tooltip styles</a>
         </div>
     </div>
 </div>

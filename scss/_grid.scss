@@ -73,6 +73,10 @@ $grid-col: 12;
         .row-#{$bpname}-span-#{$i} {
             grid-row: span $i;
         }
+
+        .col-start-#{$bpname}-#{$i} {
+            grid-column-start: $i;
+        }
     }
 }
 
