@@ -1,4 +1,12 @@
-﻿@import "__variable.scss";
+﻿/*!
+*   OnlyStyle Framework 
+     Only Grid
+*   Site: onlystyle.site
+*   Version: 0.1.0
+*   Author: cjdmitri@gmail.com
+*/
+
+@import "__variable.scss";
 //Максимальное количество столбцов в сетке
 $grid-col: 12;
 
@@ -89,7 +97,7 @@ $grid-col: 12;
     }
     @else {
         @media (min-width: $value) {
-            @include iteration-media($bpname)
+            @include iteration-media($bpname) 
         }
     }
 }
