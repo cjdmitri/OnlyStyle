@@ -5,7 +5,11 @@
 *   Version: 0.1.0
 *   Author: cjdmitri@gmail.com
 */
-*,::after,::before{box-sizing:border-box;scroll-behavior:smooth;}div{display:block;}body{margin:0%;padding:0%;font-size:15px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";background-color:#f7f7f7;color:#444;line-height:1.5;}::-webkit-scrollbar{width:5px;height:5px;}::-webkit-scrollbar-thumb{background:#bd93bd;border-radius:0;}::-webkit-scrollbar-thumb:hover{background:#b543b5;}::-webkit-scrollbar-track{background:#fff;border-radius:0;box-shadow:inset 0 0 0 0 #fff;}.hide-scrollbar::-webkit-scrollbar{height:0;width:0;}.container{background-color:#fff;max-width:1200px;margin-left:auto;margin-right:auto;padding-bottom:80px;padding-left:15px;padding-right:15px;}.container-full{width:100%;margin-left:0;margin-right:0;max-width:none;}footer,.footer{display:block;padding:15px;background-color:#fff;border-top:1px solid #ccc;padding-bottom:80px;}.shadow{box-shadow:0 0 10px 1px #e0ceff;}.shadow-hide{box-shadow:none;}.list-unstyled{padding-left:0;list-style:none;}[hidden]{display:none;}.w-100{width:100%;}.overflow-auto{overflow:auto;}.align-right{float:right;}.inline-row{display:flex;flex-direction:row;align-items:center;flex-wrap:wrap;}.inline-right{margin-left:auto;}
+/*!
+*   OnlyStyle Framework General
+*   Site: onlystyle.site
+*/
+*,::after,::before{box-sizing:border-box;scroll-behavior:smooth;}div{display:block;}body{margin:0%;padding:0%;font-size:15px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";background-color:#f7f7f7;color:#444;line-height:1.5;}.container{background-color:#fff;max-width:1200px;margin-left:auto;margin-right:auto;padding-bottom:80px;padding-left:15px;padding-right:15px;}.container-full{width:100%;margin-left:0;margin-right:0;max-width:none;}footer,.footer{display:block;padding:15px;background-color:#fff;border-top:1px solid #ccc;padding-bottom:80px;}.shadow{box-shadow:0 0 10px 1px #e0ceff;}.shadow-hide{box-shadow:none;}.list-unstyled{padding-left:0;list-style:none;}[hidden]{display:none;}.w-100{width:100%;}.overflow-auto{overflow:auto;}.align-right{float:right;}.inline-row{display:flex;flex-direction:row;align-items:center;flex-wrap:wrap;}.inline-right{margin-left:auto;}
 /*!
 *   OnlyStyle Framework 
      Only Grid
@@ -83,7 +87,7 @@ details{display:block;margin:0 auto;background-color:#fff;box-shadow:0 .1rem 1re
 *   OnlyStyle Framework ProgressBar
 *   Site: onlystyle.site
 */
-.progress{display:flex;align-items:center;height:20px;background-color:#f7f7f7;border-radius:5px;overflow:hidden;}.progress-bar{display:inline-block;height:100%;background-color:#009cdc;border-radius:5px;}
+.progress{display:flex;align-items:center;height:20px;background-color:#f7f7f7;border-radius:5px;overflow:hidden;}.progress-bar{display:inline-block;height:100%;background-color:#009cdc;border-radius:5px;}::-webkit-scrollbar{width:5px;height:5px;}::-webkit-scrollbar-thumb{background:#bd93bd;border-radius:0;}::-webkit-scrollbar-thumb:hover{background:#b543b5;}::-webkit-scrollbar-track{background:#fff;border-radius:0;box-shadow:inset 0 0 0 0 #fff;}.hide-scrollbar::-webkit-scrollbar{height:0;width:0;}
 /*!
 *   OnlyStyle Framework Spinners
 *   Site: onlystyle.site

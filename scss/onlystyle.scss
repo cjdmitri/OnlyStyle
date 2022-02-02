@@ -8,10 +8,10 @@
 
 //General
 @import "__variable.scss";
-//@import "__root.scss";
 @import "__mixins.scss"; 
 @import "_general.scss";
 @import "_grid.scss";
+
 //Typography
 @import "typography/_typography.scss";
 @import "typography/_text.scss";
@@ -31,6 +31,7 @@
 @import "components/_table.scss";
 @import "components/_tooltip.scss";
 @import "components/_progress.scss";
+@import "components/_scrollbar.scss";
 @import "components/_spinner.scss";
 @import "components/_switch.scss";
 //helpers

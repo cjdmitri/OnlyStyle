@@ -1,4 +1,7 @@
-﻿
+﻿/*!
+*   OnlyStyle Framework General
+*   Site: onlystyle.site
+*/
 *, ::after, ::before {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -17,42 +20,12 @@ body {
     color: $text-color; 
     line-height: 1.5;    
 } 
- 
-
-::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #BD93BD;
-    border-radius: 0px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #B543B5;
-}
-
-::-webkit-scrollbar-track {
-    background: $white;
-    border-radius: 0px;
-    box-shadow: inset 0px 0px 0px 0px $white;
-}
-
-.hide-scrollbar::-webkit-scrollbar {
-    height: 0;
-    width: 0;
-}
-
 
 .container {
     background-color: $white;
     max-width: $container-width;
     margin-left: auto;
     margin-right: auto;
-    //border-left: $border-general;
-    //border-right: $border-general;
-    //border-bottom: $border-general;
     padding-bottom: 80px;
     padding-left: $padding-general;
     padding-right: $padding-general;
@@ -65,7 +38,6 @@ body {
     max-width:none;
 }
 
-
 footer, .footer {
     display: block;
     padding: $padding-general;
@@ -74,7 +46,6 @@ footer, .footer {
     padding-bottom: 80px;
 }
 
-
 .shadow {
     box-shadow: $shadow-btn-hover
 }
@@ -82,9 +53,6 @@ footer, .footer {
 .shadow-hide {
     box-shadow: none;
 }
-
-
-
 
 .list-unstyled {
     padding-left: 0px;
