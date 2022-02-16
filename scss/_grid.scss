@@ -17,7 +17,7 @@ $grid-col: 12;
 }
 
 .hidden {
-    display: none;
+    display: none!important;
 }
 
 /*.grid-inline {
